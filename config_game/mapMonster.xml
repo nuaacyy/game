@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" explain="762666111" permanentNum="1;10|2;10|3;10" cycleNum="4;10"></l>
+	<l id="2" explain="2336644223" permanentNum="2;10|3;10|4;10" cycleNum="5;10"></l>
+	<l id="3" explain="1954307199" permanentNum="3;10|4;10|5;10" cycleNum="6;10"></l>
+	<l id="1001" explain="2885080635" permanentNum="6;8" cycleNum="7;10"></l>
+	<l id="1002" explain="2885088403" permanentNum="6;4" cycleNum="7;5"></l>
+	<l id="2001" explain="4206503238" permanentNum="6;6" cycleNum="7;7"></l>
+</r>

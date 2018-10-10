@@ -1,0 +1,49 @@
+{
+  "dsMap": {
+    "general": {
+      "datasourceList": {
+        "shardId": 0,
+        "socket": "localhost:3306",
+        "database": "slg2d",
+        "user": "root",
+        "password": "123456"
+      }
+    },
+    "172.30.18.188": {
+      "datasourceList": {
+        "shardId": 0,
+        "socket": "192.168.11.160:3306",
+        "database": "slg2d",
+        "user": "root",
+        "password": "123456"
+      }
+    },
+    "192.168.11.135": {
+      "datasourceList": {
+        "shardId": 0,
+        "socket": "192.168.11.160:3306",
+        "database": "slg2d",
+        "user": "root",
+        "password": "123456"
+      }
+    },
+    "192.168.189.40": {
+      "datasourceList": {
+        "shardId": 0,
+        "socket": "127.0.0.1:13306",
+        "database": "slg2d",
+        "user": "root",
+        "password": "123456"
+      }
+    },
+    "172.18.0.10": {
+      "datasourceList": {
+        "shardId": 0,
+        "socket": "172.18.0.100:3306",
+        "database": "rebuildslg2d",
+        "user": "root",
+        "password": "123456"
+      }
+    }
+  }
+}

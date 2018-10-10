@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l unitId="1" unitName="2272631566" unitShuo="3110946798" unitPos="223;223" unitRange="2" unitBorth="223;223" preconditionLv="1" preconditionUnit="0" army="1" reward="7;0;5000|14;20109;2|14;10805;2|14;11104;5|14;91204;1" unitModel="zhuangshi_1"></l>
+	<l unitId="2" unitName="3691879527" unitShuo="3110946798" unitPos="288;223" unitRange="2" unitBorth="288;223" preconditionLv="1" preconditionUnit="1" army="2" reward="7;0;3000|14;20108;3|14;10804;3|14;11104;3|14;91203;2" unitModel="zhuangshi_1"></l>
+	<l unitId="3" unitName="2189962288" unitShuo="3110946798" unitPos="223;288" unitRange="2" unitBorth="223;288" preconditionLv="1" preconditionUnit="2" army="3" reward="7;0;2000|14;20107;5|14;10804;2|14;11104;2|14;91203;1" unitModel="zhuangshi_1"></l>
+	<l unitId="4" unitName="2229807472" unitShuo="3110946798" unitPos="288;288" unitRange="2" unitBorth="288;288" preconditionLv="1" preconditionUnit="3" army="4" reward="7;0;1000|14;20106;5|14;10803;3|14;11103;3|14;91202;2" unitModel="zhuangshi_1"></l>
+	<l unitId="5" unitName="3910242108" unitShuo="3110946798" unitPos="251;507" unitRange="2" unitBorth="251;507" preconditionLv="1" preconditionUnit="4" army="5" reward="7;0;500|14;20105;5|14;10803;2|14;11103;2|14;91202;1" unitModel="zhuangshi_1"></l>
+	<l unitId="6" unitName="2178887146" unitShuo="3110946798" unitPos="507;251" unitRange="2" unitBorth="507;251" preconditionLv="1" preconditionUnit="5" army="6" reward="7;0;200|14;20104;5|14;10802;3|14;11102;6|14;91201;2" unitModel="zhuangshi_1"></l>
+	<l unitId="7" unitName="4235229854" unitShuo="3110946798" unitPos="507;507" unitRange="3" unitBorth="507;507" preconditionLv="6" preconditionUnit="6" army="7" reward="7;0;100|14;20103;5|14;10802;2|14;11102;3|14;91201;1" unitModel="zhuangshi_7"></l>
+</r>

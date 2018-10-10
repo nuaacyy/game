@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" name="873147317" cardType="1" timeInfo="0" oneCost="14;1001;1" moreCost="14;1001;10" moreCostDisCount="14;1001;8" mustGet="14;11002;1" basicDraw="1;4000|6;4000|11;1000|201;1000" drawProtect1="10" themDraw1="202;10000" drawProtect2="1000" themDraw2="203;10000" cardShow="11;1001;1;2|11;1002;1;1|11;1003;1;1"></l>
+	<l id="2" name="3645736811" cardType="1" timeInfo="0" oneCost="14;1002;1" moreCost="14;1002;10" moreCostDisCount="14;1002;8" mustGet="14;11003;1" basicDraw="1;4000|6;4000|11;1000|204;1000" drawProtect1="10" themDraw1="205;10000" drawProtect2="1000" themDraw2="206;10000" cardShow="11;1004;1;2|11;1005;1;1|11;1006;1;1"></l>
+	<l id="3" name="1616152294" cardType="2" timeInfo="0;0;1;0;0;0|0;0;8;0;0;0" oneCost="14;1002;1" moreCost="14;1002;10" moreCostDisCount="14;1002;8" mustGet="14;11003;1" basicDraw="1;4000|6;4000|11;1000|204;1000" drawProtect1="10" themDraw1="205;10000" drawProtect2="1000" themDraw2="206;10000" cardShow="11;1004;1;2|11;1005;1;1|11;1006;1;1"></l>
+	<l id="4" name="437246395" cardType="3" timeInfo="2018;5;4;0;0;0|2018;5;6;0;0;0" oneCost="14;1002;1" moreCost="14;1002;10" moreCostDisCount="14;1002;8" mustGet="14;11003;1" basicDraw="1;4000|6;4000|11;1000|204;1000" drawProtect1="10" themDraw1="205;10000" drawProtect2="1000" themDraw2="206;10000" cardShow="11;1004;1;2|11;1005;1;1|11;1006;1;1"></l>
+	<l id="5" name="50222552" cardType="3" timeInfo="2018;5;7;0;0;0|2018;5;8;0;0;0" oneCost="14;1002;1" moreCost="14;1002;10" moreCostDisCount="14;1002;8" mustGet="14;11003;1" basicDraw="1;4000|6;4000|11;1000|204;1000" drawProtect1="10" themDraw1="205;10000" drawProtect2="1000" themDraw2="206;10000" cardShow="11;1004;1;2|11;1005;1;1|11;1006;1;1"></l>
+</r>

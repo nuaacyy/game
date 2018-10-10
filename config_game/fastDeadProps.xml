@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" rank="1;1" needPropsNum="50"></l>
+	<l id="2" rank="2;5" needPropsNum="40"></l>
+	<l id="3" rank="6;10" needPropsNum="30"></l>
+	<l id="4" rank="11;20" needPropsNum="20"></l>
+	<l id="5" rank="21;30" needPropsNum="10"></l>
+	<l id="6" rank="31;40" needPropsNum="8"></l>
+	<l id="7" rank="41;50" needPropsNum="6"></l>
+	<l id="8" rank="51;100" needPropsNum="5"></l>
+	<l id="9" rank="101;200" needPropsNum="4"></l>
+	<l id="10" rank="201;500" needPropsNum="2"></l>
+	<l id="11" rank="501;500000" needPropsNum="1"></l>
+</r>

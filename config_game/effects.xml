@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="10001" name="2704440137" path="Effect/Prefab/chuansong_kaishi" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10002" name="1223260970" path="Effect/Prefab/chuansong_jieshu" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10003" name="3829803618" path="Effect/Prefab/yan_huoshan" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10004" name="31644471" path="Effect/Prefab/shachen" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10005" name="3452577096" path="Effect/Prefab/rain" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10006" name="3452577094" path="Effect/Prefab/snow" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10007" name="4052803050" path="Effect/Prefab/shui_chitang" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10008" name="1398368191" path="Effect/Prefab/fanghuzhao_huang" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10009" name="3207405187" path="Effect/Prefab/fanghuzhao_lan" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10010" name="4224464012" path="Effect/Prefab/chengbao_huo" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10011" name="429568594" path="Effect/Prefab/chengbao_yan" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10012" name="1960083766" path="Effect/Prefab/story/green_light" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10013" name="609001520" path="Effect/Prefab/story/story_huifutexiao_front" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="1" sound="0"></l>
+	<l id="10014" name="579575856" path="Effect/Prefab/story/story_huifutexiao_back" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10015" name="987338655" path="Effect/Prefab/story/story_menghuanpaopao" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10016" name="3465388513" path="Effect/Prefab/story/story_nihongcaiguang_front" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="1" sound="0"></l>
+	<l id="10017" name="3427443169" path="Effect/Prefab/story/story_nihongcaiguang_back" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10020" name="4146771549" path="Effect/Prefab/smoke" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10021" name="795372339" path="Effect/Prefab/smoke_disappear" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10022" name="3559648792" path="Effect/Prefab/chuansong_jieshu" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10023" name="2731064080" path="Effect/Prefab/skill3_shan" times="3" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10024" name="2060576070" path="Effect/Prefab/gaiya_daoguang_1" times="3" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="200021;0;100"></l>
+	<l id="10025" name="1657291543" path="Effect/Prefab/gaiya_daoguang_2" times="3" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="200021;0;100"></l>
+	<l id="10026" name="1650565353" path="Effect/Prefab/gaiya_daoguang_3" times="3" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="200021;0;100"></l>
+	<l id="10027" name="849741744" path="Effect/Prefab/fanghuzhao_wonder" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10028" name="1256712887" path="Effect/Prefab/yeguai_bao" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10029" name="175089474" path="Effect/Prefab/CageFront" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10030" name="175087871" path="Effect/Prefab/CageBack" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10031" name="1237383846" path="Effect/Prefab/jzwc" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10032" name="2634045195" path="Effect/Prefab/baoxiang" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10033" name="2263500744" path="Effect/Prefab/luodi" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10044" name="3590037683" path="Effect/Prefab/jianzaozhong_tnt" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10050" name="2224961390" path="Effect/Prefab/map_click" times="0" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+	<l id="10060" name="2682808088" path="Effect/Prefab/luodi" times="1.2" blendMode="0" xOffset="0" yOffset="0" sortLayerName="0" sound="0"></l>
+</r>

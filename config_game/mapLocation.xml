@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" type="1" name="4089454614" level="1" mapDistribution="1;45|2;30"></l>
+	<l id="2" type="1" name="4089454614" level="2" mapDistribution="1;15|2;45|3;15"></l>
+	<l id="3" type="1" name="4089454614" level="3" mapDistribution="2;15|3;40|4;15"></l>
+	<l id="4" type="1" name="4089454614" level="4" mapDistribution="4;45|5;30"></l>
+	<l id="6" type="2" name="2456117458" level="1" mapDistribution="1;30|2;20"></l>
+	<l id="7" type="2" name="2456117458" level="2" mapDistribution="1;10|2;30|3;10"></l>
+	<l id="8" type="2" name="2456117458" level="3" mapDistribution="2;10|3;30|4;10"></l>
+	<l id="9" type="2" name="2456117458" level="4" mapDistribution="4;30|5;30"></l>
+	<l id="11" type="3" name="3195349009" level="1" mapDistribution="1;27|2;23"></l>
+	<l id="12" type="3" name="3195349009" level="2" mapDistribution="1;12|2;27|3;11"></l>
+	<l id="13" type="3" name="3195349009" level="3" mapDistribution="2;12|3;27|4;11"></l>
+	<l id="14" type="3" name="3195349009" level="4" mapDistribution="4;27|5;23"></l>
+</r>

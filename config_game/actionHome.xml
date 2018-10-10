@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" station="1" bubble="0" action="1007001" num="2" time="1" script="1"></l>
+	<l id="2" station="2" bubble="DialogBubble" action="1007002" num="2" time="2" script="1"></l>
+	<l id="3" station="1" bubble="DialogBubble" action="1007002" num="2" time="3" script="1"></l>
+	<l id="4" station="1" bubble="0" action="1007001" num="2" time="4" script="1"></l>
+	<l id="5" station="2" bubble="0" action="1007002" num="2" time="5" script="1"></l>
+	<l id="6" station="0" bubble="0" action="0" num="2" time="6" script="1"></l>
+	<l id="7" station="1" bubble="0" action="1007001" num="3" time="1" script="2"></l>
+	<l id="8" station="2" bubble="DialogBubble" action="1007002" num="3" time="2" script="2"></l>
+	<l id="9" station="3" bubble="DialogBubble" action="1007002" num="3" time="3" script="2"></l>
+	<l id="10" station="1" bubble="0" action="1007001" num="3" time="4" script="2"></l>
+	<l id="11" station="2" bubble="0" action="1007002" num="3" time="5" script="2"></l>
+	<l id="12" station="0" bubble="0" action="0" num="3" time="6" script="2"></l>
+</r>

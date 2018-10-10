@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" name="2011295651" snowCoordinate="25;25" snowSize="50;50" incidenceBigLv="4" incidenceMidMonster="1002" forbiddenCoordinate="49;49" forbiddenSize="4;4" baseCoordinate="50;50" baseSize="2;2" pictureMap="Img_01"></l>
+	<l id="2" name="2624337701" snowCoordinate="437;25" snowSize="50;50" incidenceBigLv="4" incidenceMidMonster="1002" forbiddenCoordinate="461;49" forbiddenSize="4;4" baseCoordinate="462;50" baseSize="2;2" pictureMap="Img_02"></l>
+	<l id="3" name="4158640348" snowCoordinate="25;437" snowSize="50;50" incidenceBigLv="4" incidenceMidMonster="1002" forbiddenCoordinate="49;461" forbiddenSize="4;4" baseCoordinate="50;462" baseSize="2;2" pictureMap="Img_03"></l>
+	<l id="4" name="3066683100" snowCoordinate="437;437" snowSize="50;50" incidenceBigLv="4" incidenceMidMonster="1002" forbiddenCoordinate="461;461" forbiddenSize="4;4" baseCoordinate="462;462" baseSize="2;2" pictureMap="Img_04"></l>
+</r>

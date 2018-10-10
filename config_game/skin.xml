@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l type="1" level="1" id="1" name="4244819297" skin="playerCity1" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="2" id="2" name="4244819297" skin="playerCity2" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="3" id="3" name="4244819297" skin="playerCity3" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="4" id="4" name="4244819297" skin="playerCity4" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="5" id="5" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="6" id="6" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="7" id="7" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="8" id="8" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="9" id="9" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="10" id="10" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="11" id="11" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="12" id="12" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="13" id="13" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="14" id="14" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="15" id="15" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="16" id="16" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="17" id="17" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="18" id="18" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="19" id="19" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="20" id="20" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="21" id="21" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="22" id="22" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="23" id="23" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="24" id="24" name="4244819297" skin="playerCity5" xGrid="0" yGrid="-1"></l>
+	<l type="1" level="25" id="25" name="4244819297" skin="playerCity6" xGrid="-0.25" yGrid="-0.6"></l>
+	<l type="2" level="1" id="26" name="祥龙传说" skin="playerCity7" xGrid="-0.25" yGrid="-0.6"></l>
+	<l type="3" level="1" id="27" name="凤舞九天" skin="playerCity8" xGrid="-0.25" yGrid="-0.6"></l>
+	<l type="4" level="1" id="28" name="童梦奇缘" skin="playerCity9" xGrid="-0.25" yGrid="-0.6"></l>
+</r>

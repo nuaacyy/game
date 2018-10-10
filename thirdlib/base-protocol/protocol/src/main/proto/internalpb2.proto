@@ -1,0 +1,42 @@
+syntax = "proto2";
+
+package pb4server;
+
+import "client2server.proto";
+
+option java_package = "pb4server";
+option java_outer_classname = "InternalPb2Pkt";
+option java_multiple_files = true;
+
+// 广播消息
+message MulticastEnvelopeMsg {
+    optional int32 msgType = 1;
+
+    oneof csMsg {
+        SubscribeCmd subscribeCmd = 2;
+        UnsubscribeCmd unsubscribeCmd = 3;
+        client2server.NewChatMessage newChatMsg = 4;
+        client2server.GroupChatInfo groupChatMsg = 5;
+        AddMulticastBlackList addMulticastBlackList = 6;
+        DelMulticastBlackList delMulticastBlackList = 7;
+
+    }
+    optional string channel = 8;
+    repeated int64 excludePlayerIds = 9;
+}
+
+message SubscribeCmd {
+    optional string channel = 1;
+}
+
+message UnsubscribeCmd {
+    optional string channel = 1;
+}
+
+message AddMulticastBlackList{
+    required int64 blackPlayerId = 1;
+}
+
+message DelMulticastBlackList{
+    required int64 blackPlayerId = 1;
+}

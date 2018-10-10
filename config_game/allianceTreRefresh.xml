@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" taskNum="5" dropTask="101;1000|102;9000" luckTask="100;101|200;102"></l>
+	<l id="2" taskNum="6" dropTask="301;9000|302;1000" luckTask="100;302|200;303"></l>
+</r>

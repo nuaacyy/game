@@ -1,0 +1,48 @@
+archivesBaseName = 'slg2d-common'
+
+apply plugin: 'application'
+
+mainClassName = "labentry.MainKt"
+
+task binTar(type: Tar, dependsOn: jar) {
+    extension = 'tar.gz'
+    baseName = project.name
+    compression = Compression.GZIP
+
+    from(configurations.runtime) {
+        into("bin")
+    }
+
+    from("build/libs/slg2d-common.jar") {
+        into("bin")
+    }
+
+}
+
+dependencies {
+    compile("xyz.ariane:framework-util:$frameworklib_version")
+    compile("com.point18.slg2d:base-protocol:1.1.592")
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.point18.slg2d.common.MainKt',
+                "Class-Path": configurations.compile.collect { it.getName() }.join(' '),
+        )
+    }
+}
+
+task checkConfigLocal(type: JavaExec, dependsOn: classes) {
+    args(["CheckConfigLocal"])
+    description = "Check Config"
+    main = "com.point18.slg2d.common.MainKt"
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task checkHotUploadConfig(type: JavaExec, dependsOn: classes) {
+    args(["CheckHotUploadConfigLocal"])
+    description = "Check Config"
+    main = "com.point18.slg2d.common.MainKt"
+    classpath = sourceSets.main.runtimeClasspath
+}

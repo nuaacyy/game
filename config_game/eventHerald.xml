@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" eventHeraldName="活动预告" eventHeadMap="ImgActivityBg" eventHeraldType="1" timeType="1" openTime="2018_9_13_15_10_0" endTime="2018_9_14_10_0_0" text="3369351849" eventOpenTime="2018_5_1_24_0_0" text3="0"></l>
+	<l id="2" eventHeraldName="1519541143" eventHeadMap="ImgActivityBg2" eventHeraldType="2" timeType="1" openTime="2018_9_13_15_10_0" endTime="2018_9_14_10_0_0" text="0" eventOpenTime="2018_5_2_24_0_0" text3="tzhd1_1;tzhd1_2;ImgActivityBg3%tzhd1_3;tzhd1_4;0"></l>
+	<l id="3" eventHeraldName="1519541143" eventHeadMap="ImgActivityBg3" eventHeraldType="2" timeType="1" openTime="2018_9_13_15_10_0" endTime="2018_9_14_10_0_0" text="0" eventOpenTime="2018_5_3_24_0_0" text3="tzhd1_1;tzhd1_2;ImgActivityBg3%tzhd1_3;tzhd1_4;0"></l>
+	<l id="4" eventHeraldName="1519541143" eventHeadMap="ImgActivityBg4" eventHeraldType="2" timeType="1" openTime="2018_9_13_15_10_0" endTime="2018_9_14_10_0_0" text="0" eventOpenTime="2018_5_4_24_0_0" text3="tzhd1_1;tzhd1_2;ImgActivityBg3%tzhd1_3;tzhd1_4;0"></l>
+	<l id="5" eventHeraldName="活动预告" eventHeadMap="ImgActivityBg6" eventHeraldType="1" timeType="1" openTime="2018_5_10_16_9_45" endTime="2018_5_6_10_0_0" text="3369351849" eventOpenTime="2018_5_6_24_0_0" text3="0"></l>
+</r>

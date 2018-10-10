@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" treRefreshleLevel="0" exp="10" bigTreRefreshEffect="40204;5000|40205;5000"></l>
+	<l id="2" treRefreshleLevel="1" exp="20" bigTreRefreshEffect="40204;5000|40205;5000"></l>
+	<l id="3" treRefreshleLevel="2" exp="30" bigTreRefreshEffect="40204;5000|40205;5000"></l>
+	<l id="4" treRefreshleLevel="3" exp="40" bigTreRefreshEffect="40204;5000|40205;5000"></l>
+	<l id="5" treRefreshleLevel="4" exp="50" bigTreRefreshEffect="40204;5000|40205;5000"></l>
+	<l id="6" treRefreshleLevel="5" exp="60" bigTreRefreshEffect="40204;5000|40205;5000"></l>
+	<l id="7" treRefreshleLevel="6" exp="70" bigTreRefreshEffect="40204;5000|40205;5000"></l>
+	<l id="8" treRefreshleLevel="7" exp="80" bigTreRefreshEffect="40204;5000|40205;5000"></l>
+	<l id="9" treRefreshleLevel="8" exp="90" bigTreRefreshEffect="40204;5000|40205;5000"></l>
+	<l id="10" treRefreshleLevel="9" exp="100" bigTreRefreshEffect="40204;5000|40205;5000"></l>
+	<l id="11" treRefreshleLevel="10" exp="0" bigTreRefreshEffect="40204;5000|40205;5000"></l>
+</r>

@@ -1,0 +1,12 @@
+pipeline {
+	agent any
+	stages {
+		stage('Deploy') {
+			steps {
+				withCredentials(bindings: [sshUserPrivateKey(credentialsId: 'easy-manage-205', keyFileVariable: 'keyfile')]) {
+					sh 'bash -x ci/deploy_general.sh inner_205 172.18.3.205 2022'
+				}
+			}
+		}
+	}
+}

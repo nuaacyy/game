@@ -1,0 +1,12 @@
+---
+- name: stop all server
+  shell: "if [ -d {{ deploy_path }}/{{ dist_name }} ]; then cd {{ deploy_path }}/{{ dist_name }}; bash -x bin/slg2d.sh stop mgr; fi"
+  args:
+    chdir: "~"
+  ignore_errors: yes
+
+- name: "del dirs"
+  block:
+    - file:
+        path: "{{ deploy_path }}"
+        state: absent

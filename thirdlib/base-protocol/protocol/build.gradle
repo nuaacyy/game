@@ -1,0 +1,67 @@
+apply plugin: 'com.google.protobuf'
+apply plugin: 'maven'
+
+protobuf {
+	// SS：指定编译协议的编译器版本
+	protoc {
+		//noinspection GroovyAssignabilityCheck
+		artifact = "com.google.protobuf:protoc:3.3.0"
+	}
+
+	// SS：GRPC插件
+	//noinspection GroovyAssignabilityCheck
+	plugins {
+		grpc {
+			//noinspection GroovyAssignabilityCheck
+			artifact = 'io.grpc:protoc-gen-grpc-java:1.4.0'
+		}
+	}
+
+	generateProtoTasks {
+		all()*.plugins {
+			grpc {
+				outputSubDir = 'java'
+			}
+		}
+	}
+
+	generatedFilesBaseDir = "$projectDir/src"
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+	classifier = 'sources'
+	from sourceSets.main.allSource
+}
+
+artifacts {
+	archives sourcesJar
+}
+
+uploadArchives {
+	repositories {
+		//noinspection GroovyAssignabilityCheck
+		mavenDeployer {
+			repository(url: "http://$nexus_host/repository/topg-releases/") {
+				authentication(userName: "admin", password: "admin123")
+			}
+			pom.artifactId = "base-protocol"
+		}
+	}
+
+}
+
+sourceSets {
+	main {
+		proto {
+			srcDir 'src/main/proto'
+		}
+	}
+}
+
+task runGen(type: JavaExec, dependsOn: 'classes') {
+	description '运行指定main函数的java'
+	classpath = sourceSets.main.runtimeClasspath
+	if (project.hasProperty('main')) {
+		main = "genenvelope.${project.getProperty('main')}"
+	}
+}

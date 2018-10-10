@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" subject="新春" icon="Img_FurnitureDefault01" ntroduce="这个是主题" template="1;1;0;1|8;1;1;2|8;4;1;3|3;5;0;4" templateTwo="2;4;0;1|6;3;1;2|2;6;1;3|5;3;0;4"></l>
+	<l id="2" subject="夏日" icon="Img_FurnitureDefault01" ntroduce="这个是主题" template="2;2;1;8|6;6;0;9|8;8;0;10|3;3;0;12" templateTwo="2;1;1;8|6;8;0;9|5;8;0;10|3;6;0;12"></l>
+	<l id="3" subject="铁血" icon="Img_FurnitureDefault01" ntroduce="这个是主题" template="8;6;1;15" templateTwo="8;2;1;15"></l>
+	<l id="4" subject="周年庆" icon="Img_FurnitureDefault01" ntroduce="这个是主题" template="7;8;0;16|7;10;1;17|9;12;1;18" templateTwo="7;2;0;16|2;10;1;17|4;12;1;18"></l>
+	<l id="5" subject="狂热" icon="Img_FurnitureDefault01" ntroduce="这个是主题" template="1;5;1;19|4;9;1;20|7;5;0;21|6;8;1;22" templateTwo="1;3;1;19|4;8;1;20|3;5;0;21|2;8;1;22"></l>
+	<l id="6" subject="海滨" icon="Img_FurnitureDefault01" ntroduce="这个是主题" template="8;4;0;23|6;2;1;26|5;8;0;22" templateTwo="6;4;0;23|3;2;1;26|7;8;0;22"></l>
+</r>

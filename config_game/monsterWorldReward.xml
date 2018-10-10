@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" turn="1" reward="1;0;4000"></l>
+	<l id="2" turn="2" reward="1;0;4000"></l>
+	<l id="3" turn="3" reward="1;0;4000"></l>
+	<l id="4" turn="4" reward="1;0;4000"></l>
+	<l id="5" turn="5" reward="1;0;4000"></l>
+	<l id="6" turn="6" reward="1;0;4000"></l>
+</r>

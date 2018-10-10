@@ -1,0 +1,4 @@
+---
+- hosts: "{{host}}"
+  roles:
+    - deploy4test4mgr

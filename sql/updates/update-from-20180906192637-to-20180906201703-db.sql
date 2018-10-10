@@ -1,0 +1,23 @@
+alter table common_bosses drop column `next_ref_time`;
+alter table common_reses drop column `next_ref_time`;
+alter table players drop column `sync_realm`;
+alter table players drop column `decree_day_time`;
+alter table players drop column `decree_buy_num`;
+alter table players drop column `power`;
+alter table players drop column `fortress`;
+alter table players drop column `building_queue`;
+alter table players drop column `world_talk_limit`;
+alter table players drop column `world_talk_last`;
+alter table players drop column `tower_num`;
+alter table players drop column `tower_num_last_time`;
+alter table players drop column `jjc_coin`;
+alter table players drop column `drap_hero_info`;
+alter table players drop column `mission_id`;
+alter table players drop column `mission_durability`;
+alter table players drop column `research_info`;
+alter table players drop column `research_effect_info`;
+alter table players drop column `building_effect_info`;
+alter table players drop column `inner_building_effect_info`;
+alter table players drop column `inner_building_unlock_area`;
+    
+UPDATE `version` SET db_version = '20180906201703';

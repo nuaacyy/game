@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" name="4276832375" quality="1" time="10" percent="5000" reward="1;5000|2;5000" drop="1;500"></l>
+	<l id="2" name="4276832375" quality="2" time="20" percent="5000" reward="1;4000|2;6000" drop="2;500"></l>
+	<l id="3" name="4276832375" quality="3" time="30" percent="5000" reward="1;10000" drop="3;5000"></l>
+	<l id="4" name="4276832375" quality="4" time="40" percent="5000" reward="1;5000|2;5000" drop="4;500"></l>
+	<l id="5" name="4276832372" quality="1" time="11" percent="5000" reward="1;10000" drop="5;500"></l>
+	<l id="6" name="4276832372" quality="2" time="21" percent="5000" reward="1;10000" drop="1;5000"></l>
+	<l id="7" name="4276832372" quality="3" time="31" percent="5000" reward="1;10000" drop="1;500"></l>
+	<l id="8" name="4276832372" quality="4" time="41" percent="5000" reward="1;10000" drop="1;5000"></l>
+</r>

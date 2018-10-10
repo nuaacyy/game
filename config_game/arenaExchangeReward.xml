@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" condition="5000" goldReward="14;11102;1|14;20103;1|14;10505;1" arenaCoin="17;0;100"></l>
+	<l id="2" condition="3500" goldReward="14;11102;2|14;20103;1|14;10505;1" arenaCoin="17;0;150"></l>
+	<l id="3" condition="2000" goldReward="14;11102;3|14;20104;1|14;10508;1" arenaCoin="17;0;200"></l>
+	<l id="4" condition="1000" goldReward="14;11102;4|14;20104;1|14;10508;1" arenaCoin="17;0;250"></l>
+	<l id="5" condition="800" goldReward="14;11102;5|14;20106;1|14;10511;1" arenaCoin="17;0;300"></l>
+	<l id="6" condition="600" goldReward="14;11102;6|14;20106;1|14;10511;1" arenaCoin="17;0;350"></l>
+	<l id="7" condition="400" goldReward="14;11102;7|14;20107;1|14;10512;1" arenaCoin="17;0;400"></l>
+	<l id="8" condition="300" goldReward="14;11102;8|14;20107;2|14;10512;2" arenaCoin="17;0;450"></l>
+	<l id="9" condition="200" goldReward="14;11102;9|14;20108;1|14;10513;2" arenaCoin="17;0;500"></l>
+	<l id="10" condition="100" goldReward="14;11104;1|14;20108;1|14;10513;2" arenaCoin="17;0;500"></l>
+	<l id="11" condition="50" goldReward="14;11104;1|14;20108;2|14;10514;2" arenaCoin="17;0;500"></l>
+	<l id="12" condition="20" goldReward="14;11104;2|14;20108;2|14;10514;2" arenaCoin="17;0;600"></l>
+	<l id="13" condition="10" goldReward="14;11104;3|14;20109;1|14;10515;1" arenaCoin="17;0;700"></l>
+	<l id="14" condition="9" goldReward="14;11104;4|14;20109;1|14;10515;1" arenaCoin="17;0;800"></l>
+	<l id="15" condition="8" goldReward="14;11104;5|14;20110;1|14;10515;2" arenaCoin="17;0;900"></l>
+	<l id="16" condition="7" goldReward="14;11104;6|14;20110;1|14;10515;2" arenaCoin="17;0;1000"></l>
+	<l id="17" condition="6" goldReward="14;11104;7|14;20111;1|14;10516;1" arenaCoin="17;0;1100"></l>
+	<l id="18" condition="5" goldReward="14;11104;8|14;20111;1|14;10516;1" arenaCoin="17;0;1200"></l>
+	<l id="19" condition="4" goldReward="14;11104;9|14;20111;2|14;10516;2" arenaCoin="17;0;1300"></l>
+	<l id="20" condition="3" goldReward="14;11105;1|14;20111;2|14;10516;2" arenaCoin="17;0;1400"></l>
+	<l id="21" condition="2" goldReward="14;11105;2|14;20112;1|14;10517;1" arenaCoin="17;0;1500"></l>
+	<l id="22" condition="1" goldReward="14;11105;3|14;20113;1|14;10518;1" arenaCoin="17;0;1600"></l>
+</r>

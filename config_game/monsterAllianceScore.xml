@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" score="1000" monsterId="1001;1"></l>
+	<l id="2" score="2000" monsterId="2001;1|3001;1"></l>
+	<l id="3" score="3000" monsterId="4001;1|5001;1|6001;1"></l>
+</r>

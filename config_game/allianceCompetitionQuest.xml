@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" name="2337935754" questId="300001" randomWeight="100" describe="2337935754" reward="10" icon="0"></l>
+	<l id="2" name="771851813" questId="300002" randomWeight="200" describe="771851813" reward="20" icon="0"></l>
+	<l id="3" name="3500735168" questId="300003" randomWeight="300" describe="3500735168" reward="30" icon="0"></l>
+	<l id="4" name="1934651227" questId="300004" randomWeight="400" describe="1934651227" reward="40" icon="0"></l>
+	<l id="5" name="368567286" questId="300005" randomWeight="500" describe="368567286" reward="50" icon="0"></l>
+	<l id="6" name="3097450641" questId="300006" randomWeight="600" describe="3097450641" reward="60" icon="0"></l>
+	<l id="7" name="1531366700" questId="300007" randomWeight="700" describe="1531366700" reward="70" icon="0"></l>
+	<l id="8" name="3547789335" questId="300008" randomWeight="800" describe="3547789335" reward="80" icon="0"></l>
+	<l id="9" name="1981705394" questId="300009" randomWeight="900" describe="1981705394" reward="90" icon="0"></l>
+	<l id="10" name="3574206858" questId="300010" randomWeight="1000" describe="3574206858" reward="100" icon="0"></l>
+	<l id="11" name="1235554698" questId="300011" randomWeight="1100" describe="1235554698" reward="110" icon="0"></l>
+	<l id="12" name="3191869834" questId="300012" randomWeight="1200" describe="3191869834" reward="120" icon="0"></l>
+	<l id="13" name="853217674" questId="300013" randomWeight="1300" describe="853217674" reward="130" icon="0"></l>
+	<l id="14" name="2809532810" questId="300014" randomWeight="1400" describe="2809532810" reward="140" icon="0"></l>
+	<l id="15" name="470880650" questId="300015" randomWeight="1500" describe="470880650" reward="150" icon="0"></l>
+	<l id="16" name="2427195786" questId="300016" randomWeight="1600" describe="2427195786" reward="160" icon="0"></l>
+	<l id="17" name="88543626" questId="300017" randomWeight="1700" describe="88543626" reward="170" icon="0"></l>
+	<l id="18" name="808587658" questId="300018" randomWeight="1800" describe="808587658" reward="180" icon="0"></l>
+	<l id="19" name="2764902794" questId="300019" randomWeight="1900" describe="2764902794" reward="190" icon="0"></l>
+	<l id="20" name="2008122917" questId="300020" randomWeight="2000" describe="2008122917" reward="200" icon="0"></l>
+	<l id="21" name="3964438053" questId="300021" randomWeight="2100" describe="3964438053" reward="210" icon="0"></l>
+	<l id="22" name="1625785893" questId="300022" randomWeight="2200" describe="1625785893" reward="220" icon="0"></l>
+	<l id="23" name="3582101029" questId="300023" randomWeight="2300" describe="3582101029" reward="230" icon="0"></l>
+	<l id="24" name="1243448869" questId="300024" randomWeight="2400" describe="1243448869" reward="240" icon="0"></l>
+	<l id="25" name="3199764005" questId="300025" randomWeight="2500" describe="3199764005" reward="250" icon="0"></l>
+</r>

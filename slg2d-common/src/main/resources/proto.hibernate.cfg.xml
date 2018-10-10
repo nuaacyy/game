@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!--suppress HibernateConfigDomFacetInspection -->
+<hibernate-configuration>
+    <session-factory>
+        <property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <!--<property name="hbm2ddl.auto">create</property>-->
+        <property name="hbm2ddl.auto">validate</property>
+        <property name="connection.provider_class">xyz.ariane.util.DruidConnectionProvider</property>
+        <property name="cache.use_second_level_cache">false</property>
+        <property name="jdbc.batch_size">30</property>
+        <property name="generate_statistics">false</property>
+        <property name="query.plan_cache_max_strong_references">32</property>
+        <property name="query.plan_cache_max_soft_references">256</property>
+
+        <!-- Druid config -->
+        <property name="maxActive">800</property>
+        <property name="initialSize">1</property>
+        <property name="minIdle">1</property>
+        <property name="validationQuery">SELECT 1</property>
+        <property name="validationQueryTimeout">60</property>
+
+        <property name="testOnBorrow">false</property>
+        <property name="testOnReturn">false</property>
+        <property name="testWhileIdle">true</property>
+        <property name="defaultTransactionIsolation">READ_COMMITTED</property>
+        <property name="druid.timeBetweenLogStatsMillis">3600000</property>
+        <property name="filters">stat</property>
+        <property name="connectionProperties">druid.stat.slowSqlMillis=3000</property>
+
+        <!-- world 服数据库表 -->
+        <mapping class="com.point18.slg2d.common.worldentities.AchievementEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.ActivityBossAreaEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.ActivityBossEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.ActivityRankEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.BelongCellEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.BossInviteEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.AreaOnlyEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.ArmyPlanEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.BarracksEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.BuffEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.CallBossEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.CastleEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.CaveEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.ChatEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.CommonBossDataEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.CommonResDataEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.DeadBossResEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.FameHallEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.FogEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.WorldHeroEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.HomeHeartEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.InfoByHomeEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.InstanceEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.InstanceDropEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.JjcEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.MassEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.WalkEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.MoveServerCellLockEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.MyAllianceGiftEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.MyTargetEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.WalkForceEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.WalkForceGroupEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.NoticeEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.PlayerEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.PlayerActivityEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.PlayerSettingEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.PrisonEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.RelicDataEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.ServerActivityEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.TaskEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.TransportRequestEntity"/>
+        <mapping class="com.point18.slg2d.common.worldentities.WonderEntity"/>
+
+        <!-- home 服数据库表 -->
+        <mapping class="com.point18.slg2d.common.homeentities.BankEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.BankAccelerateEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.BagEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.BattleReportEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.BlackPlayerEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.ForcePlanEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.ForcePlanEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.FriendGroupEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.FriendApplyEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.FriendChatRecordEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.FriendEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.FurnitureEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.GuildHouseEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.GiftBagEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.GiftBagRecordEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.HomePlayerEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.HomeSyncEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.HomeAchievementEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.HomeTaskEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.HomeMyTargetEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.HouseThemeEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.HeroEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.IconEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.InnerCityEntity"/>
+
+        <mapping class="com.point18.slg2d.common.homeentities.JjcHomeEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.KingEquipPlanEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.LibraryEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.LotteryEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.MailEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.MarkEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.MerchantShipEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.InMakeKingEquipEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.NewEquipEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.PayEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.QuotaBagEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.ResourceYieldEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.SkinEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.TalentPlanEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.ThumbInfoEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.VipEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.CasinoEntity"/>
+        <mapping class="com.point18.slg2d.common.homeentities.CasinoPlayerEntity"/>
+
+        <mapping class="com.point18.slg2d.common.homeentities.VersionEntity"/>
+
+        <!-- public 服数据库表 -->
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceActivityEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.EveryAllianceActivityEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceActivityRankEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceCompetitionGroupEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceCompetitionQuestEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceChatEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceGiftEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceHelpEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceLogEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceMarkEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceMemberEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceMemberTraceEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceReplyEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceReqEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceTopicEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.AllianceWaijiaoEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.PublicActivityEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.RoomChatRecordEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.ChatRoomEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.CasinosWinnerEntity"/>
+        <mapping class="com.point18.slg2d.common.publicentities.JackpotEntity"/>
+
+
+    </session-factory>
+</hibernate-configuration>

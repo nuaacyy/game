@@ -1,0 +1,107 @@
+{
+  "name": "slg2d-mgr",
+  "version": "1.0.0",
+  "description": "gm",
+  "main": "./static/main.js",
+  "scripts": {
+    "build-main-prod": "webpack --config webpack/webpack.main.prod.config.js",
+    "build-renderer-prod": "webpack --config webpack/webpack.renderer.prod.config.js",
+    "build-prod": "npm run build-renderer-prod && npm run build-main-prod",
+    "start-main-dev": "webpack --config webpack/webpack.main.dev.config.js && electron --inspect ./static-dev/main.js",
+    "start-renderer-dev": "node webpack/webpack-devserver.js",
+    "start-prod": "electron ./static/main.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "productName": "RelicGm",
+    "appId": "org.slg2d.gm",
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "static/",
+      "node_modules/",
+      "package.json"
+    ],
+    "linux": {
+      "target": "deb"
+    },
+    "win": {
+      "target": "portable"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/recharts": "^1.0.7",
+    "moment": "^2.21.0",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "recharts": "^1.0.0-beta.6",
+    "redux": "^3.7.2",
+    "superagent": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/react": "^16.4.12",
+    "@types/react-dom": "^16.0.7",
+    "@types/react-redux": "^5.0.14",
+    "@types/react-router": "^4.0.17",
+    "@types/react-router-dom": "^4.2.1",
+    "@types/superagent": "^3.8.4",
+    "antd": "3.8.4",
+    "awesome-typescript-loader": "^5.0.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-import": "^1.1.0",
+    "babel-plugin-transform-runtime": "^6.3.13",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "clean-webpack-plugin": "^0.1.6",
+    "concurrently": "^3.5.0",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.7",
+    "electron": "2.0.10",
+    "electron-builder": "^20.28.4",
+    "eslint": "^3.3.1",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-loader": "^1.0.0",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.1.0",
+    "eslint-plugin-react": "^6.1.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^0.11.2",
+    "history": "^4.7.2",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "4.8.3",
+    "react-transform-catch-errors": "^1.0.0",
+    "react-transform-hmr": "^1.0.1",
+    "redux-saga": "^0.15.6",
+    "reselect": "^3.0.1",
+    "resolve-url-loader": "^1.6.0",
+    "sass-loader": "^6.0.6",
+    "source-map-loader": "^0.2.1",
+    "strip-loader": "^0.1.0",
+    "style-loader": "^0.19.0",
+    "transfer-webpack-plugin": "^0.1.4",
+    "tslint": "^5.7.0",
+    "tslint-loader": "^3.5.3",
+    "tslint-react": "^3.2.0",
+    "typescript": "3.0.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-middleware": "^3.1.3",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-hot-middleware": "^2.22.2",
+    "webpack-merge": "^4.1.4"
+  }
+}

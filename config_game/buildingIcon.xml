@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" name="3991665727" icon="icon_3" ui="InnerCityInformation" extend="0"></l>
+	<l id="2" name="3810781401" icon="icon_2" ui="InnerCityBuildingPanel" extend="0"></l>
+	<l id="3" name="2003803495" icon="icon_8" ui="AcceleratePanel" extend="0"></l>
+	<l id="4" name="948667852" icon="icon_8" ui="0" extend="0"></l>
+	<l id="5" name="1354884835" icon="icon_9" ui="0" extend="0"></l>
+	<l id="6" name="1418260138" icon="icon_6" ui="CastleSkin" extend="0"></l>
+	<l id="7" name="2351976641" icon="icon_1" ui="Castle" extend="0"></l>
+	<l id="8" name="3817291779" icon="icon_10" ui="Barracks" extend="0"></l>
+	<l id="9" name="3345272569" icon="icon_8" ui="AcceleratePanel" extend="0"></l>
+	<l id="10" name="2290136926" icon="icon_8" ui="BarracksPanel" extend="0"></l>
+	<l id="11" name="3629374229" icon="icon_10" ui="DisabledCamp" extend="0"></l>
+	<l id="12" name="1283506963" icon="icon_8" ui="AcceleratePanel" extend="0"></l>
+	<l id="13" name="228371320" icon="icon_8" ui="ClinicPanel" extend="0"></l>
+	<l id="14" name="1457794844" icon="icon_1" ui="AlertInfo" extend="0"></l>
+	<l id="15" name="1001972834" icon="icon_1" ui="TrapPanel" extend="0"></l>
+	<l id="16" name="2839452634" icon="icon_1" ui="0" extend="0"></l>
+	<l id="17" name="2964407350" icon="icon_1" ui="0" extend="0"></l>
+	<l id="18" name="3876095389" icon="icon_1" ui="0" extend="0"></l>
+	<l id="19" name="4014657135" icon="icon_1" ui="MainTec" extend="0"></l>
+	<l id="20" name="79904603" icon="icon_1" ui="Smithy" extend="0"></l>
+	<l id="21" name="1434840809" icon="icon_1" ui="0" extend="0"></l>
+	<l id="22" name="70231064" icon="icon_1" ui="0" extend="0"></l>
+	<l id="23" name="2861855233" icon="icon_1" ui="0" extend="0"></l>
+	<l id="24" name="4000771890" icon="icon_1" ui="Increase" extend="0"></l>
+	<l id="25" name="2172184278" icon="icon_1" ui="Bazaar" extend="0"></l>
+	<l id="26" name="3818333530" icon="icon_1" ui="WarHome" extend="0"></l>
+	<l id="27" name="1001973985" icon="icon_1" ui="0" extend="0"></l>
+	<l id="28" name="3805556508" icon="icon_1" ui="0" extend="0"></l>
+	<l id="29" name="3830039919" icon="icon_1" ui="PrisonWatchHero" extend="0"></l>
+	<l id="30" name="3830173427" icon="icon_1" ui="PrisonBonus" extend="0"></l>
+	<l id="31" name="1015278752" icon="icon_1" ui="Bank" extend="0"></l>
+	<l id="32" name="3991665727" icon="icon_1" ui="SchoolFieldPanel" extend="0"></l>
+	<l id="33" name="56098157" icon="icon_1" ui="Cellar" extend="0"></l>
+	<l id="34" name="2662016101" icon="icon_1" ui="Cave" extend="0"></l>
+	<l id="35" name="4281462146" icon="icon_8" ui="0" extend="0"></l>
+	<l id="36" name="105243554" icon="icon_1" ui="0" extend="0"></l>
+	<l id="37" name="4276738323" icon="icon_1" ui="SumMain" extend="0"></l>
+	<l id="38" name="232240296" icon="icon_1" ui="DisabledCamp" extend="100"></l>
+	<l id="39" name="4281709830" icon="icon_1" ui="DisabledCamp" extend="101"></l>
+</r>

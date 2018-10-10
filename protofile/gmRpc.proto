@@ -1,0 +1,315 @@
+syntax = "proto3";
+
+package rpcgm;
+
+import "mgrCommon.proto";
+
+option java_package = "rpcgm";
+option java_outer_classname = "GrpcGm";
+option java_multiple_files = true;
+
+service GmMgr {
+    // 登录
+    rpc Login (GsLogin) returns (GsLoginRt) {
+    }
+
+    // 获取游戏服配置
+    rpc FetchGameProcessConfig (GsFetchGameConfig) returns (GsFetchGameConfigRt) {
+    }
+
+    // 获取网关服配置
+    rpc FetchRealmProcessConfig (GsFetchRealmConfig) returns (GsFetchRealmConfigRt) {
+    }
+
+    // 获取聊天服配置
+    rpc FetchChatProcessConfig (GsFetchChatConfig) returns (GsFetchChatConfigRt) {
+    }
+	
+	// 获取public服配置
+    rpc FetchPublicProcessConfig (GsFetchPublicConfig) returns (GsFetchPublicConfigRt) {
+    }
+
+    // gm配置同步
+    rpc SyncGmConfig (GsSyncGmConfig) returns (GsSyncGmConfigRt) {
+    }
+
+    // 登陆服查询游戏服相关
+    rpc QueryPlayerServer (GsQueryPlayerServer) returns (GsQueryPlayerServerRt) {
+    }
+}
+
+// 游戏 -> GM
+// 服务器登记
+message GsLogin {
+    int32 pno = 1; // 进程序号
+    repeated string ips = 2; // 有效IP
+    int32 processType = 3; // 进程类型，1：游戏，2：登录，3：聊天
+    int32 clientId = 4; // 客户端唯一ID
+}
+
+// GM -> 游戏
+// 服务器登记返回
+message GsLoginRt {
+    int32 rt = 1;
+    int64 token = 2;
+}
+
+// 游戏 -> GM
+// 拉取进程配置
+message GsFetchGameConfig {
+    int64 token = 1;
+}
+
+// GM -> 游戏
+// 拉取进程配置返回
+message GsFetchGameConfigRt {
+    int32 rt = 1;
+    PbProcessConfig processConfig = 2; // 进程配置
+}
+
+// Realm -> GM
+// 拉取Realm进程配置
+message GsFetchRealmConfig {
+    int64 token = 1;
+}
+
+// GM -> Realm
+// 拉取Realm进程配置返回
+message GsFetchRealmConfigRt {
+    int32 rt = 1;
+    string httpAddr = 2; // 短连接地址
+    int32 httpPort = 3; // 短连接端口
+    string mysqlAddr = 4; // 数据库地址
+    int32 mysqlPort = 5; // 数据库端口
+    string mysqlAccount = 6; // 数据库账号
+    string mysqlPwd = 7; // 数据库密码
+    string dbName = 8; // 数据库名
+
+    int32 rpcPort = 11; // rpc监听端口
+    string processInnerAddr = 12; // 进程内部访问地址
+    repeated EtcdAddr addresses = 13; // etcd地址
+    int32 groupId = 14; // 集群ID
+    string kafkaEps = 15; // MQ的kafka地址
+    int32 kafkaPId = 16; // 进程所属Kafka分区ID
+    string redisAddrs = 17; // redis地址
+    string redisPwd = 18; // redis密码
+}
+
+// Chat -> GM
+// 拉取Chat进程配置
+message GsFetchChatConfig {
+    int64 token = 1;
+}
+
+// Chat -> GM
+// 拉取Chat进程配置返回
+message GsFetchChatConfigRt {
+    int32 rt = 1;
+
+    int32 rpcPort = 4; // rpc监听端口
+    string processInnerAddr = 5; // 进程内部访问地址
+    repeated EtcdAddr addresses = 6; // etcd地址
+    int32 groupId = 7; // 集群ID
+    string kafkaEps = 8; // MQ的kafka地址
+    int32 kafkaPId = 9; // 进程所属Kafka分区ID
+    string redisAddrs = 10; // redis地址
+    string redisPwd = 11; // redis密码
+}
+
+// Public -> GM
+// 拉取Public进程配置
+message GsFetchPublicConfig {
+    int64 token = 1;
+}
+
+// Public -> GM
+// 拉取Public进程配置返回
+message GsFetchPublicConfigRt {
+    int32 rt = 1;
+	string httpAddr = 2; // 短连接地址
+    int32 httpPort = 3; // 短连接端口
+    string mysqlAddr = 4; // 数据库地址
+    int32 mysqlPort = 5; // 数据库端口
+    string mysqlAccount = 6; // 数据库账号
+    string mysqlPwd = 7; // 数据库密码
+    string dbName = 8; // 数据库名
+    int32 rpcPort = 9; // rpc监听端口
+    string processInnerAddr = 10; // 进程内部访问地址
+    repeated EtcdAddr addresses = 11; // etcd地址
+    int32 groupId = 12; // 集群ID
+    string kafkaEps = 13; // MQ的kafka地址
+    int32 kafkaPId = 14; // 进程所属Kafka分区ID
+}
+
+// 进程配置
+message PbProcessConfig {
+    int32 id = 1; // 配置的唯一ID
+    int32 gameId = 2; // 游戏ID
+    int32 processNo = 3; // 进程序号
+    string name = 4; // 进程名字
+    string ip = 5; // 进程地址
+    string kafkaAddr = 6; // kafka地址
+    int32 kafkaPort = 7; // kafka端口
+    repeated string shieldingWords = 8; // 屏蔽词
+    string httpAddr = 9; // 短连接地址
+    int32 httpPort = 10; // 短连接端口
+    string tcpAddr = 11; // 长连接地址
+    int32 tcpPort = 12; // 长连接端口
+    int32 rpcPort = 13; // rpc监听端口
+    string mysqlAddr = 14; // 数据库地址
+    int32 mysqlPort = 15; // 数据库端口
+    string mysqlAccount = 16; // 数据库账号
+    string mysqlPwd = 17; // 数据库密码
+    repeated rpccommon.PbGameConfig areas = 18; // 游戏区配置
+    string processInnerAddr = 19; // 进程内部访问地址
+    repeated EtcdAddr addresses = 20; // etcd地址
+    int32 groupId = 21; // 集群ID
+    string kafkaEps = 22; // MQ的kafka地址
+    int32 kafkaPId = 23; // 进程所属Kafka分区ID
+}
+
+// etcd配置
+message EtcdAddr {
+    string etcdHost = 1;
+    int32 etcdPort = 2;
+}
+
+// GM -> GM
+// 同步GM服配置
+message GsSyncGmConfig {
+    int64 checkToken = 1;
+}
+
+// GM -> GM
+// 同步GM服配置返回
+message GsSyncGmConfigRt {
+    int32 rt = 1;
+    repeated PlatformSyncConfig pltConfigs = 2;
+    repeated ProcessSyncConfig processConfigs = 3;
+    repeated GameAreaSyncConfig areaConfigs = 4;
+    repeated LogSyncConfig logConfigs = 5;
+    repeated RealmServerSyncConfig realmConfigs = 6;
+    repeated ChatServerSyncConfig chatConfigs = 7;
+	repeated PublicServerSyncConfig publicConfigs = 8;
+    repeated CommCfgSyncConfig commCfgConfigs = 10;
+}
+
+// 登陆服 -> GM
+// 登陆服查询游戏服相关（没有参数）
+message GsQueryPlayerServer {
+}
+
+// GM -> 登陆服
+// 返回给登陆服查询游戏服相关结果
+message GsQueryPlayerServerRt {
+    int32 rt = 1;
+    repeated QueryPlayerServerInfo queryPlayerServerInfo = 2;
+}
+
+message PlatformSyncConfig {
+    int32 id = 1;
+    int32 opId = 2;
+    string name = 3;
+    int32 gameId = 4;
+}
+
+message CommCfgSyncConfig {
+    int32 id = 1;
+    int32 groupNo = 2;
+    string groupName = 3;
+    string etcdEps = 4;
+    string kafkaEps = 5;
+    string redisAddrs = 6;
+    string redisPwd = 7;
+}
+
+message ProcessSyncConfig {
+    int32 id = 1;
+    string processIp = 2;
+    string processName = 3;
+
+    string httpAddr = 6;
+    int32 httpPort = 7;
+    string tcpAddr = 8;
+    int32 tcpPort = 9;
+    int32 rpcPort = 10;
+    int64 platformId = 11;
+    int32 processType = 12;
+    string dbHost = 13;
+    int32 dbPort = 14;
+    string dbUser = 15;
+    string dbPwd = 16;
+    string etcdEps = 17;
+    string kafkaEps = 18;
+    int32 kafkaPId = 19;
+    int32 processNum = 20;
+    string hbaseAddrs = 21;
+    int32 hbasePort = 22;
+    string zkAddrs = 23;
+    int32 zkPort = 24;
+    int32 logServerId = 25;
+
+    int32 clusterId = 26; // 集群配置ID
+}
+
+message GameAreaSyncConfig {
+    int32 id = 1;
+    int32 areaNo = 2;
+    int64 pltAreaNo = 3;
+    int32 areaState = 4;
+    string areaName = 5;
+    string dbName = 6;
+    string whiteRosters = 8;
+    string blackRosters = 9;
+    int32 opgameId = 10;
+    string payKey = 11;
+    string loginKey = 12;
+    string giftKey = 13;
+    int64 openAreaDate = 14;
+    int32 deployState = 15;
+    int32 processNo = 16;
+    int32 processId = 17;
+}
+
+message LogSyncConfig {
+    int32 id = 1;
+    string zkIp = 2;
+    int32 zkPort = 3;
+    string hbaseIp = 4;
+    int32 hbasePort = 5;
+    string kafka = 6;
+    string logServerName = 7;
+    string columnFamilyName = 8;
+    string tableName = 9;
+    string columnName1 = 10;
+    string columnName2 = 11;
+}
+
+message RealmServerSyncConfig {
+    int32 id = 1;
+    string name = 2;
+    string dbName = 3;
+    int32 processNo = 4;
+    int32 processId = 5;
+}
+
+message ChatServerSyncConfig {
+    int32 id = 1;
+    int32 chatServerState = 2;
+    int32 processNo = 3;
+    int32 processId = 4;
+}
+
+message PublicServerSyncConfig {
+    int32 id = 1;
+    int32 processNo = 2;
+    int32 processId = 3;
+	string dbName = 4;
+}
+
+message QueryPlayerServerInfo {
+    int64 serverId = 1;
+    string tcp = 2;
+    int32 tcpPort = 3;
+}
+

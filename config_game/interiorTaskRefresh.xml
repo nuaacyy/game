@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" name="5" refreshBag="1;1000|2;2000|3;3000|4;1000|5;3000" luckyRefresh="50;4"></l>
+	<l id="2" name="6" refreshBag="6;1000|7;2000|8;3000|9;1000|10;3000" luckyRefresh="50;4"></l>
+	<l id="3" name="7" refreshBag="11;1000|12;2000|13;3000|14;1000|15;3000" luckyRefresh="50;4"></l>
+	<l id="4" name="8" refreshBag="16;1000|17;2000|18;3000|19;1000|20;3000" luckyRefresh="50;4"></l>
+	<l id="5" name="9" refreshBag="21;1000|22;2000|23;3000|24;1000|25;3000" luckyRefresh="50;4"></l>
+	<l id="6" name="10" refreshBag="26;1000|27;2000|28;3000|29;1000|30;3000" luckyRefresh="50;4"></l>
+</r>

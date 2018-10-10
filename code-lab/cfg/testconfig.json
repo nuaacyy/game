@@ -1,0 +1,6 @@
+{
+  "mgrHost": "192.168.189.250",
+  "mgrPort": 27171,
+  "createTable": false,
+  "ignore": 0
+}

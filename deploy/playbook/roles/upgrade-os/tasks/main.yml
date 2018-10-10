@@ -1,0 +1,9 @@
+---
+- name: upgrade all
+  apt:
+    upgrade: dist
+
+- name: reboot
+  reboot:
+    test_command: echo $PATH
+    # reboot_timeout: 600

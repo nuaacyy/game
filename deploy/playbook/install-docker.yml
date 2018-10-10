@@ -1,0 +1,10 @@
+---
+- hosts: "{{host}}"
+  roles:
+    - geerlingguy.docker
+    - install-docker
+  vars:
+    docker_users:
+      - testvm
+  become: yes
+  become_method: sudo

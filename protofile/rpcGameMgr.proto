@@ -1,0 +1,2682 @@
+syntax = "proto3";
+
+package rpcgamemgr;
+
+import "mgrCommon.proto";
+
+option java_package = "rpcgamemgr";
+option java_outer_classname = "GrpcGameMgr";
+option java_multiple_files = true;
+
+service GameMgr {
+
+    // 添加新游戏区
+    rpc AddNewArea (GsAddNewArea) returns (GsAddNewAreaRt) {
+    }
+
+    // 游戏区清档
+    rpc CleanAreaDb (GsCleanAreaDb) returns (GsCleanAreaDbRt) {
+    }
+
+    // 停游戏区
+    rpc StopArea (GsStopArea) returns (GsStopAreaRt) {
+    }
+
+    // 删游戏区
+    rpc RemoveArea (GsRemoveArea) returns (GsRemoveAreaRt) {
+    }
+
+    // 切换游戏区维护状态
+    rpc SwitchMaintance (GsSwitchMaintance) returns (GsSwitchMaintanceRt) {
+    }
+
+    // 战斗模拟器
+    rpc FightingDemo (GsMgrFighting) returns (GsMgrFightingRt) {
+    }
+
+    // 查询玩家角色信息
+    rpc QueryPlayerInfo (GsQueryPlayerInfo) returns (GsQueryPlayerInfoRt) {
+    }
+
+    // 查询玩家基本信息
+    rpc QueryPlayerSimpInfo (GsQueryPlayerSimpInfo) returns (GsQueryPlayerSimpInfoRt) {
+    }
+
+    // 禁言
+    rpc Gag (GsGag) returns (GsGagRt) {
+    }
+
+    // 查询禁言
+    rpc QueryGag (GsQueryGag) returns (GsQueryGagRt) {
+    }
+
+    // 取消禁言
+    rpc CancelGag (GsCancelGag) returns (GsCancelGagRt) {
+    }
+
+    // Ip封号
+    rpc IpClose (GsIpClose) returns (GsIpCloseRt) {
+    }
+
+    // IP解禁
+    rpc CancelIPClose (GsCancelIpClose) returns (GsCancelIPCloseRt) {
+    }
+
+    // 查询IP封号
+    rpc QueryIpClose (GsQueryIpClose) returns (GsQueryIpCloseRt) {
+    }
+
+    // 查询用户名封号
+    rpc QueryAccountNameClose (GsQueryAccountNameClose) returns (GsQueryAccountNameCloseRt) {
+    }
+
+    // 发送即时公告
+    rpc MgrRtNotice (GsRtNotice) returns (GsRtNoticeRt) {
+    }
+
+    // 发送定时公告
+    rpc MgrNotice (GsNotice) returns (GsNoticeRt) {
+    }
+
+    // 查询公告
+    rpc QueryNotice (GsQueryNotice) returns (GsQueryNoticeRt) {
+    }
+
+    // 删除公告
+    rpc DeleteNotice (GsDeleteNotice) returns (GsDeleteNoticeRt) {
+    }
+
+    // 查询实时在线人数
+    rpc QueryCurrentOnlines (GsQueryCurrentOnlines) returns (GsQueryCurrentOnlinesRt) {
+    }
+
+    // 查询账号留存与流失
+    rpc QueryRemain (GsQueryRemain) returns (GsQueryRemainRt) {
+    }
+
+    // 查询服务器7日留存
+    rpc getHaveInfoForMgr (GsGetHaveInfo) returns (GsGetHaveInfoRt) {
+    }
+
+    // 查询时间段内在线人数
+    rpc QueryDuringOnlines (GsQueryDuringOnlines) returns (GsQueryDuringOnlinesRt) {
+    }
+
+    // 聊天监控查询
+    rpc QueryChitchatLog (GsQueryChitchatLog) returns (GsQueryChitchatLogRt) {
+    }
+
+    // 排行榜记录查询
+    rpc QueryRankingList (GsQueryRankingList) returns (GsQueryRankingListRt) {
+    }
+
+    // 插入屏蔽字
+    rpc AddShieldingText (GsAddShieldingText) returns (GsAddShieldingTextRt) {
+    }
+
+    // 武将查询
+    rpc QueryPlayerCard (GsQueryPlayerCard) returns (GsQueryPlayerCardRt) {
+    }
+
+    // 查询周报
+    rpc QueryWeeklyData (GsQueryWeeklyData) returns (GsQueryWeeklyDataRt) {
+    }
+
+    // 查询日报
+    rpc QueryDailyData (GsQueryDailyData) returns (GsQueryDailyDataRt) {
+    }
+
+    // 查询新手引导留存
+    rpc GuideStepInfo (GsGuideStepInfo) returns (GsGuideStepInfoRt) {
+    }
+
+    // 发送邮件
+    rpc SendEmail (GsSendEmail) returns (GsSendEmailRt) {
+    }
+
+    // 删除邮件
+    rpc DeletePlayerEmail (GsDeleteEmail) returns (GsDeleteEmailRt) {
+    }
+
+    // 检验玩家
+    rpc TestPlayer (GsTestPlayer) returns (GsTestPlayerRt) {
+    }
+
+    // 给玩家发卡
+    rpc SendPlayerCard (GsSendPlayerCard) returns (GsSendPlayerCardRt) {
+    }
+
+    // 查询玩家建筑信息
+    rpc QueryPlayerBuilding (GsQueryPlayerBuilding) returns (GsQueryPlayerBuildingRt) {
+    }
+
+    // 查询玩家城池信息
+    rpc QueryPlayerCity (GsQueryPlayerCity) returns (GsQueryPlayerCityRt) {
+    }
+
+    // 查询玩家装备信息
+    rpc QueryPlayerEquip (GsQueryPlayerEquip) returns (GsQueryPlayerEquipRt) {
+    }
+
+    // 查询玩家土地信息
+    rpc QueryPlayerLand (GsQueryPlayerLand) returns (GsQueryPlayerLandRt) {
+    }
+
+    // 查询玩家土地信息
+    rpc QueryPlayerTroops (GsQueryPlayerTroops) returns (GsQueryPlayerTroopsRt) {
+    }
+
+    // 查看实时充值
+    rpc QueryRechargeOnline (GsQueryRechargeOnline) returns (GsQueryRechargeOnlineRt) {
+    }
+
+    // 查看充值排行
+    rpc QueryRechargeRanking (GsQueryRechargeRanking) returns (GsQueryRechargeRankingRt) {
+    }
+
+    // 查看充值总览
+    rpc QueryRechargeGeneralize (GsQueryRechargeGeneralize) returns (GsQueryRechargeGeneralizeRt) {
+    }
+
+    // 修改黑白名单
+    rpc AddRoster (GsAddRoster) returns (GsAddRosterRt) {
+    }
+
+    // 充值测试
+    rpc PayTest (GsPayTest) returns (GsPayTestRt) {
+    }
+
+    // 元宝统计
+    rpc GroupRes (GsGroupResData) returns (GsGroupResDataRt) {
+    }
+
+    // 刪除屏蔽字
+    rpc DelShieldingText (GsDelShielding) returns (GsDelShieldingRt) {
+    }
+
+    // 查询服务器的玩家列表
+    rpc GetUser (GsGetUser) returns (GsGetUserRt) {
+    }
+
+    // 在查看界面获取某一玩家的具体信息
+    rpc GetUserInfo (GsGetUserInfo) returns (GsGetUserInfoRt) {
+    }
+
+    // 获取玩家额外信息列表
+    rpc GetUserDetailList (GsGetUserDetailList) returns (GsGetUserDetailListRt) {
+    }
+
+    // 获取玩家额外信息详细内容
+    rpc GetUserDetail (GsGetUserDetail) returns (GsGetUserDetailRt) {
+    }
+
+    // 获取玩家属性
+    rpc QueryPlayerProperty (GsQueryPlayerProperty) returns (GsQueryPlayerPropertyRt) {
+    }
+
+    // 获取玩家英雄
+    rpc QueryPlayerHero (GsQueryPlayerHero) returns (GsQueryPlayerHeroRt) {
+    }
+
+    // 获取玩家装备
+    rpc QueryPlayerNewEquip (GsQueryPlayerNewEquip) returns (GsQueryPlayerNewEquipRt) {
+    }
+
+    // 获取玩家邮件
+    rpc QueryPlayerEmail (GsQueryPlyaerEmail) returns (GsQueryPlyaerEmailRt) {
+    }
+
+    // 获取玩家建筑
+    rpc QueryPlayerBuildingDetail (GsQueryPlyaerBuilding) returns (GsQueryPlyaerBuildingRt) {
+    }
+
+    // 获取玩家城池
+    rpc QueryPlayerCityDetail (GsQueryPlyaerCity) returns (GsQueryPlyaerCityRt) {
+    }
+
+    // 获取玩家部队
+    rpc QueryPlayerTroopsDetail (GsQueryPlyaerTroops) returns (GsQueryPlyaerTroopsRt) {
+    }
+
+    // 获取玩家土地
+    rpc QueryPlayerLandDetail (GsQueryPlyaerLand) returns (GsQueryPlyaerLandRt) {
+    }
+
+    // 获取玩家日志类型列表
+    rpc GetUserLogList (GsGetUserLogList) returns (GsGetUserLogListRt) {
+    }
+
+    // 发放游戏资源和物品
+    rpc AddGoods (GsAddGoods) returns (GsAddGoodsRt) {
+    }
+
+    // 将玩家踢下线
+    rpc KickUser (GsKickUser) returns (GsKickUserRt) {
+    }
+
+    // 发送邮件
+    rpc sendMail (GsSendMail) returns (GsSendMailRt) {
+    }
+
+    // 封禁玩家
+    rpc BanUser (GsBanUser) returns (GsBanUserRt) {
+    }
+
+    // 发布公告
+    rpc notice (GsShanghaiGMNotice) returns (GsShanghaiGmNoticeRt) {
+    }
+
+    // 删除公告
+    rpc DelNotice (GsDelNotice) returns (GsDelNoticeRt) {
+    }
+
+    // 获取公告显示位置
+    rpc GetNoticePosition (GsGetNoticePosition) returns (GsGetNoticePositionRt) {
+    }
+
+    // 单服充值记录
+    rpc ChargeLog (GsChargeLog) returns (GsChargeLogRt) {
+    }
+
+    // 在线数据
+    rpc GetOnline (GsGetOnline) returns (GsGetOnlineRt) {
+    }
+
+    // 单服充值排行
+    rpc ChargeRank (GsChargeRank) returns (GsChargeRankRt) {
+    }
+
+    // 查询运营概况
+    rpc GetServerInfo (GsGetServerInfo) returns (GsGetServerInfoRt) {
+    }
+
+    // 查询用户留存
+    rpc GetHaveInfo (GsShanghaiGetHaveInfo) returns (GsShanghaiGetHaveInfoRt) {
+    }
+
+    // 获取游戏资源
+    rpc GetResource (GsGetResource) returns (GsGetResourceRt) {
+    }
+
+    // 禁言/解禁玩家
+    rpc PlayerGag (GsPlayerGag) returns (GsPlayerGagRt) {
+    }
+
+    // 删除游戏资源和物品
+    rpc DelGoods (GsDelGoods) returns (GsDelGoodsRt) {
+    }
+
+}
+
+// GM -> 游戏
+// 部署新区
+message GsAddNewArea {
+    rpccommon.PbGameConfig newArea = 1; // 新区配置
+}
+
+// 游戏 -> GM
+// 部署新区返回
+message GsAddNewAreaRt {
+    int32 rt = 1;
+    int64 serverId = 2; // 平台上的唯一游戏区ID
+}
+
+// GM -> 游戏
+// 清档
+message GsCleanAreaDb {
+    int64 serverId = 1; // 平台上的唯一游戏区ID
+}
+
+// 游戏 -> GM
+// 清档返回
+message GsCleanAreaDbRt {
+    int32 rt = 1;
+    int64 serverId = 2; // 平台上的唯一游戏区ID
+}
+
+// GM -> 游戏
+// 移除游戏区
+message GsRemoveArea {
+    int64 serverId = 1; // 平台上的唯一游戏区ID
+}
+
+// 游戏 -> GM
+// 移除游戏区返回
+message GsRemoveAreaRt {
+    int32 rt = 1;
+    int64 serverId = 2; // 平台上的唯一游戏区ID
+}
+
+// GM -> 游戏
+// 停服
+message GsStopArea {
+    int64 serverId = 1; // 平台上的唯一游戏区ID
+}
+
+// 游戏 -> GM
+// 停服返回
+message GsStopAreaRt {
+    int32 rt = 1;
+    int64 serverId = 2; // 平台上的唯一游戏区ID
+}
+
+// GM -> 游戏
+// 开放维护切换
+message GsSwitchMaintance {
+    int64 serverId = 1; // 平台上的唯一游戏区ID
+    int32 open = 2; // 0：进入维护，1：进入开放
+}
+
+// 游戏 -> GM
+// 开放维护切换返回
+message GsSwitchMaintanceRt {
+    int32 rt = 1;
+    int64 serverId = 2; // 平台上的唯一游戏区ID
+}
+// GM ->游戏
+// 模拟战斗数据
+message GsMgrFighting {
+    repeated FightGezi fightGezi = 1;//模拟战斗的一组配置
+    int32 fightNum = 2;
+    int64 areaId = 3; // 游戏服ID
+}
+
+// 游戏 -> GM
+// 战斗模拟器结果返回
+message GsMgrFightingRt {
+    int32 rt = 1;
+    int32 key = 2; // 老的战报唯一ID标记,用途是到游戏内通过GM查看战报
+    repeated string newFightInfos = 3; //新战报的结构体
+}
+
+// GM -> 游戏
+// 查询玩家角色信息
+message GsQueryPlayerInfo {
+    int64 playerId = 1;
+    int64 areaId = 2; // 玩家信息
+}
+
+// 游戏 -> GM
+// 查询玩家角色信息结果返回
+message GsQueryPlayerInfoRt {
+    int32 rt = 1;
+    PlayerInfo data = 2; // 玩家信息
+}
+// GM -> 游戏
+// 查询玩家角色大概信息
+message GsQueryPlayerSimpInfo {
+    int64 playerId = 1;
+    string accountName = 2; // 账号名
+    string playerName = 3; // 角色名
+    int64 areaId = 4; // 游戏服id
+    int32 page = 5; // 总页数
+    int32 count = 6; // 总记录数
+}
+
+// 游戏 -> GM
+// 查询玩家角色大概信息结果返回（分页功能）
+message GsQueryPlayerSimpInfoRt {
+    int32 rt = 1;
+    repeated PlayerSimpInfo data = 2; // 玩家简单信息
+    int32 page = 3; // 当前页
+    int32 count = 4; // 每页显示记录数
+    int32 pages = 5; // 总页数
+    int32 counts = 6; // 总记录数
+}
+
+// GM -> 游戏
+// 禁言
+message GsGag {
+    int64 areaId = 1; // 游戏服id
+    string playIds = 2; // 玩家们id
+    string playerNames = 3; // 玩家们名称
+    int64 gagTime = 4; // 封禁时间
+    string reason = 5; // 封禁原因
+    string accNameMg = 6; // 操作人名
+    int64 operateTime = 7; // 操作时间
+}
+
+// 游戏 -> GM
+// 禁言操作结果返回
+message GsGagRt {
+    int32 rt = 1;
+}
+
+// GM -> 游戏
+// 查询禁言
+message GsQueryGag {
+    int64 playerId = 1;
+    string playerName = 2;
+    int64 areaId = 3;
+    int32 page = 4;
+    int32 count = 5;
+    string accName = 6;
+}
+
+// 游戏 -> GM
+// 查询禁言结果返回
+message GsQueryGagRt {
+    int32 rt = 1;
+    repeated QueryGags data = 2;
+    int32 page = 3;
+    int32 count = 4;
+    int32 pages = 5;
+    int32 counts = 6;
+}
+
+// GM -> 游戏
+// 取消禁言
+message GsCancelGag {
+    int64 playerId = 1;
+    int64 areaId = 2;
+    string playerName = 3;
+}
+
+// 游戏 -> GM
+// 取消禁言结果返回
+message GsCancelGagRt {
+    int32 rt = 1;
+}
+
+// GM -> 游戏
+// 封禁ip
+message GsIpClose {
+    string operator = 1;
+    string playerIp = 2;
+    string closeReason = 3;
+    string accountName = 4;
+    string playerName = 5;
+    int64 areaId = 6;
+    int32 closeTime = 7;
+    int64 operateTime = 8;
+}
+
+// 游戏 -> GM
+// 封禁ip结果返回
+message GsIpCloseRt {
+    int32 rt = 1;
+}
+
+// GM -> 游戏
+// ip解禁
+message GsCancelIpClose {
+    int64 areaId = 1;
+    string closeIp = 2;
+    string playerName = 3;
+}
+
+// 游戏 -> GM
+// ip解禁结果返回
+message GsCancelIPCloseRt {
+    int32 rt = 1;
+}
+
+// GM -> 游戏
+// 查询ip封禁
+message GsQueryIpClose {
+    string playerIp = 1; // 封禁Ip
+    int64 areaId = 2;
+    int32 page = 3;
+    int32 count = 4;
+}
+
+// 游戏 -> GM
+// 查询ip封禁结果返回
+message GsQueryIpCloseRt {
+    int32 rt = 1;
+    repeated IpClosePlayer data = 2; //被禁玩家信息数组
+    int32 page = 3; //当前页（1,2,3,.....）
+    int32 count = 4; //每页显示记录数
+    int32 pages = 5; //总页数
+    int32 counts = 6; //总记录数
+}
+
+// GM -> 游戏
+// 查询账号名封禁
+message GsQueryAccountNameClose {
+    string accountName = 1; // 封禁Ip
+    int64 areaId = 2;
+    int32 page = 3;
+    int32 count = 4;
+}
+
+// 游戏 -> GM
+// 查询账号名封禁结果返回
+message GsQueryAccountNameCloseRt {
+    int32 rt = 1;
+    repeated AccountNameClosePlayer data = 2; //被禁玩家信息数组
+    int32 page = 3; //当前页（1,2,3,.....）
+    int32 count = 4; //每页显示记录数
+    int32 pages = 5; //总页数
+    int32 counts = 6; //总记录数
+}
+
+
+// GM -> 游戏
+// 即时公告
+message GsRtNotice {
+    string noticeInfo = 1; // 公告内容
+    int64 noticePosition = 2; // 公告位置
+    int64 noticeType = 6; // 公告类型
+    int64 areaId = 7; // 服务器编号
+}
+
+// 游戏 -> GM
+// 即时公告返回
+message GsRtNoticeRt {
+    int32 rt = 1;
+}
+
+// GM -> 游戏
+// 定时公告
+message GsNotice {
+    string noticeInfo = 1; // 公告内容
+    int64 noticePosition = 2; // 公告位置
+    int64 noticeTimeStart = 3; // 开始时间
+    int64 noticeTimeEnd = 4; // 结束时间
+    int64 noticeFrequency = 5; // 公告频率（秒）
+    int64 noticeType = 6; // 公告类型
+    int64 areaId = 7; // 服务器编号
+}
+
+// 游戏 -> GM
+// 定时公告返回
+message GsNoticeRt {
+    int32 rt = 1;
+}
+
+// GM -> 游戏
+// 查询公告
+message GsQueryNotice {
+    int64 noticeTimeStart = 1; // 查询公告开始时间
+    int64 noticeTimeEnd = 2; // 查询公告结束时间
+    string noticeInfo = 3; // 查询内容
+    int64 areaId = 4; // 服务器编号
+}
+
+// 游戏 -> GM
+// 查询公告结果返回
+message GsQueryNoticeRt {
+    int32 rt = 1;
+    repeated NoticeInfo data = 2; // 公告信息
+}
+
+// GM -> 游戏
+// 删除公告
+message GsDeleteNotice {
+    string noticeIds = 1; // 需要删除的公告的Id
+    int64 areaId = 2; // 服务器编号
+}
+
+// 游戏 -> GM
+// 删除公告结果返回
+message GsDeleteNoticeRt {
+    int32 rt = 1;
+}
+
+// GM -> 游戏
+// 查询实时在线人数
+message GsQueryCurrentOnlines {
+    int64 areaId = 1; // 服务器编号
+}
+
+// 游戏 -> GM
+// 查询实时在线人数结果返回
+message GsQueryCurrentOnlinesRt {
+    int32 rt = 1;
+    int32 num = 2; // 人数
+}
+
+// GM -> 游戏
+// 查询留存与流失
+message GsQueryRemain {
+    int64 startTime = 1; // 开始时间
+    int64 endTime = 2; // 结束时间
+    int64 areaId = 3;
+}
+
+// 游戏 -> GM
+// 查询留存与流失结果返回
+message GsQueryRemainRt {
+    int32 rt = 1;
+    repeated Remains data = 2;
+}
+
+// GM -> 游戏
+// 查询服务器7日留存
+message GsGetHaveInfo {
+    int64 areaId = 1;
+    int64 startTime = 2; // 开始时间
+    int64 endTime = 3; // 结束时间
+    int64 day = 4; // N日留存
+}
+
+// 游戏 -> GM
+// 查询服务器7日留存结果返回
+message GsGetHaveInfoRt {
+    int32 rt = 1;
+    repeated HaveInfoData data = 2;
+    HaveInfoData fields = 3; // 供上海使用的字段描述
+}
+
+// GM -> 游戏
+// 查询时间段内在线人数
+message GsQueryDuringOnlines {
+    int64 beginTime = 1; // 开始时间
+    int64 endTime = 2; // 结束时间
+    int32 page = 3; // 当前页面
+    int32 count = 4; // 每个页面的条数
+    int32 areaId = 5;
+}
+
+// 游戏 -> GM
+// 查询时间段内在线人数结果返回
+message GsQueryDuringOnlinesRt {
+    int32 rt = 1;
+    repeated DuringData data = 2; // 期间数据
+    int32 page = 3;
+    int32 count = 4;
+    int32 pages = 5;
+    int32 counts = 6;
+}
+
+// GM -> 游戏
+// 聊天监控查询
+message GsQueryChitchatLog {
+    int64 areaId = 1; // 游戏区编号
+    int32 chatType = 2; // 聊天类型
+}
+
+// 游戏 -> GM
+// 聊天监控查询结果返回
+message GsQueryChitchatLogRt {
+    int32 rt = 1;
+    repeated ChatMessageData data = 2; // 聊天信息数据
+}
+
+// GM -> 游戏
+// 排行榜记录查询
+message GsQueryRankingList {
+    int64 areaId = 1; // 游戏区编号
+    int64 queryTime = 2; // 查询时间
+    int32 rankingType = 3; // 排行榜类型  1.个人势力值  2.同盟势力 3.铺路种田 4.翻地拆城 5.要塞建造
+}
+
+// 游戏 -> GM
+// 排行榜记录查询结果返回
+message GsQueryRankingListRt {
+    int32 rt = 1;
+    repeated RankInfoData data = 2; // 排行数据
+}
+
+// GM -> 游戏
+// 插入屏蔽字
+message GsAddShieldingText {
+    string addShieldingText = 1; // 屏蔽内容
+}
+
+// 游戏 -> GM
+// 插入屏蔽字结果返回
+message GsAddShieldingTextRt {
+    int32 rt = 1;
+}
+
+// GM -> 游戏
+// 武将查询
+message GsQueryPlayerCard {
+    int64 areaId = 1;
+    int64 playerId = 2;
+}
+
+// 游戏 -> GM
+// 武将查询结果返回
+message GsQueryPlayerCardRt {
+    int32 rt = 1;
+    repeated HeroData data = 2; // 武将信息
+}
+
+// GM -> 游戏
+// 查询周报
+message GsQueryWeeklyData {
+    int64 areaNo = 1;
+    int64 gameAreaNo = 2;
+    int64 queryTime = 3;
+}
+
+// 游戏 -> GM
+// 查询周报返回
+message GsQueryWeeklyDataRt {
+    int32 rt = 1;
+    WeeklyData data = 2; // 周报信息
+}
+
+// GM -> 游戏
+// 查询日报
+message GsQueryDailyData {
+    int64 areaNo = 1;
+    int64 gameAreaNo = 2;
+    int64 queryTime = 3;
+}
+
+// 游戏 -> GM
+// 查询日报返回
+message GsQueryDailyDataRt {
+    int32 rt = 1;
+    DailyData data = 2; // 日报信息
+}
+
+// GM -> 游戏
+// 查询新手引导留存
+message GsGuideStepInfo {
+     int64 areaId = 1;
+}
+
+// 游戏 -> GM
+// 查询日报返回
+message GsGuideStepInfoRt {
+    int32 rt = 1;
+    repeated GuideStepInfoData data = 2; // 新手引导留存信息
+    int64 allPlayerNum = 3;
+    int64 accNum = 4;
+}
+
+// GM -> 游戏
+// 发送邮件
+message GsSendEmail {
+     int64 areaId = 1;
+     string playerIds = 2;
+     int64 emailType = 3;
+     string title = 4;
+     string message = 5;
+     string attach = 6;
+     string equips = 7;
+     string heros = 8;
+     int64 pltAreaNo = 9;
+}
+
+// 游戏 -> GM
+// 发送邮件结果返回
+message GsSendEmailRt {
+    int32 rt = 1;
+}
+
+// GM -> 游戏
+// 删除邮件
+message GsDeleteEmail {
+     int64 areaId = 1;
+     int64 deleteId = 2;
+     int64 deleteType = 3;
+}
+
+// 游戏 -> GM
+// 发送邮件结果返回
+message GsDeleteEmailRt {
+    int32 rt = 1;
+}
+
+// GM -> 游戏
+// 检验玩家
+message GsTestPlayer {
+     int64 areaId = 1;
+     string playerIds = 2;
+     int64 emailType = 3;
+     int64 pltAreaNo = 4;
+}
+
+// 游戏 -> GM
+// 检验玩家结果返回
+message GsTestPlayerRt {
+    int32 rt = 1;
+    repeated string data = 2; // 玩家信息拼接的字符串 "playerId, playerName, accName"
+}
+
+// GM -> 游戏
+// 给玩家发卡
+message GsSendPlayerCard {
+     int64 areaId = 1; // 游戏服Id
+     int64 playerId = 2; // 角色Id
+     int64 protoId = 3; // 英雄Id
+     int64 num = 4; // 数量
+     int64 advLv = 5; // 星级
+     string title = 6; // 标题
+     string content = 7; // 内容
+}
+
+// 游戏 -> GM
+// 给玩家发卡结果返回
+message GsSendPlayerCardRt {
+    int32 rt = 1;
+}
+
+// GM -> 游戏
+// 查询玩家建筑信息
+message GsQueryPlayerBuilding {
+     int64 areaId = 1; // 游戏服Id
+     int64 playerId = 2; // 角色Id
+     int64 page = 3; // 当前页
+     int64 size = 4; // 每页数量
+}
+
+// 游戏 -> GM
+// 查询玩家建筑信息结果返回
+message GsQueryPlayerBuildingRt {
+    int32 rt = 1;
+    int32 page = 2;
+    int32 pages = 3;
+    int32 count = 4;
+    int32 counts = 5;
+    repeated BuildingData data = 6; // 建筑属性Building
+}
+
+// GM -> 游戏
+// 查询玩家城池信息
+message GsQueryPlayerCity {
+     int64 areaId = 1; // 游戏服Id
+     int64 playerId = 2; // 角色Id
+     int64 page = 3; // 当前页
+     int64 size = 4; // 每页数量
+}
+
+// 游戏 -> GM
+// 查询玩家城池信息结果返回
+message GsQueryPlayerCityRt {
+    int32 rt = 1;
+    int32 page = 2;
+    int32 pages = 3;
+    int32 count = 4;
+    int32 counts = 5;
+    repeated CastleData data = 6; // 建筑属性Building
+}
+
+// GM -> 游戏
+// 查询玩家装备信息
+message GsQueryPlayerEquip {
+     int64 areaId = 1; // 游戏服Id
+     int64 playerId = 2; // 角色Id
+     int64 page = 3; // 当前页
+     int64 size = 4; // 每页数量
+}
+
+// 游戏 -> GM
+// 查询玩家装备信息结果返回
+message GsQueryPlayerEquipRt {
+    int32 rt = 1;
+    int32 page = 2;
+    int32 pages = 3;
+    int32 count = 4;
+    int32 counts = 5;
+    repeated EquipData data = 6; // 建筑属性Building
+}
+
+// GM -> 游戏
+// 查询玩家土地信息
+message GsQueryPlayerLand {
+     int64 areaId = 1; // 游戏服Id
+     int64 playerId = 2; // 角色Id
+     int64 page = 3; // 当前页
+     int64 size = 4; // 每页数量
+}
+
+// 游戏 -> GM
+// 查询玩家土地信息结果返回
+message GsQueryPlayerLandRt {
+    int32 rt = 1;
+    int32 page = 2;
+    int32 pages = 3;
+    int32 count = 4;
+    int32 counts = 5;
+    repeated LandCellData data = 6; // 建筑属性Building
+}
+
+// GM -> 游戏
+// 查询玩家部队信息
+message GsQueryPlayerTroops {
+     int64 areaId = 1; // 游戏服Id
+     int64 playerId = 2; // 角色Id
+     int64 page = 3; // 当前页
+     int64 size = 4; // 每页数量
+}
+
+// 游戏 -> GM
+// 查询玩家部队信息结果返回
+message GsQueryPlayerTroopsRt {
+    int32 rt = 1;
+    int32 page = 2;
+    int32 pages = 3;
+    int32 count = 4;
+    int32 counts = 5;
+    repeated ForceData data = 6; // 建筑属性Building
+}
+
+// GM -> 游戏
+// 查询实时充值
+message GsQueryRechargeOnline {
+     int64 areaId = 1; // 游戏服Id
+     int64 startTime = 2; // 开始时间
+     int64 endTime = 3; // 结束时间
+     string gameAreaName = 4; // 游戏区名
+}
+
+// 游戏 -> GM
+// 查询实时充值结果返回
+message GsQueryRechargeOnlineRt {
+    int32 rt = 1;
+    repeated RechargeOnlineData data = 2;
+}
+
+// GM -> 游戏
+// 查询充值排行
+message GsQueryRechargeRanking {
+     int64 areaId = 1; // 游戏服Id
+     int64 startTime = 2; // 开始时间
+     int64 endTime = 3; // 结束时间
+     int64 page = 4; // 当前页
+     int64 count = 5; // 每页条数
+     int64 condition = 6;
+}
+
+// 游戏 -> GM
+// 查询充值排行结果返回
+message GsQueryRechargeRankingRt {
+    int32 rt = 1;
+    repeated RechargeRankingData data = 2;
+    int64 page = 3;
+    int64 count = 4;
+    int64 pages = 5;
+    int64 counts = 6;
+}
+
+// GM -> 游戏
+// 查询充值总览
+message GsQueryRechargeGeneralize {
+     int64 areaId = 1; // 游戏服Id
+     int64 startTime = 2; // 开始时间
+     int64 endTime = 3; // 结束时间
+     string gameAreaName = 4; // 游戏区名
+}
+
+// 游戏 -> GM
+// 查询充值总览结果返回
+message GsQueryRechargeGeneralizeRt {
+    int32 rt = 1;
+    RechargeGeneralizeData data = 2;
+}
+
+// GM -> 游戏
+// 修改黑白名单
+message GsAddRoster {
+     int64 areaId = 1; // 游戏服Id
+     int64 rosterType = 2; // 黑白名单类型 1-黑  2-白
+     map<string, int64> newRoste = 3; // 黑白名单ip
+}
+
+// 游戏 -> GM
+// 修改黑白名单结果返回
+message GsAddRosterRt {
+    int32 rt = 1;
+}
+
+// GM -> 游戏
+// 充值测试
+message GsPayTest {
+    PayTestData data = 1; //充值数据
+}
+
+// 游戏 -> GM
+// 充值测试结果返回
+message GsPayTestRt {
+    string rt = 1;
+}
+
+// GM -> 游戏
+// 元宝统计
+message GsGroupResData {
+    GroupResData data = 1; //充值数据
+}
+
+// 游戏 -> GM
+// 元宝统计结果返回
+message GsGroupResDataRt {
+    int32 rt = 1;
+    GroupResDataRt data = 2;
+    int64 page = 3;
+    int64 count = 4;
+    int64 pages = 5;
+    int64 counts = 6;
+}
+
+// GM -> 游戏
+// 刪除屏蔽字
+message GsDelShielding {
+   int64 delShieldingTextId = 1; // 屏蔽字Id
+}
+
+// 游戏 -> GM
+// 刪除屏蔽字结果返回
+message GsDelShieldingRt {
+    int32 rt = 1;
+}
+
+// GM -> 游戏
+// 查询服务器的玩家列表
+message GsGetUser {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 查询服务器的玩家列表结果返回
+message GsGetUserRt {
+    int32 status = 1;
+    PlayerDataRt data = 2;
+}
+
+// GM -> 游戏
+// 在查看界面获取某一玩家的具体信息
+message GsGetUserInfo {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 在查看界面获取某一玩家的具体信息结果返回
+message GsGetUserInfoRt {
+    int32 status = 1;
+    PlayerDataInfoRt data = 2;
+}
+
+// GM -> 游戏
+// 获取玩家额外信息列表
+message GsGetUserDetailList {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 获取玩家额外信息列表结果返回
+message GsGetUserDetailListRt {
+    int32 status = 1;
+    GetUserDetailListRt data = 2;
+}
+
+// GM -> 游戏
+// 获取玩家额外信息详细内容
+message GsGetUserDetail {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 获取玩家额外信息详细内容结果返回
+message GsGetUserDetailRt {
+    int32 status = 1;
+    GetUserDetailDataRt data = 2;
+}
+
+// GM -> 游戏
+// 获取玩家日志类型列表
+message GsGetUserLogList {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 获取玩家日志类型列表结果返回
+message GsGetUserLogListRt {
+    int32 status = 1;
+    GetUserLogListDataRt data = 2;
+}
+
+// GM -> 游戏
+// 发放游戏资源和物品
+message GsAddGoods {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 发放游戏资源和物品结果返回
+message GsAddGoodsRt {
+    int32 status = 1;
+    repeated string data = 2;
+}
+
+// GM -> 游戏
+// 将玩家踢下线
+message GsKickUser {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 将玩家踢下线结果返回
+message GsKickUserRt {
+    int32 status = 1;
+    string data = 2;
+}
+
+// GM -> 游戏
+// 发送邮件
+message GsSendMail {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 发送邮件结果返回
+message GsSendMailRt {
+    int32 status = 1;
+    repeated string data = 2;
+    string tag = 3;
+}
+
+// GM -> 游戏
+// 封禁玩家
+message GsBanUser {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 封禁玩家结果返回
+message GsBanUserRt {
+    int32 status = 1;
+    string data = 2;
+}
+
+// GM -> 游戏
+// 公告发布
+message GsShanghaiGMNotice {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 公告发布结果返回
+message GsShanghaiGmNoticeRt {
+    int32 status = 1;
+    string data = 2;
+}
+
+// GM -> 游戏
+// 删除公告
+message GsDelNotice {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 删除公告结果返回
+message GsDelNoticeRt {
+    int32 status = 1;
+    string data = 2;
+}
+
+// GM -> 游戏
+// 获取公告显示位置
+message GsGetNoticePosition {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 获取公告显示位置结果返回
+message GsGetNoticePositionRt {
+    int32 status = 1;
+    GetNoticePositionData data = 2;
+}
+
+// GM -> 游戏
+// 单服充值记录
+message GsChargeLog {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 单服充值记录结果返回
+message GsChargeLogRt {
+    int32 status = 1;
+    ChargeLogData data = 2;
+}
+
+// GM -> 游戏
+// 在线数据
+message GsGetOnline {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 在线数据结果返回
+message GsGetOnlineRt {
+    int32 status = 1;
+    GetOnlineData data = 2;
+}
+
+// GM -> 游戏
+// 单服充值排行
+message GsChargeRank {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 单服充值排行结果返回
+message GsChargeRankRt {
+    int32 status = 1;
+    ChargeRankData data = 2;
+}
+
+// GM -> 游戏
+// 查询运营概况
+message GsGetServerInfo {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 查询运营概况结果返回
+message GsGetServerInfoRt {
+    int32 status = 1;
+    GetServerInfoData data = 2;
+}
+
+// GM -> 游戏
+// 查询用户留存
+message GsShanghaiGetHaveInfo {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 查询用户留存结果返回
+message GsShanghaiGetHaveInfoRt {
+    int32 status = 1;
+    HaveInfoShanghaiData data = 2;
+}
+
+// GM -> 游戏
+// 获取游戏资源
+message GsGetResource {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 获取游戏资源结果返回
+message GsGetResourceRt {
+    int32 status = 1;
+    GetResourceData data = 2;
+}
+
+// GM -> 游戏
+// 禁言/解禁玩家
+message GsPlayerGag {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 禁言/解禁玩家结果返回
+message GsPlayerGagRt {
+    int32 status = 1;
+    string data = 2;
+}
+
+// GM -> 游戏
+// 删除游戏资源和物品
+message GsDelGoods {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 删除游戏资源和物品结果返回
+message GsDelGoodsRt {
+    int32 status = 1;
+    repeated string data = 2;
+}
+
+// GM -> 游戏
+// 查询玩家属性
+message GsQueryPlayerProperty {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 查询玩家属性结果返回
+message GsQueryPlayerPropertyRt {
+    int32 status = 1;
+    GetUserDetailDataPlayer data = 2;
+}
+
+// GM -> 游戏
+// 查询玩家武将
+message GsQueryPlayerHero {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 查询玩家武将结果返回
+message GsQueryPlayerHeroRt {
+    int32 status = 1;
+    GetUserDetailDataHero data = 2;
+}
+
+// GM -> 游戏
+// 查询玩家装备
+message GsQueryPlayerNewEquip {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 查询玩家装备结果返回
+message GsQueryPlayerNewEquipRt {
+    int32 status = 1;
+    GetUserDetailDataEquip data = 2;
+}
+
+// GM -> 游戏
+// 查询玩家邮件
+message GsQueryPlyaerEmail {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 查询玩家邮件结果返回
+message GsQueryPlyaerEmailRt {
+    int32 status = 1;
+    GetUserDetailDataEmail data = 2;
+}
+
+// GM -> 游戏
+// 查询玩家建筑
+message GsQueryPlyaerBuilding {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 查询玩家建筑结果返回
+message GsQueryPlyaerBuildingRt {
+    int32 status = 1;
+    GetUserDetailDataBuilding data = 2;
+}
+
+// GM -> 游戏
+// 查询玩家城池
+message GsQueryPlyaerCity {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 查询玩家建筑结果返回
+message GsQueryPlyaerCityRt {
+    int32 status = 1;
+    GetUserDetailDataCastle data = 2;
+}
+
+// GM -> 游戏
+// 查询玩家部队
+message GsQueryPlyaerTroops {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 查询玩家部队结果返回
+message GsQueryPlyaerTroopsRt {
+    int32 status = 1;
+    GetUserDetailDataForce data = 2;
+}
+
+// GM -> 游戏
+// 查询玩家土地
+message GsQueryPlyaerLand {
+   string data = 1;
+}
+
+// 游戏 -> GM
+// 查询玩家土地结果返回
+message GsQueryPlyaerLandRt {
+    int32 status = 1;
+    GetUserDetailDataCell data = 2;
+}
+
+
+
+// 战斗格子
+message FightGezi {
+	int32 address = 1; // 位置
+    int32 heroProto = 2; // 武将模板
+    int32 heroStar = 3; // 武将星级
+    int32 lv = 4; // 武将等级
+    int32 bingli = 5; // 兵力
+    int32 skill1 = 6; // 技能模板1
+    int32 skill2 = 7; // 技能模板2
+    int32 skill3 = 8; // 技能模板3
+    int32 soliderId = 9; // 携带士兵ID
+    int32 awakeLv = 10; // 武将觉醒等级
+    int32 suitId = 11; // 套装技能ID
+    int32 equipAtkG = 12; // 装备攻击资质加成
+    int32 equipDefG = 13; // 装备防御资质加成
+    int32 equipHpG = 14; // 装备血量资质加成
+    int32 equipSpeed = 15; // 装备速度
+    int32 equipBaoji = 16; // 装备暴击
+    int32 equipBaoshang = 17; // 装备暴伤
+}
+
+// 武器模板
+message FightTestEquipInfo {
+    int64 equipProtoId = 1; // 装备属性Id
+    int32 skill1 = 2; // 技能1
+    int32 skill2 = 3; // 技能2
+    int32 skill3 = 4; // 技能3
+    int32 skill4 = 5; // 技能4
+}
+
+
+
+// 玩家信息
+message PlayerInfo {
+    int64 playerId = 1; // 角色id
+    string playerIp = 2; // 玩家ip
+    string name = 3; // 角色名
+    string accName = 4; //
+    int64 woodYield = 5; // 木材数量
+    int64 ironYield = 6; // 晶矿数量
+    int64 stoneYield = 7; // 石头数量
+    int64 foodYield = 8; // 粮食数量
+    int64 bindGold = 9; // 绑定钻石
+    int64 gold = 10; // 钻石
+    int64 coin = 11; // 金币
+    int64 decree = 12; // 政令
+    int64 taskFame = 13; // 声望
+    int64 power = 14; // 势力
+    int64 allianceId = 16; // 联盟id
+    string allianceName = 17; // 联盟名
+    int32 defenseStatus = 18; // 防守状态
+    int64 accountId = 19; // 账号id
+    int64 defenseEndTime = 20; // 防守结束时间
+    int64 gagTime = 21; // 封禁时间
+    int64 birthTime = 22; // 出生时间
+}
+
+// 玩家简单信息
+message PlayerSimpInfo {
+    int64 playerId = 1; //
+	string name = 2; //
+	string accName = 3; //
+	string fightValue = 4; // 战斗力总和
+	string lastEnterGameTime = 5; // 最近一次上线时间
+	string lastLeaveGameTime = 6; // 最近退出时间
+	string sumPayMoney = 7; // 共计充值金额
+	string firstPayTime = 8; // 首次充值时间
+	string lastPayTime = 9; // 最后充值时间
+	string onlineState = 10; // 玩家是否在线
+	string birthTime = 11; // 玩家创建账号时间
+	int32 isSleep = 12; // 玩家是否处于休眠状态：0-非休眠状态；1-休眠状态
+}
+
+// 禁言信息
+message QueryGags {
+    string playerAccount = 1; // 被禁账号
+    int64 playerId = 2; // 被禁角色id
+    string playerName =3; // 被禁角色名
+    int64 gagTime = 4; // 被禁时间
+    string gagReason = 5; // 被禁原因
+    string operator = 6; // 操作人
+    int64 operateTime = 7;// 操作时间
+}
+
+// 被禁玩家信息
+message IpClosePlayer {
+    int64 id = 1;
+    string playerIp = 2; // 玩家ip
+    int64 closeTime = 3; // 被封时间
+    string closeReason = 4; // 被封原因
+    string operator =5; // 操作人
+    int64 operateTime = 6; // 操作时间
+}
+
+// 被禁玩家信息
+message AccountNameClosePlayer {
+    int64 id = 1;
+    string accountName = 2; // 玩家ip
+    int64 closeTime = 3; // 被封时间
+    string closeReason = 4; // 被封原因
+    string operator =5; // 操作人
+    int64 operateTime = 6; // 操作时间
+}
+
+// 公告信息
+message NoticeInfo {
+    int64 id = 1;
+    string content = 2; // 公告内容
+    int32 frequency = 3; // 频率
+    int32 noticePosition = 4; // 公告位置
+    int64 noticeTimeStart = 5; // 公告开始时间
+    int64 noticeTimeEnd = 6; // 公告结束时间
+}
+
+// 留存与流失
+message Remains {
+    string createRoleBeginTime = 2; // 日期
+    repeated int32 roleCnt = 3;
+}
+
+// 期间数据
+message DuringData {
+    int32 time = 1;
+    int32 num = 2;
+}
+
+// 聊天信息数据
+message ChatMessageData {
+    int64 chitId = 1;
+    int32 chatType = 2;
+    string chatPlayerName = 3;
+    string chatMessage = 4;
+    int32 chatNow = 5;
+}
+
+// 排行数据
+message RankInfoData {
+    int32 rank = 1;
+    string rankPlayerName = 2;
+    int32 rankScore = 3;
+    int64 rankTime = 4;
+}
+
+// 武将信息
+message HeroData {
+	int64 id = 1; // 主键
+	int32 protoId = 2; // 武将模板ID
+	int32 heroType = 3; // 武将类型
+	int32 level = 4; // 武将等级
+	int32 num = 5; // 武将数量
+	int32 advLv = 6; // 阶数
+	int32 exp = 7; // 武将经验
+	int32 energy = 8; // 武将体力
+	int32 cityId = 9; // 武将所属于城池Id
+	int32 troops = 10; // 武将兵力
+	int32 skillId1 = 11; // 武将技能1
+	int32 skillId2 = 12; // 武将技能2
+	int32 skillId3 = 13; // 武将技能3
+
+	int32 hurtState = 15; // 武将状态 0-正常  1-重伤
+	int32 hurtTroops = 16; // 伤兵数量
+	int64 hurtEndTime = 17; // 重伤恢复完成时间
+	int64 consumeTime = 18; // 兵力消耗时间
+	int64 playerId = 19; // 玩家编号
+	int64 energyTime = 20; // 体力刷新时间
+}
+
+// 周报信息
+message WeeklyData {
+	int64 gameid = 1; // 游戏ID
+	int64 serverId = 2; // 服务器ID
+	int64 newAccountNumber = 3; // 新增帐号
+	int64 newPlayerNumber = 4; // 新增角色
+	int64 oldUsersNumber = 5; // 老用户登陆数量
+	int64 loginUserNumber = 6; // 登陆用户
+	float ACU = 7; // 平均在线
+	float loginNumberAll = 8; // 平均登陆次数（全部用户）
+	float loginNumberCharge = 9; // 平均登陆次数（付费用户）
+	float loginNumberFree = 10; // 平均登陆次数（免费用户）
+	float gameTimeAll = 11; // 平均游戏时长（全部用户）
+	float gameTimeCharge = 12; // 平均游戏时长（付费用户）
+	float gameTimeFree = 13; // 平均游戏时长（免费用户）
+	int64 PCU = 14; // 峰值在线
+	int64 chargeMoney = 15; // 充值金额
+	int64 chargeNumber = 16; // 充值次数
+	int64 onlyApa = 17; // 唯一付费人数
+	int64 newApa = 18; // 新增充值人数
+	int64 outflowPlayer = 19; // 流失用户数量
+	int64 returnPlayer = 20; // 有效回归用户数量
+	int64 outflowChargePlayer = 21; // 流失付费用户数量
+	int64 returnChargePlayer = 22; // 有效回归付费用户数量
+	int64 spendGold = 23; // 消耗元宝数量
+	int64 time = 24; // 时间
+}
+
+// 日报信息
+message DailyData {
+	int64 time = 1; // 时间
+	int64 gameid = 2; // 游戏ID
+	int64 serverId = 3; // 服务器ID
+	int64 totalAccountNumber = 4; // 帐号数
+	int64 totalPlayerNumber = 5; // 角色数（总）
+	int64 newAccountNumber = 6; // 新增帐号
+	int64 newPlayerNumber = 7; // 新增角色
+	float createRate = 8; // 角色创建率
+	int64 oldUsersNumber = 9; // 老用户登陆数量
+	int64 loginUserNumber = 10; // 登陆用户
+	int64 ACU = 11; // 平均在线
+	int64 PCU = 12; // 峰值在线
+	int64 LVU = 13; // 谷值在线
+	float CCU = 14; // 平高比
+	float active = 15; // 活跃度
+	int64 totalChargeMoney = 16; // 充值金额（总）
+	int64 chargeMoney = 17; // 充值金额
+	int64 chargeNumber = 18; // 充值次数
+	int64 onlyApa = 19; // 充值人数
+	int64 newApa = 20; // 新增充值人数
+	float PUR = 21; // 付费渗透率
+	float PTR = 22; // 付费转化率
+	int64 spendGold = 23; // 消费元宝数量
+	int64 totalSurplusGoldNumber = 24; // 服务器剩余元宝（总）
+	float totalPlayerHaveGold = 25; // 人均持有元宝数量（总）
+	int64 d7LogoutPlayerSurplusGold = 26; // 近7日登陆用户剩余元宝总数
+	float d7LogoutPlayerGold = 27; // 近7日登陆用户元宝均值
+	int64 d7LogoutRplayerSurplusGold = 28; // 近7日登陆付费用户剩余元宝总数
+	float d7LogoutRplayerGold = 29; // 近7日登陆付费用户元宝均值
+}
+
+// 新手引导留存信息
+message GuideStepInfoData {
+    int64 guide = 1; // 引导id
+    int64 nowNum = 2; // 停留人数
+    float pecentNum = 3; // 百分比
+}
+
+// 建筑属性
+message BuildingData {
+    int64 id = 1; // 表主键Id
+    int64 x = 2; // 建筑x坐标
+    int64 y = 3; // 建筑y坐标
+    int64 type = 4; // 类型
+    int64 lv = 5; // 等级
+    int64 completeTime = 6; // 建筑升级完成时间
+    int64 state = 7; // 建筑升级状态
+    int64 destroyTime = 8; // 建筑升级状态
+    int64 destroyState = 9; // 建筑拆除状态
+    string helperIds = 10; // 帮忙加速过的玩家
+    int64 helpId = 11; // 对应的帮派帮助表里的ID
+    int64 cityId = 12; // 所属城池Id（关联的城池Id）
+    int64 playerId = 13; // 所属玩家Id
+}
+
+// 城池属性
+message CastleData {
+    int64 id = 1; // 表主键Id
+    string name = 2; // 城池名
+    int64 protoId = 3; // 城池模板ID
+    int64 lv = 4; // 城池等级
+    int64 x = 5; // 城池x坐标
+    int64 y = 6; // 城池y坐标
+    float cost = 7; // 城池cost值
+    int64 type = 8; // 城池类型
+    int64 readySoldier = 9; // 当前预备兵
+    int64 maxReadySoldier = 10; // 上限预备兵
+    int64 expeditionQueue = 11; // 出征队列
+    int64 extensionNum = 12; // 已扩建次数
+    int64 extensionNumSum = 13; // 扩建次数上限
+    int64 prepareConscriptionTime = 14; // 预征兵刷新时间
+    int64 durabilityRefurbish = 15; // 耐久刷新时间
+    int64 castleOpenQinfengNum = 16; // 开启队列前锋数量
+    int64 castleHold = 17; // 当前城池容纳
+    int64 buildingQueue = 18; // 建筑队列
+    int64 rentBuildingQueue = 19; // 建筑队列(租借)
+    int64 playerId = 20; // 玩家id
+    int64 giveUpTime = 21; // 拆除城池时间
+    int64 prepareConscriptionSpeed = 22; // 本城的预征兵恢复速度
+    int64 addBingliMax = 23; // 本城的兵力加成
+    int64 addWarningTime = 24; // 本城的增加预警时间
+    int64 addLook = 25; // 本城的增加视野
+    int64 addTowerTroopsMax = 26; // 爬塔部队增加的兵力上限
+    int64 addJjcTroopsMax = 27; // 竞技场部队增加的兵力上限
+    int64 addJjcForcesMax = 28; // 竞技场增加的部队数量上限
+    int64 addJjcPlansMax = 29; // 竞技场增加的布阵数量上限
+    string lockInfo = 30; // 内城解锁情况
+    int64 woodSpecialSkill = 31; // 伐木场满级后的增加的百分比
+    int64 ironSpecialSkill = 32; // 铁矿场满级后的增加的百分比
+    int64 quarrySpecialSkill = 33; // 采石场满级后的增加的百分比
+    int64 footSpecialSkill = 34; // 磨坊满级后的增加的百分比
+    int64 walkAddSudu = 35; // 行军速度加成
+    int64 addWorldWalkSpeed = 36; // 增加世界行走速度
+    string specialSkill = 37; // 行军速度加成
+    string defSpecialSkill = 38; // 专为战斗地点是城区或者主城(分城)的占中中的防守方提供的技能集合
+    string defenders = 39; // 守军信息
+    string relicSkill = 40;
+    int64 addBuildSpeedForFlag = 41; // 战旗加成的建造速度加成
+    int64 addTroopsMax = 42; // 本城玩家的兵力上限加成
+}
+
+// 装备属性
+message EquipData {
+    int64 id = 1; // 表主键Id
+    int64 equipProtoId = 2; // 装备模板
+    int64 equipState = 3; // 装备状态  0-仓库内,非0表示武将ID,表示被此武将佩戴
+    int64 equipOnAddress = 4; // 佩戴部位  1=武器；2=衣服；3=鞋子；4=饰品；5=腰带；6=戒指
+    string propertys = 5; // 装备属性
+    int64 lv = 6; // 装备等级
+    int64 exp = 7; // 装备经验
+    int64 playerId = 8; // 玩家ID
+}
+
+// 土地属性
+message LandCellData {
+    int64 id = 1; // 表主键Id
+    int64 x = 2; // 地块坐标X
+    int64 y = 3; // 地块坐标Y
+    int64 type = 4; // 地块类型
+    int64 cityId = 5; // 地图格子城池ID (如果是0表示没有被建造,仍然是一块空地)
+    int64 belong = 6; // 城池个人归属
+    int64 allianceBelong = 7; // 城池帮会归属(NPC城池的主人是帮会不是个人)
+    int64 buildingQueue = 8; // 城池队列
+    int64 isBuilding = 9; // 是否正在被建造  0-没有 非0-正在建造的建筑类型
+    int64 buildingTime = 10; // 如果正在被建造,这个字段是完成时间
+    string buildName = 11; // 如果正在被建造,这个字段是玩家给建筑取得名字
+    int64 currentDurability = 12; // 当前耐久度
+    int64 maxDurability = 13; // 土地耐久上限
+    int64 durabilityTime = 14; // 耐久刷新时间
+    int64 inBuildForce = 15; // 暂时在本地块的部队集合(其实是一个key.)
+    int64 birMasterId = 16; // 这是建造者ID
+    string birMasterName = 17; // 这是建造者名字
+    int64 giveUpTime = 18; // 本块地的放弃信息
+    int64 walkInfoOnLand = 19; // 将本地块作为行军起点或者终点的部队信息
+    int64 warFreeTime = 20; // 免战到点时间
+    int64 crackTypeId = 21; // 地图事件的类型ID
+    int64 crackProtoId = 22; // 地图事件的ID
+    int64 crackEndTime = 23; // 地图事件消失时间
+}
+
+// 部队属性
+message ForceData {
+    int64 id = 1; // 表主键Id
+    int64 forceAddId = 2; // 部队在城中的位置编号 1-5
+    int64 forceState = 3; // 部队状态  1-待命 2-行军 3-驻守 4-屯田 5-征兵 6-回城 7-练兵
+    int64 forceInWhatCity = 4; // 部队所在一级归属 (主城或者分城)
+    int64 forceInWhatFortress = 5; // 部队所在二级归属 (要塞或者军营)
+    int64 forceTimeArrival = 6; // 到达时间(这个字段和上面的出征时间不知道谁写的没有用到.现在这个到达时间捆绑到下面的XY一起设置.就是表示上一次行军结束时间)
+    int64 forcePositionX = 7; // 部队位置X
+    int64 forcePositionY = 8; // 部队位置Y
+    int64 forceLeaveTime = 9; // 但是这个记录这个时间只是为了给客户端显示,不用做计算,因为这个时间只是理论实践,如练兵时.有可能被进攻而导致提前回城..对部队的操作全部依赖心跳)
+    int64 forceMaster = 10; // 部队主人
+    int64 inArmyGroup = 11; // 隶属郡城军团ID(就是集结在了郡城的军团中) 没有就是0
+    int64 inArmyGroupAddress = 12; // 在军团中的位置
+    int64 isFightForArmyGroup = 13; // 是否已经为军团战斗过了  0-否 1-是 2-战斗完毕并且已经回归到起点
+    int64 haveFood = 14; // 部队携带的食物
+    int64 haveWood = 15; // 部队携带的木头
+    int64 haveIron = 16; // 部队携带的铁
+    int64 haveStone = 17; // 部队携带的石头
+    int64 haveGold = 18;
+}
+
+// 在线充值
+message RechargeOnlineData {
+    string platForm = 1; // 平台
+    int64 payTime = 2; // 充值时间
+    int64 payNum = 3; // 充值金额
+}
+
+// 充值排行
+message RechargeRankingData {
+    string accName = 1; // 帐号
+    int64 playerId = 2; // 玩家Id
+    string playerName = 3; // 角色名
+    int64 remainingGold = 4; // 剩余元宝
+    int64 timeRecharge = 5; // 时间段内充值
+    int64 timeRechargeNum = 6; // 时间段内充值次数
+    int64 lastRechargeTime = 7; // 最后充值时间
+}
+
+// 查看充值总览
+message RechargeGeneralizeData {
+    string platForm = 1; // 平台
+    int64 rechargeSZ = 2; // 充值数值
+    int64 rechargeRS = 3; // 充值人数（去重）
+    int64 rechargeRSXZ = 4; // 充值人数（新增）
+    int64 rechargeCS = 5; // 充值次数
+}
+
+// 充值数据
+message PayTestData {
+    string orderId = 1;
+    string cooOrderId = 2;
+    string userId = 3;
+    int64  opId = 4;
+    string accountSystemId = 5;
+    string osdkUserId = 6;
+    string amount = 7;
+    string serverId = 8;
+    string productId = 9;
+    string productName = 10;
+    int64  gameId = 11;
+    string gameRoleId = 12;
+    int64  payStatus = 13;
+    int64  payTime = 14;
+    string channelId = 15;
+    string sdkPayExtend = 16;
+    string customData = 17;
+    string sign = 18;
+}
+
+// 元宝统计请求信息
+message GroupResData {
+    int64 pltAreaNo = 1;
+    int64 limit = 2;
+    int64 chg = 3;
+    int64 res = 4;
+    int64 start = 5;
+    int64 end = 6;
+    int64 page = 7;
+    int64 count = 8;
+}
+
+// 元宝统计请求信息
+message GroupResDataRt {
+    int64 pltAreaNo = 1; // 所属区
+    string action = 2;  // 事件类型
+    int64 cs = 3; // 次数
+    int64 je = 4; // 金额
+    int64 zje = 5; // 总额
+    float percentJe = 6; // 百分比
+}
+
+// 留存描述信息
+message HaveInfoData {
+    string time = 1; // 日期
+    string D0 = 2; // 第0天
+    string D1 = 3;
+    string D2 = 4;
+    string D3 = 5;
+    string D4 = 6;
+    string D5 = 7;
+    string D6 = 8;
+    string D7 = 9;
+    string D8 = 10;
+    string D9 = 11;
+    string D10 = 12;
+    string D11 = 13;
+    string D12 = 14;
+    string D13 = 15;
+    string D14 = 16;
+    string D15 = 17;
+    string D16 = 18;
+    string D17 = 19;
+    string D18 = 20;
+    string D19 = 21;
+    string D20 = 22;
+    string D21 = 23;
+    string D22 = 24;
+    string D23 = 25;
+    string D24 = 26;
+    string D25 = 27;
+    string D26 = 28;
+    string D27 = 29;
+    string D28 = 30;
+    string D29 = 31;
+    string D30 = 32; // 第30天
+}
+
+// 玩家列表信息
+message PlayerDataRt {
+    int64 all_total = 1; // 总数
+    repeated YzPlayerSimpInfo list = 2;  // 玩家简单信息列表
+    PlayerExplain fields = 3; // 字段描述
+}
+
+// 玩家具体信息
+message PlayerDataInfoRt {
+    PlayerInfoExplain fields = 1; // 字段描述
+    PlayerInfoGm content = 2; // 玩家具体信息
+}
+
+// 玩家具体信息
+message GetUserDetailListRt {
+    repeated DetailList list = 1; // 玩家额外信息列表
+}
+
+// 玩家具体信息
+message GetUserDetailDataRt {
+    int64 total = 1; // 玩家额外信息列表
+}
+
+// 玩家日志列表
+message GetUserLogListDataRt {
+    repeated LogList list = 1;
+}
+
+// 玩家日志列表
+message LogList {
+    int64 id = 1;
+    string title = 2;
+}
+
+// 玩家具体信息
+message DetailList {
+    int64 id = 1;
+    string title = 2;
+}
+
+// 玩家基本信息
+message YzPlayerSimpInfo {
+    int64 player_id = 1; // 角色id
+    string name = 2;  // 角色名
+    string user_account = 3;  // 玩家账号
+    string all_force_fight_value = 4;  // 战斗力总和
+    string last_enter_gameTime = 5;  // 最近一次上线时间
+    string last_leave_gameTime = 6;  // 最近退出时间
+    string sum_pay_money = 7;  // 充值总额
+    string first_payTime = 8;  // 首次充值时间
+    string last_payTime = 9;  // 最后充值时间
+    string isOnline = 10;  // 玩家是否在线
+    string birthTime = 11;  // 玩家创建账号时间
+    string is_sleep = 12;  // 玩家是否处于休眠状态
+}
+
+// 玩家信息字段描述
+message PlayerExplain {
+    string player_id = 1; // 角色id
+    string name = 2;  // 角色名
+    string user_account = 3;  // 玩家帐号
+    string all_force_fight_value = 4;  // 战斗力总和
+    string last_enter_gameTime = 5;  // 最近一次上线时间
+    string last_leave_gameTime = 6;  // 最近退出时间
+    string sum_pay_money = 7;  // 充值总额
+    string first_payTime = 8;  // 首次充值时间
+    string last_payTime = 9;  // 最后充值时间
+    string isOnline = 10;  // 玩家是否在线
+    string birthTime = 11;  // 玩家创建账号时间
+    string is_sleep = 12;  // 玩家是否处于休眠状态
+}
+
+// 玩家具体信息
+message PlayerInfoGm {
+    int64 player_id = 1; // 角色id
+    string name = 2; // 昵称
+    string user_account = 3; // 账号
+    int64 areaNo = 4; // 所在区
+    int64 decree = 5; // 政令
+    int64 decreeLimit = 6; // 政令上限
+    int64 decreeTime = 7; // 政令结算时间
+    int64 decreeDayTime = 8; // 政令购买时间
+    int64 decreeBuyNum = 9; // 政令当天购买次数
+    int64 fame = 10; // 玩家名望
+    int64 fameLimit = 11; // 名望上限
+    int64 fameTime = 12; // 名望结算时间
+    int64 power = 13; // 势力
+    int64 fortress = 14; // 要塞数量
+    int64 wood = 15; // 木材
+    int64 iron = 16; // 铁
+    int64 stone = 17; // 石头
+    int64 food = 18; // 食物
+    int64 storageLimit = 19; // 资源存储上限
+    int64 gold = 20; // 元宝
+    int64 bindGold = 21; // 绑定元宝
+    int64 coin = 22; // 铜币
+    int64 honor = 23; // 荣誉
+    int64 state = 24; // 州：0-流浪
+    int64 focusCastleId = 25; // 关注城池ID
+    int64 allianceId = 26; // 所属同盟ID
+    int64 position = 27; // 职位：0-普通成员 1-盟主 2-副盟主 3-指挥官 4-团长 5-外交官
+    int64 ctrbtTotal = 28; // 总贡献
+    int64 ctrbtWeek = 29; // 周贡献
+    int64 ctrbtYearWeek = 30; // 最近记录贡献的年周
+    int64 honorWeek = 31; // 周功勋
+    int64 quitPunishTime = 32; // 退盟惩罚结束时间
+    int64 occupiedBy = 33; // 玩家被哪个联盟沦陷，如果没有沦陷，则为0
+    int64 rebelRes = 34; // 玩家被沦陷后，反叛已缴纳资源
+    int64 lastStrayTime = 35; // 前一次流浪时间：zeroTime-没有流浪过
+    int64 nextDemandTime = 36; // 下次可进行联盟换卡/捐献的时间
+    int64 readReqTime = 37; // 读取申请联盟的时间
+    int64 defenseStatus = 38; // 坚守状态：0-未开启；1-准备中；2-坚守中；3-冷却中
+    int64 defenseEndTime = 39; // 坚守状态对应的结束时间
+    string selfIntroduction = 40; // 自我介绍
+    int64 lastEnterGameTime = 41; // 最近一次上线时间
+    int64 lastLeaveTime = 42; // 最后一次离线时间
+    int64 birthTime = 43; // 玩家创建账号时间
+    int64 rookieEndTime = 44; // 新手期结束时间
+    int64 buildingQueue = 45; // 建筑队列
+    int64 chestFreePrizeTime = 46; // 免费宝箱领取时间
+    int64 chestFreeCnt = 47; // 免费宝箱数量
+    int64 chestKillRefTime = 48; // 击杀宝箱时间
+    int64 chestKillCnt = 49; // 击杀宝箱击杀数量
+    int64 chestKillPrize = 50; // 是否已经领取击杀宝箱
+    int64 moveMainCityTime = 51; // 迁主城CD时间
+    int64 moveSubCityTime = 52; // 迁分城CD时间
+    int64 isNotFirstChest = 53; // 是否不是首次抽取宝箱
+    int64 photoFreeTime = 54; // 可免费换头像时间
+    string photoProtoId = 55; // 头像
+    int64 photoFreeCount = 56; // 初始剩余免费更换头像次数
+    int64 worldTalkLimit = 57; // 每天世界频道免费聊天次数
+    int64 worldTalkLast = 58; // 世界频道最新免费聊天时间
+    int64 taishouX = 59; // 如果我是太守,这两个字段分别是属于我的郡城的X坐标
+    int64 taishouY = 60; // 如果我是太守,这两个字段分别是属于我的郡城的Y坐标
+    int64 equipFreeXilianNum = 61; // 装备免费洗炼次数
+    int64 equipFreeSuperXilianNum = 62; // 装备免费至尊洗炼次数
+    int64 equipFreeXilianLastTime = 63; // 上次更新装备免费洗炼次数时间
+    int64 accType = 64; // 角色类型，标识角色的分类属性，1:正常 2:测试 3:gm/福利 4:其他
+    int64 vipLv = 65; // VIP等级
+    int64 isSleep = 66; // 玩家是否处于休眠状态：0-非休眠状态；1-休眠状态
+    int64 todayHonor = 67; // 玩家本日获得的荣誉值
+    int64 lastGetHonor = 68; // 上次获得荣誉的时间
+    int64 allForceFightValue = 69; // 玩家所有部队的战斗力
+    int64 maxForceFightValue = 70; // 玩家最强部队的战斗力
+    int64 advLvSum = 71; // 玩家英雄进阶总和
+    int64 firstPayTime = 72; // 首次充值时间
+    int64 accountId = 73; // 关联的账号ID
+}
+
+// 玩家具体信息
+message PlayerInfoExplain {
+        string player_id = 1; // 角色id
+        string name = 2; // 昵称
+        string user_account = 3; // 账号
+        string areaNo = 4; // 所在区
+        string decree = 5; // 政令
+        string decreeLimit = 6; // 政令上限
+        string decreeTime = 7; // 政令结算时间
+        string decreeDayTime = 8; // 政令购买时间
+        string decreeBuyNum = 9; // 政令当天购买次数
+        string fame = 10; // 玩家名望
+        string fameLimit = 11; // 名望上限
+        string fameTime = 12; // 名望结算时间
+        string power = 13; // 势力
+        string fortress = 14; // 要塞数量
+        string wood = 15; // 木材
+        string iron = 16; // 铁
+        string stone = 17; // 石头
+        string food = 18; // 食物
+        string storageLimit = 19; // 资源存储上限
+        string gold = 20; // 元宝
+        string bindGold = 21; // 绑定元宝
+        string coin = 22; // 铜币
+        string honor = 23; // 荣誉
+        string state = 24; // 州：0-流浪
+        string focusCastleId = 25; // 关注城池ID
+        string allianceId = 26; // 所属同盟ID
+        string position = 27; // 职位：0-普通成员 1-盟主 2-副盟主 3-指挥官 4-团长 5-外交官
+        string ctrbtTotal = 28; // 总贡献
+        string ctrbtWeek = 29; // 周贡献
+        string ctrbtYearWeek = 30; // 最近记录贡献的年周
+        string honorWeek = 31; // 周功勋
+        string quitPunishTime = 32; // 退盟惩罚结束时间
+        string occupiedBy = 33; // 玩家被哪个联盟沦陷，如果没有沦陷，则为0
+        string rebelRes = 34; // 玩家被沦陷后，反叛已缴纳资源
+        string lastStrayTime = 35; // 前一次流浪时间：zeroTime-没有流浪过
+        string nextDemandTime = 36; // 下次可进行联盟换卡/捐献的时间
+        string readReqTime = 37; // 读取申请联盟的时间
+        string defenseStatus = 38; // 坚守状态：0-未开启；1-准备中；2-坚守中；3-冷却中
+        string defenseEndTime = 39; // 坚守状态对应的结束时间
+        string selfIntroduction = 40; // 自我介绍
+        string lastEnterGameTime = 41; // 最近一次上线时间
+        string lastLeaveTime = 42; // 最后一次离线时间
+        string birthTime = 43; // 玩家创建账号时间
+        string rookieEndTime = 44; // 新手期结束时间
+        string buildingQueue = 45; // 建筑队列
+        string chestFreePrizeTime = 46; // 免费宝箱领取时间
+        string chestFreeCnt = 47; // 免费宝箱数量
+        string chestKillRefTime = 48; // 击杀宝箱时间
+        string chestKillCnt = 49; // 击杀宝箱击杀数量
+        string chestKillPrize = 50; // 是否已经领取击杀宝箱
+        string moveMainCityTime = 51; // 迁主城CD时间
+        string moveSubCityTime = 52; // 迁分城CD时间
+        string isNotFirstChest = 53; // 是否不是首次抽取宝箱
+        string photoFreeTime = 54; // 可免费换头像时间
+        string photoProtoId = 55; // 头像
+        string photoFreeCount = 56; // 初始剩余免费更换头像次数
+        string worldTalkLimit = 57; // 每天世界频道免费聊天次数
+        string worldTalkLast = 58; // 世界频道最新免费聊天时间
+        string taishouX = 59; // 如果我是太守,这两个字段分别是属于我的郡城的X坐标
+        string taishouY = 60; // 如果我是太守,这两个字段分别是属于我的郡城的Y坐标
+        string equipFreeXilianNum = 61; // 装备免费洗炼次数
+        string equipFreeSuperXilianNum = 62; // 装备免费至尊洗炼次数
+        string equipFreeXilianLastTime = 63; // 上次更新装备免费洗炼次数时间
+        string accType = 64; // 角色类型，标识角色的分类属性，1:正常 2:测试 3:gm/福利 4:其他
+        string vipLv = 65; // VIP等级
+        string isSleep = 66; // 玩家是否处于休眠状态：0-非休眠状态；1-休眠状态
+        string todayHonor = 67; // 玩家本日获得的荣誉值
+        string lastGetHonor = 68; // 上次获得荣誉的时间
+        string allForceFightValue = 69; // 玩家所有部队的战斗力
+        string maxForceFightValue = 70; // 玩家最强部队的战斗力
+        string advLvSum = 71; // 玩家英雄进阶总和
+        string firstPayTime = 72; // 首次充值时间
+        string accountId = 73; // 关联的账号ID
+}
+
+// 公告位置列表
+message NoticePositionList {
+    int64 id = 1;
+    string name = 2;
+    string desc = 3;
+}
+
+// 单服充值记录
+message ChargeLogData {
+    int64 all_total = 1;
+    ChargeLogRtFields fields = 2;
+    repeated ChargeLogRtList list = 3;
+}
+
+// 单服充值字段描述
+message ChargeLogRtFields {
+    string cash = 1;
+    string now_cash = 2;
+    string passport = 3;
+    string time = 4;
+    string user_id = 5;
+    string user_name = 6;
+}
+
+// 单服充值记录列表
+message ChargeLogRtList {
+    string cash = 1;
+    string now_cash = 2;
+    string passport = 3;
+    string time = 4;
+    string user_id = 5;
+    string user_name = 6;
+}
+
+// 在线数据
+message GetOnlineData {
+    repeated GetOnlineRtList list = 1;
+    GetOnlineRtFields fields = 2;
+    repeated Info info = 3;
+    string old_login_count = 4;
+    string reg_count = 5;
+}
+
+
+message GetOnlineRtList {
+    string time = 1;
+    string num = 2;
+    string newNum = 3;
+}
+
+message GetOnlineRtFields {
+    string time = 1;
+    string num = 2;
+    string newNum = 3;
+}
+
+message Info {
+    repeated string info = 1;
+}
+
+// 单服充值排行
+message ChargeRankData {
+    int64 all_total = 1;
+    ChargeRankRtFields fields = 2;
+    repeated ChargeRankRtList list = 3;
+    ChargeRankRtExtra extra = 4;
+}
+
+// 单服充值排行字段描述
+message ChargeRankRtFields {
+    string last_login_time = 1;
+    string last_time = 2;
+    string passport = 3;
+    string total_cash = 4;
+    string user_id = 5;
+    string user_name = 6;
+}
+
+// 单服充值排行列表
+message ChargeRankRtList {
+    string last_login_time = 1;
+    string last_time = 2;
+    string passport = 3;
+    string total_cash = 4;
+    string user_id = 5;
+    string user_name = 6;
+}
+
+// 单服充值排行额外信息
+message ChargeRankRtExtra {
+   string cash_total = 1;
+   string player_count = 2;
+}
+
+// 查询运营概况结果数据
+message GetServerInfoData {
+   repeated GetServerInfoRtList list = 1;
+   GetServerInfoRtFields fields = 2;
+   repeated Extra extra = 3;
+   repeated string countfields = 4;
+}
+
+// 单服充值排行列表信息
+message GetServerInfoRtList {
+   float acu = 1; // 平均在线
+   float arpu = 2; // ARPU值
+   float cash = 3; // 充值金额
+   string dau = 4; // 登陆帐号数
+   int64 dt_time = 5; // DT时间
+   string first_login_count = 6; // 新增帐号数
+   float pay_rate = 7; // 累计付费率
+   string pcu = 8; // 最高在线
+   float per = 9; // 有效转化率
+   string player_count = 10; // 有效用户数
+   float player_rate = 11; // 创建角色率
+   int64 recharge_count = 12; // 去重充值帐号数
+   string recharge_times = 13; // 充值次数
+   string reg_count = 14; // 新创建角色数
+   string time = 15; // 日 期
+}
+
+// 单服充值排行列表信息
+message GetServerInfoRtFields {
+   string acu = 1; // 平均在线
+   string arpu = 2; // ARPU值
+   string cash = 3; // 充值金额
+   string dau = 4; // 登陆帐号数
+   string dt_time = 5; // DT时间
+   string first_login_count = 6; // 新增帐号数
+   string pay_rate = 7; // 累计付费率
+   string pcu = 8; // 最高在线
+   string per = 9; // 有效转化率
+   string player_count = 10; // 有效用户数
+   string player_rate = 11; // 创建角色率
+   string recharge_count = 12; // 去重充值帐号数
+   string recharge_times = 13; // 充值次数
+   string reg_count = 14; // 新创建角色数
+   string time = 15; // 日 期
+}
+
+message Extra {
+    repeated string extra = 1;
+}
+
+// 查询用户留存
+message HaveInfoShanghaiData {
+    repeated HaveInfoData list = 1;
+    HaveInfoData fields = 2;
+}
+
+// 获取游戏资源信息
+message ExplainData {
+    int64 id = 1;
+    string name = 2;
+    string desc = 3;
+}
+
+// 获取英雄信息
+message HeroShanghaiData {
+    int64 id = 1;
+    string name = 2;
+}
+
+// 获取公告位置
+message GetNoticePositionData {
+    repeated NoticePositionList list = 1;
+}
+
+// 获取资源信息
+message GetResourceData {
+     repeated ExplainData resource = 1;
+     repeated ExplainData item = 2;
+     repeated ExplainData params = 3;
+     repeated HeroShanghaiData hero = 4;
+}
+
+// 获取玩家属性信息
+message GetUserDetailDataPlayer {
+    int64 total = 1;
+    PlayerInfoExplain fields = 2;
+    repeated PlayerInfoGm list = 3;
+}
+
+// 获取玩家武将信息
+message GetUserDetailDataHero {
+    int64 total = 1;
+    HeroRtStr fields = 2;
+    repeated HeroInfo list = 3;
+}
+
+// 武将信息字段描述
+message HeroRtStr {
+    string  ID = 1;            // 武将ID
+    string	ProtoId = 2;       // 武将模板ID
+    string	HeroType = 3;      // 武将类型
+    string	Level = 4;         // 武将等级
+    string	Num = 5;           // 武将数量
+    string	AdvLv = 6;         // 阶数
+    string	Exp = 7;           // 武将经验
+    string	Energy = 8;        // 武将体力
+    string	CityId = 9;        // 武将所属于城池Id
+    string	Troops = 10;       // 武将兵力
+    string	SkillId1 = 11;     // 武将技能1
+    string	SkillId2 = 12;     // 武将技能2
+    string	SkillId3 = 13;     // 武将技能3
+    string	GeziId = 14;       // 所在部队格子ID   0表示空闲状态
+    string	HurtState = 15;    // 武将状态 0-正常  1-重伤
+    string	HurtTroops = 16;   // 伤兵数量
+    string	HurtEndTime = 17;  // 重伤恢复完成时间
+    string	ConsumeTime = 18;  // 兵力消耗时间
+    string	PlayerId = 19;     // 玩家编号
+    string	EnergyTime = 20;   // 体力刷新时间
+    string	Army = 21;         // 兵种类型
+}
+
+// 武将信息
+message HeroInfo {
+    int64   ID = 1;
+    int64   ProtoId = 2;        // 武将模板ID
+    int64	HeroType = 3;          // 武将类型
+    int64	Level = 4;              // 武将等级
+    int64	AdvLv = 5;               // 星数
+    int64	Exp = 6;                 // 武将经验
+    int64	Energy  = 7;            // 武将体力
+    int64	CityId = 8;        // 武将所属于城池Id
+    int64	SoliderId = 9;          // 武将配兵ID
+    int64	Troops = 10;             // 武将配兵数量
+    int64	SkillId1 = 11;            // 武将技能1
+    int64	SkillId2 = 12;      // 武将技能2
+    int64	SkillId3 = 13;           // 武将技能3
+    int64	HurtState = 15;          // 武将状态 0-正常  1-重伤
+    int64	HurtTroops = 16;         // 伤兵数量
+    int64	HurtEndTime = 17;        // 重伤恢复完成时间
+    int64	ConsumeTime = 18;        // 兵力消耗时间
+    int64	PlayerId = 19;           // 玩家编号
+    int64	EnergyTime = 20;         // 体力刷新时间
+    int64	Army = 21;               // 兵种类型
+    int64	Awake = 22;              // 觉醒等级
+    int64	Lock = 23;               // 锁 0-未锁 1-锁了
+    int64	IntSkillId1 = 24;        // 武将内政技能1
+    int64	IntSkillId2 = 25;        // 武将内政技能2
+    int64	IntSkillId3 = 26;        // 武将内政技能3
+    int64	IntHeroAddress = 27;     // 非0表示武将在执政中,这个值表示执政位ID
+}
+
+
+// 获取玩家装备信息
+message GetUserDetailDataEquip {
+    int64 total = 1;
+    EquipRtStr fields = 2;
+    repeated NewEquip list = 3;
+}
+
+// 获取玩家装备字段描述
+message EquipRtStr {
+    string ID = 1;                // 装备Id
+   	string EquipProtoId =2 ;           // 装备模板
+   	string ProtoType =3;              // 模板类型  1-普通部位装备  2-套装
+   	string AddInForceId = 4;           // 隶属部队中格子ID(装备使用)
+   	string ForceId = 5;                // 隶属部队ID
+   	string EquipState = 6;              // 装备状态  1-仓库内 2-已装备 3-回收站
+   	string DestroyTime = 7;            // 摧毁时间
+   	string SkillInfo = 8;              // 技能信息
+   	string LastSkillInfo = 9;          // 上次激活影藏属性的属性信息
+   	string HaveNum = 10;                 // 物品数量
+   	string PlayerId = 11;               // 玩家ID
+   	string EquipSkillInfoList = 12;     // 装备上的技能信息
+   	string LastEquipSkillInfoList = 13;  // 上次激活隐藏属性的属性信息
+   	string SkillId = 14;                 // 技能ID
+   	string SkillLv = 15;                // 技能等级
+}
+
+// 玩家装备信息
+message NewEquip {
+    int64 ID = 1;    // 装备Id
+   	int64 EquipProtoId = 2;      // 装备模板
+    int64 EquipState = 3;    // 装备状态  0-仓库内,非0表示武将ID,表示被此武将佩戴
+    int64 EquipOnAddress = 4;   // 佩戴部位  1=武器；2=衣服；3=鞋子；4=饰品；5=腰带；6=戒指
+    int64 HaveNum = 5;  // 物品数量
+    string Propertys = 6;    // 装备属性
+    int64 Lv = 7;
+    int64 Exp   = 8;
+    int64 PlayerId = 9;  // 玩家ID
+}
+
+// 获取玩家邮件信息
+message GetUserDetailDataEmail {
+    int64 total = 1;
+    EmailRtStr fields = 2;
+    repeated PlayerEmail list = 3;
+}
+
+// 获取玩家邮件信息
+message EmailRtStr {
+    string ID = 1;           //邮件ID
+    string SendPlayerId = 2;  //发送玩家Id
+    string SendPlayerName = 3; //发送玩家姓名
+    string SendAllianceId = 4;  //发送人所属联盟
+    string Type = 5;        //邮件类型
+    string Title = 6;     //邮件标题
+    string Message = 7;   //邮件内容
+    string IsRead = 8;        //是否阅读
+    string Attach = 9;      //邮件附件
+    string IsDraw = 10;      //是否领取附件
+    string SendTime = 11;      //邮件发送时间
+    string PlayerId = 12;    //接受者ID
+}
+
+// 获取玩家邮件信息
+message PlayerEmail {
+    int64 ID = 1;
+    int64 SendPlayerId = 2;  //发送玩家Id
+    string SendPlayerName = 3;
+    int64 SendAllianceId = 4;   //发送人所属联盟
+    int64 Type = 5;                      //邮件类型
+    int64 IsRead = 6;                //是否阅读
+    string Attach = 7;              //邮件附件
+    int64 IsDraw = 8;                  //是否领取附件
+    int64 SendTime = 9;      //邮件发送时间
+    int64 PlayerId =10;        //接受者ID
+    int64 GMEmailId = 11;         //用来记录后台发送奖励时的Id
+    string MailInfoString = 12; //邮件内容(标题 + 内容)
+}
+
+// 获取玩家建筑信息
+message GetUserDetailDataBuilding {
+    int64 total = 1;
+    BuildingRtStr fields = 2;
+    repeated PlayerBuilding list = 3;
+}
+
+// 玩家建筑信息字段描述
+message BuildingRtStr {
+    string ID = 1;         // 建筑ID
+    string Type = 2;      // 类型
+    string Lv = 3;            // 等级
+    string CompleteTime = 4; // 建筑完成时间
+    string State = 5;        // 建筑状态
+    string IsRent = 6;      // 是否是租借升级的
+    string CityId = 7;      // 所属城池Id（关联的城池Id）
+    string PlayerId = 8; // 所属玩家Id
+}
+
+// 玩家建筑信息
+message PlayerBuilding {
+    int64 ID = 1;
+    int64 X = 2; // 建筑
+    int64 Y = 3; // 位置ID
+    int64 Type = 4; // 类型
+    int64 Lv =5;  // 等级
+    int64 CompleteTime = 6; // 建筑升级完成时间
+    int64 State = 7;        // 建筑升级状态
+    int64 DestroyTime = 8;   // 建筑拆除完成时间
+    int64 DestroyState = 9;             // 建筑拆除状态
+    string HelperIds = 10;    // 帮忙加速过的玩家
+    int64 HelpId = 11;      // 对应的帮派帮助表里的ID
+    int64 CityId = 12;   // 所属城池Id（关联的城池Id）
+    int64 PlayerId = 13;  // 所属玩家Id
+}
+
+// 获取玩家城池信息
+message GetUserDetailDataCastle {
+    int64 total = 1;
+    CastleRtStr fields = 2;
+    repeated PlayerCastle list = 3;
+}
+
+// 玩家城池信息字段描述
+message CastleRtStr {
+    string ID = 1;                     // 城池Id
+    string	Name = 2;                     // 城池名
+    string	ProtoId = 3;                  // 城池模板ID
+    string	Lv = 4;                      // 城池等级
+    string	X = 5;                        // 城池x坐标
+    string	Y = 6;                        // 城池y坐标
+    string	Cost = 7;                     // 城池cost值
+    string	Type = 8;                     // 城池类型
+    string	ReadySoldier = 9;             // 当前预备兵
+    string	MaxReadySoldier = 10;          // 上限预备兵
+    string	ExpeditionQueue = 11;          // 出征队列
+    string	ExtensionNum = 12;             // 已扩建次数
+    string	ExtensionNumSum = 13;          // 扩建次数上限
+    string	PrepareConscriptionTime = 14;   // 预征兵刷新时间
+    string	DurabilityRefurbish = 15;      // 耐久刷新时间
+    string	CastleOpenQinfengNum = 16;     // 开启队列前锋数量
+    string	CastleHold = 17;               // 当前城池容纳
+    string	BuildingQueue = 18;            // 建筑队列
+    string	RentBuildingQueue = 19;        // 建筑队列(租借)
+    string	PlayerId  = 20;                // 玩家id
+    string	GiveUpTime = 21;               // 拆除城池时间
+    string	PrepareConscriptionSpeed = 22; // 本城的预征兵恢复速度
+    string	AddBingliMax = 23;             // 本城的兵力加成
+    string	AddWarningTime = 24;           // 本城的增加预警时间
+    string	AddLook = 25;                  // 本城的增加视野
+}
+
+// 玩家城池信息
+message PlayerCastle {
+    int64 ID = 1;
+    string Name = 2;
+   	int64 ProtoId = 3;
+   	int64 Lv = 4;
+   	int64 X = 5;
+   	int64 Y = 6;
+   	float Cost = 7;
+   	int64 Type = 8;
+   	int64 ReadySoldier = 9;
+   	int64 MaxReadySoldier = 10;
+   	int64 ExpeditionQueue = 11;
+   	int64 ExtensionNum = 12;
+   	int64 ExtensionNumSum = 13;
+   	int64 PrepareConscriptionTime = 14;
+   	int64 DurabilityRefurbish = 15;
+   	int64 CastleOpenQinfengNum =16;
+   	int64 CastleHold = 17;
+   	int64 BuildingQueue = 18;
+   	int64 RentBuildingQueue = 19;
+   	int64 PlayerId = 20;
+   	int64 GiveUpTime = 21;
+   	int64 PrepareConscriptionSpeed = 22;
+   	int64 AddBingliMax =23;
+   	int64 AddWarningTime = 24;
+   	int64 AddLook = 25;
+   	int64 AddTowerTroopsMax = 26;
+   	int64 AddJjcTroopsMax = 27;
+   	int64 AddJjcForcesMax = 28;
+   	int64 AddJjcPlansMax = 29;
+   	string LockInfo = 30;
+   	int64 WoodSpecialSkill = 31;
+   	int64 IronSpecialSkill =32;
+   	int64 QuarrySpecialSkill = 33;
+   	int64 FootSpecialSkill = 34;
+   	int64 WalkAddSudu = 35;
+   	int64 AddWorldWalkSpeed = 36;
+   	string SpecialSkill = 37;
+   	string DefSpecialSkill = 38;
+   	string RelicSkill = 39;
+   	string Defenders = 40 ;
+   	int64 AddBuildSpeedForFlag = 41;
+   	int64 AddTroopsMax = 42;
+}
+
+// 获取玩家部队信息
+message GetUserDetailDataForce {
+    int64 total = 1;
+    ForceRtStr fields = 2;
+    repeated PlayerForce list = 3;
+}
+
+// 玩家部队信息字段描述
+message ForceRtStr {
+    string  ForceId = 1;             //部队ID
+    string	ForceAddId = 2;          // 部队在城中的位置编号 1-5
+    string	ForceState = 3;           // 部队状态  1-待命 2-行军 3-驻守 4-屯田 5-征兵 6-回城 7-练兵
+    string	ForceInWhatCity = 4;      // 部队所在一级归属 (主城或者分城)
+    string	ForceInWhatFortress = 5;  // 部队所在二级归属 (要塞或者军营)
+    string	ForceTimeDeparture = 6;   // 出征时间
+    string	ForceTimeArrival = 7;     // 到达时间(这个字段和上面的出征时间不知道谁写的没有用到.现在这个到达时间捆绑到下面的XY一起设置.就是表示上一次行军结束时间)
+    string	ForcePositionX = 8;       // 部队位置X
+    string	ForcePositionY = 9;       // 部队位置Y
+    string	ForceNowWalkKey = 10;      // 当前的行军ID
+    string	ForceLeaveTime = 11;       // 但是这个记录这个时间只是为了给客户端显示,不用做计算,因为这个时间只是理论实践,如练兵时.有可能被进攻而导致提前回城..对部队的操作全部依赖心跳)
+    string	ForceMaster = 12;          // 部队主人
+    string	InArmyGroup = 13;          // 隶属郡城军团ID(就是集结在了郡城的军团中) 没有就是0
+    string	InArmyGroupAddress = 14;   // 在军团中的位置
+    string	IsFightForArmyGroup = 15;  // 是否已经为军团战斗过了  0-否 1-是 2-战斗完毕并且已经回归到起点
+    string	HaveFood = 16;             // 部队携带的食物
+    string	HaveWood = 17;             // 部队携带的木头
+    string	HaveIron = 18;             // 部队携带的铁
+    string	HaveStone = 19;            // 部队携带的石头
+    string	HaveGold = 20;            // 部队携带的铜币
+    string	TaozhuangId = 21;          // 套装ID
+}
+
+// 玩家部队信息字段描述
+message PlayerForce {
+    int64 ID = 1;
+    int64 ForceAddId = 2;              // 部队在城中的位置编号 1-5
+    int64 ForceState = 3;                 // 部队状态  1-待命 2-行军 3-驻守 4-屯田 5-征兵 6-回城 7-练兵
+    int64 ForceInWhatCity = 4;       // 部队所在一级归属 (主城或者分城)
+    int64 ForceInWhatFortress = 5;   // 部队所在二级归属 (要塞或者军营)
+    int64 ForceTimeArrival = 6;     // 到达时间(这个字段和上面的出征时间不知道谁写的没有用到.现在这个到达时间捆绑到下面的XY一起设置.就是表示上一次行军结束时间)
+    int64 ForcePositionX = 7;                   // 部队位置X
+    int64 ForcePositionY = 8;                 // 部队位置Y
+    int64 ForceLeaveTime = 9;      // 但是这个记录这个时间只是为了给客户端显示,不用做计算,因为这个时间只是理论实践,如练兵时.有可能被进攻而导致提前回城..对部队的操作全部依赖心跳)
+    int64 ForceMaster = 10;          // 部队主人
+    int64 InArmyGroup = 11;          // 隶属郡城军团ID(就是集结在了郡城的军团中) 没有就是0
+    int64 InArmyGroupAddress = 12;              // 在军团中的位置
+    int64 IsFightForArmyGroup = 13;             // 是否已经为军团战斗过了  0-否 1-是 2-战斗完毕并且已经回归到起点
+    int64 HaveFood = 14;                           // 部队携带的食物
+    int64 HaveWood = 15;                        // 部队携带的木头
+    int64 HaveIron = 16;                        // 部队携带的铁
+    int64 HaveStone = 17;                     // 部队携带的石头
+    int64 HaveGold = 18;                          // 部队携带的铜币
+}
+
+// 获取玩家土地信息
+message GetUserDetailDataCell {
+    int64 total = 1;
+    CellRtStr fields = 2;
+    repeated PlayerCell list = 3;
+}
+
+// 获取玩家土地信息
+message CellRtStr {
+    string ID = 1; //土地Id
+    string	X  = 2;                //地块坐标X
+    string	Y = 3;                 //地块坐标Y
+    string	Type = 4;              //地块类型
+    string	CityId = 5;            //地图格子城池ID (如果是0表示没有被建造,仍然是一块空地)
+    string	Belong = 6;            //城池个人归属
+    string	AllianceBelong = 7;    //城池帮会归属(NPC城池的主人是帮会不是个人)
+    string	BuildingQueue = 8;     //城池队列
+    string	IsBuilding  = 9;       //是否正在被建造  0-没有 非0-正在建造的建筑类型
+    string	BuildingTime = 10;      //如果正在被建造,这个字段是完成时间
+    string	BuildName = 11;         //如果正在被建造,这个字段是玩家给建筑取得名字
+    string	CurrentDurability = 12;  //当前耐久度
+    string	MaxDurability = 13;     //土地耐久上限
+    string	DurabilityTime = 14;    //耐久刷新时间
+    string	InBuildForce  = 15;     //暂时在本地块的部队集合(其实是一个key.)
+    string	BirMasterId  = 16;      //这是建造者ID
+    string	BirMasterName = 17;     //这是建造者名字
+    string	GiveUpTime = 18;        //本块地的放弃信息
+    string	WalkInfoOnLand = 19;    //将本地块作为行军起点或者终点的部队信息
+    string	WarFreeTime = 20;       //免战到点时间
+    string	CrackTypeId  = 21;      //地图事件的类型ID
+    string	CrackProtoId  = 22;     //地图事件的ID
+    string	CrackEndTime = 23;      //地图事件消失时间
+}
+
+// 获取玩家土地信息
+message PlayerCell {
+    int64 ID = 1;
+    int64 X =2;                 //地块坐标X
+    int64 Y = 3;                       //地块坐标Y
+    int64 Type = 4;                     //地块类型
+    int64 CityId = 5;          //地图格子城池ID (如果是0表示没有被建造,仍然是一块空地)
+    int64 Belong = 6;          //城池个人归属
+    int64 AllianceBelong = 7;    //城池帮会归属(NPC城池的主人是帮会不是个人)
+    int64 BuildingQueue = 8;            //城池队列
+    int64 IsBuilding = 9;               //是否正在被建造  0-没有 非0-正在建造的建筑类型
+    int64 BuildingTime = 10;    //如果正在被建造,这个字段是完成时间
+    string BuildName = 11;           //如果正在被建造,这个字段是玩家给建筑取得名字
+    int64 CurrentDurability = 12;          //当前耐久度
+    int64 MaxDurability = 13;                //土地耐久上限
+    int64 DurabilityTime = 14;    //耐久刷新时间
+    int64 InBuildForce = 15;          //暂时在本地块的部队集合(其实是一个key.)
+    int64 BirMasterId = 16;    //这是建造者ID
+    string BirMasterName = 17;     //这是建造者名字
+    int64 GiveUpTime = 18;    //本块地的放弃信息
+    int64 WalkInfoOnLand = 19;              //将本地块作为行军起点或者终点的部队信息
+    int64 WarFreeTime = 20;     //免战到点时间
+    int64 CrackTypeId = 21;             //地图事件的类型ID
+    int64 CrackProtoId = 22;             //地图事件的ID
+    int64 CrackEndTime = 23;  //地图事件消失时间
+}
+
+
+
+
+
+
+
+

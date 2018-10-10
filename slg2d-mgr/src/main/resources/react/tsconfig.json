@@ -1,0 +1,35 @@
+{
+  "version": "2.7.2",
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es6",
+    "lib": ["es6", "dom"],
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "outDir": "dist"
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useBabel": true,
+    "useCache": true,
+    "emitRequireType": false
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "static",
+    "webpack"
+  ]
+}

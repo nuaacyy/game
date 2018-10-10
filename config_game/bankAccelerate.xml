@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" type="1" time="3600" buildId="13" buildLv="1" accelerate="600" props="14;20101;20"></l>
+	<l id="2" type="1" time="3600" buildId="13" buildLv="2" accelerate="1200" props="14;20101;40"></l>
+	<l id="3" type="1" time="3600" buildId="13" buildLv="3" accelerate="1800" props="14;20101;60"></l>
+	<l id="4" type="1" time="3600" buildId="13" buildLv="4" accelerate="2700" props="14;20101;85"></l>
+	<l id="5" type="1" time="3600" buildId="13" buildLv="5" accelerate="3600" props="14;20101;110"></l>
+	<l id="6" type="1" time="3600" buildId="13" buildLv="6" accelerate="5400" props="14;20101;150"></l>
+	<l id="7" type="1" time="3600" buildId="13" buildLv="7" accelerate="7200" props="14;20101;190"></l>
+	<l id="8" type="1" time="3600" buildId="13" buildLv="8" accelerate="9000" props="14;20101;230"></l>
+	<l id="9" type="1" time="3600" buildId="13" buildLv="9" accelerate="10800" props="14;20101;270"></l>
+	<l id="10" type="2" time="28800" buildId="13" buildLv="3" accelerate="1800" props="14;20102;14"></l>
+	<l id="11" type="2" time="28800" buildId="13" buildLv="4" accelerate="2700" props="14;20102;19"></l>
+	<l id="12" type="2" time="28800" buildId="13" buildLv="5" accelerate="3600" props="14;20102;24"></l>
+	<l id="13" type="2" time="28800" buildId="13" buildLv="6" accelerate="5400" props="14;20102;30"></l>
+	<l id="14" type="2" time="28800" buildId="13" buildLv="7" accelerate="7200" props="14;20102;36"></l>
+	<l id="15" type="2" time="28800" buildId="13" buildLv="8" accelerate="9000" props="14;20102;42"></l>
+	<l id="16" type="2" time="28800" buildId="13" buildLv="9" accelerate="10800" props="14;20102;48"></l>
+	<l id="17" type="3" time="86400" buildId="13" buildLv="5" accelerate="3600" props="14;20103;15"></l>
+	<l id="18" type="3" time="86400" buildId="13" buildLv="6" accelerate="5400" props="14;20103;18"></l>
+	<l id="19" type="3" time="86400" buildId="13" buildLv="7" accelerate="7200" props="14;20103;21"></l>
+	<l id="20" type="3" time="86400" buildId="13" buildLv="8" accelerate="9000" props="14;20103;24"></l>
+	<l id="21" type="3" time="86400" buildId="13" buildLv="9" accelerate="10800" props="14;20103;27"></l>
+</r>

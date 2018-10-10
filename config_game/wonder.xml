@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" type="1" incidenceBig="100;100" incidenceBigLv="4" incidenceMid="64;64" incidenceMidLv="5" incidenceSmall="8;8" occupyTime="1;1800|1800;1200|3600;600" incidenceBase="2;2"></l>
+	<l id="2" type="2" incidenceBig="50;50" incidenceBigLv="3" incidenceMid="16;16" incidenceMidLv="4" incidenceSmall="6;6" occupyTime="1;1800|1800;1200|3600;600" incidenceBase="2;2"></l>
+</r>

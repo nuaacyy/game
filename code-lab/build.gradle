@@ -1,0 +1,50 @@
+archivesBaseName = 'code-lab'
+
+//apply plugin: 'application'
+//
+//mainClassName = "labentry.MainKt"
+
+task binTar(type: Tar, dependsOn: jar) {
+	extension = 'tar.gz'
+	baseName = project.name
+	compression = Compression.GZIP
+
+	from(configurations.runtime) {
+		into("bin")
+	}
+
+	from("build/libs/code-lab.jar") {
+		into("bin")
+	}
+
+	from("cfg/zkconfig.json") {
+		into("bin/cfg")
+	}
+
+	from("cfg/zkdata.txt") {
+		into("bin/cfg")
+	}
+}
+
+dependencies {
+	compile project(":slg2d-common")
+
+	compile("org.springframework:spring-orm:$spring_version")
+	compile("org.springframework.boot:spring-boot-starter-web:$spring_boot_version")
+}
+
+jar {
+	manifest {
+		attributes(
+			'Main-Class': 'MainKt',
+			"Class-Path": configurations.compile.collect { it.getName() }.join(' '),
+		)
+	}
+}
+
+task configHotUpload(type: JavaExec, dependsOn: classes) {
+	args(["ConfigHotUpload"])
+	description = "Config Hot Upload"
+	main = "MainKt"
+	classpath = sourceSets.main.runtimeClasspath
+}

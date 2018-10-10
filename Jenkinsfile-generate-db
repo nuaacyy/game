@@ -1,0 +1,14 @@
+pipeline {
+	agent any
+	stages {
+		stage("DumpDB") {
+			steps {
+				sshagent(['gitlab-201-jenkins']) {
+					sh '''
+					bash ci/generate-db.sh 1.1.x develop
+					'''
+				}
+			}
+		}
+	}
+}

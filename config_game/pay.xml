@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" type="1" cost="6" name="3429887657" desc="0" bgResId="p1" payMoney="7;60" returnCredits="7;6" firstReturn="7;60" creditsCount="60" platform="0" productId="1"></l>
+	<l id="2" type="1" cost="30" name="3429887657" desc="0" bgResId="p2" payMoney="7;300" returnCredits="7;30" firstReturn="7;300" creditsCount="300" platform="0" productId="2"></l>
+	<l id="3" type="1" cost="98" name="3429887657" desc="0" bgResId="p3" payMoney="7;980" returnCredits="7;98" firstReturn="7;980" creditsCount="980" platform="0" productId="3"></l>
+	<l id="4" type="1" cost="198" name="3429874632" desc="0" bgResId="p4" payMoney="7;1980" returnCredits="7;198" firstReturn="7;1980" creditsCount="1980" platform="0" productId="4"></l>
+	<l id="5" type="1" cost="328" name="3429874632" desc="0" bgResId="p6" payMoney="7;3280" returnCredits="7;328" firstReturn="7;3280" creditsCount="3280" platform="0" productId="5"></l>
+	<l id="6" type="2" cost="648" name="3703778316" desc="1644959551" bgResId="p7" payMoney="7;6480" returnCredits="7;648" firstReturn="7;6480" creditsCount="6480" platform="0" productId="6"></l>
+	<l id="7" type="1" cost="6" name="3429887657" desc="1661848043" bgResId="p1" payMoney="7;60" returnCredits="7;6" firstReturn="7;60" creditsCount="60" platform="2147" productId="com.gtarcade.eoc.gold0"></l>
+	<l id="8" type="1" cost="6" name="3429887657" desc="1661848043" bgResId="p1" payMoney="7;60" returnCredits="7;6" firstReturn="7;60" creditsCount="60" platform="2107" productId="com.uuzu.nslm.jjzz.1"></l>
+	<l id="9" type="1" cost="98" name="3429887657" desc="64273696" bgResId="p3" payMoney="7;980" returnCredits="7;98" firstReturn="7;980" creditsCount="980" platform="2000" productId="9"></l>
+	<l id="10" type="1" cost="198" name="3429874632" desc="915071656" bgResId="p4" payMoney="7;1980" returnCredits="7;198" firstReturn="7;1980" creditsCount="1980" platform="2000" productId="10"></l>
+	<l id="11" type="1" cost="328" name="3429874632" desc="517063946" bgResId="p6" payMoney="7;3280" returnCredits="7;328" firstReturn="7;3280" creditsCount="3280" platform="2000" productId="11"></l>
+	<l id="12" type="1" cost="648" name="3703778316" desc="1111758401" bgResId="p7" payMoney="7;6480" returnCredits="7;648" firstReturn="7;6480" creditsCount="6480" platform="2000" productId="12"></l>
+</r>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1001" buildType="1" name="95020130" bornType="1" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="0" desc="1790765363" listDesc="449075983" canScout="1"></l>
+	<l id="1002" buildType="2" name="102166714" bornType="1" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="1" desc="2600584079" listDesc="2184806768" canScout="1"></l>
+	<l id="1003" buildType="3" name="90301538" bornType="1" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="0" desc="1000907017" listDesc="1712513509" canScout="1"></l>
+	<l id="1004" buildType="4" name="2496635304" bornType="3" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="0" desc="2535932882" listDesc="944102564" canScout="1"></l>
+	<l id="1005" buildType="5" name="2224585410" bornType="3" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="0" desc="1755584505" listDesc="4237327918" canScout="1"></l>
+	<l id="1006" buildType="6" name="4206945844" bornType="3" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="0" desc="1544987293" listDesc="3243564359" canScout="1"></l>
+	<l id="1007" buildType="7" name="2224278353" bornType="3" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="0" desc="1915913137" listDesc="91106226" canScout="1"></l>
+	<l id="1008" buildType="8" name="4218285340" bornType="3" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="0" desc="1506691401" listDesc="3641907069" canScout="1"></l>
+	<l id="1009" buildType="9" name="3155008030" bornType="3" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="0" desc="3291748426" listDesc="348335112" canScout="1"></l>
+	<l id="1010" buildType="10" name="2550285007" bornType="3" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="0" desc="2845608199" listDesc="3658266457" canScout="1"></l>
+	<l id="1012" buildType="12" name="836493051" bornType="2" topLevel="1" stateShow="1;mark_1|2;knock" helpDesc="1" desc="3066104045" listDesc="2215834440" canScout="0"></l>
+	<l id="1013" buildType="13" name="1443767114" bornType="2" topLevel="9" stateShow="1;mark_1|2;knock" helpDesc="1" desc="3398184490" listDesc="3165790202" canScout="0"></l>
+	<l id="1014" buildType="14" name="56098157" bornType="1" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="0" desc="1658981547" listDesc="2609890169" canScout="1"></l>
+	<l id="1015" buildType="15" name="2441923095" bornType="2" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="0" desc="4107253063" listDesc="4016054895" canScout="1"></l>
+	<l id="1016" buildType="16" name="63448410" bornType="2" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="1" desc="2337840755" listDesc="1085746626" canScout="1"></l>
+	<l id="1017" buildType="17" name="2468036741" bornType="2" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="1" desc="3566880467" listDesc="581391134" canScout="1"></l>
+	<l id="1018" buildType="18" name="1503982049" bornType="2" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="0" desc="3979518373" listDesc="3753852296" canScout="1"></l>
+	<l id="1019" buildType="19" name="3199767529" bornType="2" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="0" desc="3952874392" listDesc="2304866187" canScout="1"></l>
+	<l id="1020" buildType="20" name="2925171451" bornType="1" topLevel="1" stateShow="1;mark_1|2;knock" helpDesc="0" desc="2419161485" listDesc="3198140472" canScout="1"></l>
+	<l id="1022" buildType="22" name="2303114065" bornType="1" topLevel="1" stateShow="1;mark_1|2;knock" helpDesc="1" desc="888052155" listDesc="757316486" canScout="0"></l>
+	<l id="1023" buildType="23" name="2573694570" bornType="1" topLevel="1" stateShow="1;mark_1|2;knock" helpDesc="1" desc="847121779" listDesc="3171456097" canScout="0"></l>
+	<l id="1024" buildType="24" name="2083765506" bornType="2" topLevel="1" stateShow="1;mark_1|2;knock" helpDesc="0" desc="3776666628" listDesc="815758930" canScout="0"></l>
+	<l id="1025" buildType="25" name="3749299567" bornType="2" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="1" desc="131040802" listDesc="1648916754" canScout="1"></l>
+	<l id="1029" buildType="29" name="1929623718" bornType="1" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="0" desc="2367452980" listDesc="2574540076" canScout="1"></l>
+	<l id="1030" buildType="30" name="3027219740" bornType="1" topLevel="25" stateShow="1;mark_1|2;knock" helpDesc="0" desc="1603923300" listDesc="1335214917" canScout="1"></l>
+	<l id="1033" buildType="33" name="4206901988" bornType="2" topLevel="1" stateShow="1;mark_1|2;knock" helpDesc="1" desc="4206901988" listDesc="4206901988" canScout="0"></l>
+	<l id="1034" buildType="34" name="340877374" bornType="1" topLevel="1" stateShow="1;mark_1|2;knock" helpDesc="1" desc="1847141146" listDesc="340877374" canScout="0"></l>
+</r>

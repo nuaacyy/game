@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" boxLevel="1" boxTime="1:10800:7000%2:28800:3000" award="32011;1;4000|32012;1;6000" Name="2759093004" icon="TimeBox_1" effect="Box_1" lan="3746963723"></l>
+	<l id="2" boxLevel="2" boxTime="1:10800:5000%2:28800:5000" award="32013;1;4000|32014;1;6000" Name="2355808477" icon="TimeBox_1" effect="Box_1" lan="3746963723"></l>
+	<l id="3" boxLevel="3" boxTime="1:10800:3000%2:28800:7000" award="32016;1;4000|32017;1;6000" Name="3921892418" icon="TimeBox_1" effect="Box_1" lan="3746963723"></l>
+	<l id="4" boxLevel="4" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32018;1;4000|32019;1;6000" Name="3518607891" icon="TimeBox_1" effect="Box_1" lan="3746963723"></l>
+	<l id="5" boxLevel="5" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32018;1;4000|32019;1;6000" Name="789724536" icon="TimeBox_1" effect="Box_1" lan="3746963723"></l>
+	<l id="6" boxLevel="6" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32011;1;4000|32012;1;6000" Name="386440009" icon="TimeBox_2" effect="Box_2" lan="3746963723"></l>
+	<l id="7" boxLevel="7" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32013;1;4000|32014;1;6000" Name="1952523950" icon="TimeBox_2" effect="Box_2" lan="3746963723"></l>
+	<l id="8" boxLevel="8" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32016;1;4000|32017;1;6000" Name="1549239423" icon="TimeBox_2" effect="Box_2" lan="3746963723"></l>
+	<l id="9" boxLevel="9" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32018;1;4000|32019;1;6000" Name="3115323364" icon="TimeBox_2" effect="Box_2" lan="3746963723"></l>
+	<l id="10" boxLevel="10" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32018;1;4000|32019;1;6000" Name="3345246988" icon="TimeBox_2" effect="Box_2" lan="3746963723"></l>
+	<l id="11" boxLevel="11" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32011;1;4000|32012;1;6000" Name="1006594828" icon="TimeBox_3" effect="Box_3" lan="3746963723"></l>
+	<l id="12" boxLevel="12" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32013;1;4000|32014;1;6000" Name="2962909964" icon="TimeBox_3" effect="Box_3" lan="3746963723"></l>
+	<l id="13" boxLevel="13" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32016;1;4000|32017;1;6000" Name="624257804" icon="TimeBox_3" effect="Box_3" lan="3746963723"></l>
+	<l id="14" boxLevel="14" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32018;1;4000|32019;1;6000" Name="4109921036" icon="TimeBox_3" effect="Box_3" lan="3746963723"></l>
+	<l id="15" boxLevel="15" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32018;1;4000|32019;1;6000" Name="1771268876" icon="TimeBox_3" effect="Box_3" lan="3746963723"></l>
+	<l id="16" boxLevel="16" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32011;1;4000|32012;1;6000" Name="3727584012" icon="TimeBox_4" effect="Box_4" lan="3746963723"></l>
+	<l id="17" boxLevel="17" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32013;1;4000|32014;1;6000" Name="1388931852" icon="TimeBox_4" effect="Box_4" lan="3746963723"></l>
+	<l id="18" boxLevel="18" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32016;1;4000|32017;1;6000" Name="1815898892" icon="TimeBox_4" effect="Box_4" lan="3746963723"></l>
+	<l id="19" boxLevel="19" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32018;1;4000|32019;1;6000" Name="3772214028" icon="TimeBox_4" effect="Box_4" lan="3746963723"></l>
+	<l id="20" boxLevel="20" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32018;1;4000|32019;1;6000" Name="2941962461" icon="TimeBox_4" effect="Box_4" lan="3746963723"></l>
+	<l id="21" boxLevel="21" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32011;1;4000|32012;1;6000" Name="603310301" icon="TimeBox_5" effect="Box_5" lan="3746963723"></l>
+	<l id="22" boxLevel="22" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32013;1;4000|32014;1;6000" Name="2559625437" icon="TimeBox_5" effect="Box_5" lan="3746963723"></l>
+	<l id="23" boxLevel="23" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32016;1;4000|32017;1;6000" Name="220973277" icon="TimeBox_5" effect="Box_5" lan="3746963723"></l>
+	<l id="24" boxLevel="24" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32018;1;4000|32019;1;6000" Name="3706636509" icon="TimeBox_5" effect="Box_5" lan="3746963723"></l>
+	<l id="25" boxLevel="25" boxTime="1:10800:4000%2:28800:3000%3:43200:3000" award="32018;1;4000|32019;1;6000" Name="1367984349" icon="TimeBox_5" effect="Box_5" lan="3746963723"></l>
+</r>

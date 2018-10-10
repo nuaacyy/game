@@ -1,0 +1,12 @@
+rootProject.name = "slg2d"
+
+include "code-lab"
+include "slg2d-common"
+include "slg2d-gate"
+include "slg2d-home"
+include "slg2d-login"
+include "slg2d-mgr"
+include "slg2d-public"
+include "slg2d-rebuild-db"
+include "slg2d-robot"
+include "slg2d-world"

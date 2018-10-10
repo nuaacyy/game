@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" rank="17001;20000" npc="1;1" model="1003" head="1"></l>
+	<l id="2" rank="14001;17000" npc="2;1" model="1012" head="2"></l>
+	<l id="3" rank="12001;14000" npc="3;1" model="1013" head="3"></l>
+	<l id="4" rank="9001;12000" npc="4;1" model="1017" head="4"></l>
+	<l id="5" rank="6001;9000" npc="5;1" model="1019" head="5"></l>
+	<l id="6" rank="3001;6000" npc="6;1" model="1003" head="6"></l>
+	<l id="7" rank="1001;3000" npc="7;1" model="1012" head="7"></l>
+	<l id="8" rank="501;1000" npc="8;1" model="1013" head="1"></l>
+	<l id="9" rank="301;500" npc="9;1" model="1017" head="2"></l>
+	<l id="10" rank="101;300" npc="10;1" model="1019" head="3"></l>
+	<l id="11" rank="51;100" npc="11;1" model="1003" head="4"></l>
+	<l id="12" rank="31;50" npc="12;1" model="1012" head="5"></l>
+	<l id="13" rank="11;30" npc="13;1" model="1013" head="6"></l>
+	<l id="14" rank="5;10" npc="14;1" model="1017" head="7"></l>
+	<l id="15" rank="4;4" npc="15;1" model="1019" head="1"></l>
+	<l id="16" rank="3;3" npc="16;1" model="1003" head="2"></l>
+	<l id="17" rank="2;2" npc="17;1" model="1012" head="3"></l>
+	<l id="18" rank="1;1" npc="18;1" model="1013" head="4"></l>
+</r>

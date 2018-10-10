@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" castleLv="1" group="1;3000|2;4000|3;3000"></l>
+	<l id="2" castleLv="2" group="2;3000|3;4000|4;3000"></l>
+	<l id="3" castleLv="3" group="3;3000|4;4000|5;3000"></l>
+	<l id="4" castleLv="4" group="4;3000|5;4000|6;3000"></l>
+	<l id="5" castleLv="5" group="5;3000|6;4000|7;3000"></l>
+	<l id="6" castleLv="8" group="6;3000|7;4000|8;3000"></l>
+	<l id="7" castleLv="10" group="4;5000|7;5000"></l>
+	<l id="8" castleLv="15" group="9;10000"></l>
+</r>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" crystalPool="0" crystalIncrement="1000;3000"></l>
+	<l id="2" crystalPool="100000" crystalIncrement="800;2000"></l>
+	<l id="3" crystalPool="1000000" crystalIncrement="700;1800"></l>
+	<l id="4" crystalPool="10000000" crystalIncrement="10;100"></l>
+</r>

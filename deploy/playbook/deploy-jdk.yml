@@ -1,0 +1,11 @@
+---
+- hosts: "{{host}}"
+  roles:
+    - srsp.oracle-java
+  vars:
+    java_version: 8
+    java_subversion: 181
+    java_mirror: http://192.168.189.8:10000/jdk
+    java_set_javahome: true
+  become: yes
+  become_method: sudo

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="20001" name="加速投资引导" is_break="1" begin_place="0" begin_place_value1="0" begin_place_value2="0" active_condition="1;10001;1" priority="1" guaid_id="2001" force_guide="1" is_force_break="1"></l>
+</r>

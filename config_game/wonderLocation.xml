@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" name="3646855001" wondersType="1" coordinateX="206" coordinateY="206" warTime="0;5400|7200;4500|10800;3600|14400;2700|18000;1200" buff="0" picture="bigWonder_1" pictureMap="Img_01" reward="1_1:80_25_26_27:1000%2_2:28_29_30:2000%3_3:7_32_33:3000" incidenceMidMonster="1001"></l>
+	<l id="2" name="3273383590" wondersType="2" coordinateX="231" coordinateY="103" warTime="0;3600|7200;3000|10800;2400|14400;1800|18000;1200" buff="145;2500" picture="smallWonder_1" pictureMap="Img_02" reward="0" incidenceMidMonster="1002"></l>
+	<l id="3" name="709771256" wondersType="2" coordinateX="103" coordinateY="231" warTime="0;3600|7200;3000|10800;2400|14400;1800|18000;1200" buff="146;2500" picture="smallWonder_2" pictureMap="Img_03" reward="0" incidenceMidMonster="1002"></l>
+	<l id="4" name="3324303916" wondersType="2" coordinateX="359" coordinateY="103" warTime="0;3600|7200;3000|10800;2400|14400;1800|18000;1200" buff="147;2500" picture="smallWonder_3" pictureMap="Img_04" reward="0" incidenceMidMonster="1002"></l>
+	<l id="5" name="3284458732" wondersType="2" coordinateX="359" coordinateY="231" warTime="0;3600|7200;3000|10800;2400|14400;1800|18000;1200" buff="148;2500|151;2500" picture="smallWonder_4" pictureMap="Img_05" reward="0" incidenceMidMonster="1002"></l>
+	<l id="6" name="491408675" wondersType="2" coordinateX="103" coordinateY="359" warTime="0;3600|7200;3000|10800;2400|14400;1800|18000;1200" buff="148;2500|151;2500" picture="smallWonder_5" pictureMap="Img_06" reward="0" incidenceMidMonster="1002"></l>
+	<l id="7" name="3367128010" wondersType="2" coordinateX="231" coordinateY="359" warTime="0;3600|7200;3000|10800;2400|14400;1800|18000;1200" buff="148;2500|151;2500" picture="smallWonder_6" pictureMap="Img_07" reward="0" incidenceMidMonster="1002"></l>
+</r>

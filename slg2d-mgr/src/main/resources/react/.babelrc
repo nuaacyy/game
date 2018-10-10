@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "react",
+    "env",
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "add-module-exports",
+    ["import", {
+      "libraryName": "antd",
+      "style": "css"   // or 'css'
+    }]
+  ]
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" actionKey="idle" picName="0"></l>
+	<l id="2" actionKey="idle2" picName="1"></l>
+	<l id="3" actionKey="run1" picName="2"></l>
+	<l id="4" actionKey="run2" picName="3"></l>
+	<l id="5" actionKey="atk1" picName="101"></l>
+	<l id="6" actionKey="atk2" picName="102"></l>
+	<l id="7" actionKey="atk3" picName="103"></l>
+	<l id="8" actionKey="hit" picName="100"></l>
+	<l id="9" actionKey="hit_fly" picName="7"></l>
+	<l id="10" actionKey="fly_up" picName="8"></l>
+	<l id="11" actionKey="hit_back" picName="5"></l>
+	<l id="12" actionKey="dizzy" picName="6"></l>
+	<l id="13" actionKey="fall" picName="11"></l>
+	<l id="14" actionKey="die" picName="4"></l>
+	<l id="15" actionKey="juma" picName="9"></l>
+	<l id="16" actionKey="win" picName="10"></l>
+	<l id="17" actionKey="skill1" picName="105"></l>
+	<l id="18" actionKey="skill2" picName="103"></l>
+	<l id="19" actionKey="skill3" picName="200"></l>
+	<l id="20" actionKey="buff" picName="104"></l>
+	<l id="21" actionKey="ready" picName="11"></l>
+</r>

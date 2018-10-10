@@ -1,0 +1,16 @@
+archivesBaseName = 'slg2d-gate'
+
+apply plugin: "kotlin-spring"
+apply plugin: "io.spring.dependency-management"
+
+dependencies {
+	compile project(":slg2d-common")
+}
+
+jar {
+	manifest {
+		attributes(
+			'Main-Class': "com.point18.slg2d.gate.MainKt",
+		)
+	}
+}

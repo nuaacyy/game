@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l type="1" refreshDay="1" level="1" refreshRate="101;4000|102;6000"></l>
+	<l type="1" refreshDay="1" level="2" refreshRate="103;4000|104;6000"></l>
+	<l type="1" refreshDay="1" level="3" refreshRate="105;5000|106;5000"></l>
+	<l type="1" refreshDay="1" level="4" refreshRate="107;5000|108;5000"></l>
+	<l type="1" refreshDay="1" level="5" refreshRate="109;4500|110;5500"></l>
+	<l type="1" refreshDay="1" level="6" refreshRate="111;4500|112;5500"></l>
+	<l type="2" refreshDay="1" level="4" refreshRate="201;5000|202;5000"></l>
+	<l type="2" refreshDay="1" level="5" refreshRate="201;5000|202;5000"></l>
+	<l type="2" refreshDay="1" level="6" refreshRate="201;5000|202;5000"></l>
+	<l type="2" refreshDay="1" level="7" refreshRate="201;5000|202;5000"></l>
+	<l type="2" refreshDay="2" level="4" refreshRate="202;5000|203;5000"></l>
+	<l type="2" refreshDay="2" level="5" refreshRate="202;5000|203;5000"></l>
+	<l type="2" refreshDay="2" level="6" refreshRate="202;5000|203;5000"></l>
+	<l type="2" refreshDay="2" level="7" refreshRate="202;5000|203;5000"></l>
+	<l type="2" refreshDay="3" level="4" refreshRate="203;5000|204;5000"></l>
+	<l type="2" refreshDay="3" level="5" refreshRate="203;5000|204;5000"></l>
+	<l type="2" refreshDay="3" level="6" refreshRate="203;5000|204;5000"></l>
+	<l type="2" refreshDay="3" level="7" refreshRate="203;5000|204;5000"></l>
+</r>

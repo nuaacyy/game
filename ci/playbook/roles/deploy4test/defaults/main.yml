@@ -1,0 +1,14 @@
+---
+deploy_path: ~/ci4test
+dist_name: slg2d
+db_name: slg2d
+db_user: root
+db_pwd: 123456
+db_port: 13306
+db_host: 127.0.0.1
+mgr_host: 192.168.189.40
+mgr_port: 18080
+release_host: 172.18.3.201
+release_port: 10080
+zk_host: 172.18.3.203
+zk_port: 12181

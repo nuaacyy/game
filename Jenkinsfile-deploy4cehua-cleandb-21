@@ -1,0 +1,12 @@
+pipeline {
+	agent any
+	stages {
+		stage('Deploy') {
+			steps {
+				withCredentials(bindings: [sshUserPrivateKey(credentialsId: 'testvm-21', keyFileVariable: 'keyfile')]) {
+					sh 'bash -x ci/deploy_general_cleandb.sh inner_21 192.168.189.21 db_port=3306'
+				}
+			}
+		}
+	}
+}

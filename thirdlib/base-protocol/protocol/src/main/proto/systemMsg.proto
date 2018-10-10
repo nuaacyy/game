@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package pb4server;
+
+option java_package = "pb4server";
+option java_outer_classname = "Systemkt";
+option java_multiple_files = true;
+
+message HandoffTell {
+}
+
+message ChannelExpiredTell {
+}
+
+message PingAskReq {
+    int64 playerId = 1;
+}
+
+message PingAskRt {
+    int64 playerId = 1;
+}
+
+message WakeUpWorld {
+    int64 worldId = 1;
+}
+
+message InitPublic {
+    int64 publicId = 1;
+}

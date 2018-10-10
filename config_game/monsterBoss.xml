@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" name="名字1" snowCoordinate="500;200" snowSize="64;64" baseCoordinate="540;240" baseSize="2;2" pictureMap="Img_01"></l>
+	<l id="2" name="名字2" snowCoordinate="200;500" snowSize="64;64" baseCoordinate="240;540" baseSize="2;2" pictureMap="Img_02"></l>
+	<l id="3" name="名字3" snowCoordinate="700;1000" snowSize="64;64" baseCoordinate="740;1040" baseSize="2;2" pictureMap="Img_03"></l>
+	<l id="4" name="名字4" snowCoordinate="1000;700" snowSize="64;64" baseCoordinate="1040;740" baseSize="2;2" pictureMap="Img_04"></l>
+</r>

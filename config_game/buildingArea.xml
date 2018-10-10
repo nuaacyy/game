@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" area="1" unLock="0" unLockRes="1;0;100|2;0;100|3;0;100|4;0;100|5;0;100" image="0" name="4030912634" desc="1064547963" titleTxt="1966477363"></l>
+	<l id="2" area="2" unLock="1;1;5" unLockRes="1;0;100|2;0;100|3;0;100|4;0;100|5;0;100" image="0" name="3110032270" desc="1064547963" titleTxt="1966477361"></l>
+	<l id="3" area="3" unLock="1;1;10" unLockRes="1;0;100|2;0;100|3;0;100|4;0;100|5;0;100" image="0" name="2108598333" desc="1064547963" titleTxt="3752120203"></l>
+	<l id="4" area="4" unLock="0" unLockRes="1;0;100|2;0;100|3;0;100|4;0;100|5;0;100" image="0" name="4115789443" desc="1064547963" titleTxt="3751989131"></l>
+	<l id="5" area="5" unLock="0" unLockRes="1;0;100|2;0;100|3;0;100|4;0;100|5;0;100" image="0" name="2753801910" desc="1064547963" titleTxt="3752316811"></l>
+	<l id="6" area="6" unLock="1;1;16" unLockRes="1;0;100|2;0;100|3;0;100|4;0;100|5;0;100" image="0" name="3201815625" desc="1064547963" titleTxt="3752251275"></l>
+</r>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" time="86400" minMoney="2000" maxMoney="2000" basicRate="500"></l>
+	<l id="2" time="259200" minMoney="2000" maxMoney="2000" basicRate="5000"></l>
+	<l id="3" time="604800" minMoney="2000" maxMoney="2000" basicRate="15000"></l>
+</r>

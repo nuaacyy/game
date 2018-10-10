@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1001" type="1" resource="ab3b6c" sequenceNumber="1"></l>
+	<l id="1002" type="1" resource="e98812" sequenceNumber="2"></l>
+	<l id="1003" type="1" resource="44728c" sequenceNumber="3"></l>
+	<l id="1004" type="1" resource="0994a9" sequenceNumber="4"></l>
+	<l id="1005" type="1" resource="d2b866" sequenceNumber="5"></l>
+	<l id="1006" type="1" resource="afb0bd" sequenceNumber="6"></l>
+	<l id="2001" type="2" resource="qizhikuang1" sequenceNumber="1"></l>
+	<l id="2002" type="2" resource="qizhikuang2" sequenceNumber="2"></l>
+	<l id="2003" type="2" resource="qizhikuang3" sequenceNumber="3"></l>
+	<l id="2004" type="2" resource="qizhikuang4" sequenceNumber="4"></l>
+	<l id="2005" type="2" resource="qizhikuang5" sequenceNumber="5"></l>
+	<l id="2006" type="2" resource="qizhikuang6" sequenceNumber="6"></l>
+	<l id="3001" type="3" resource="qizhituan1" sequenceNumber="1"></l>
+	<l id="3002" type="3" resource="qizhituan2" sequenceNumber="2"></l>
+	<l id="3003" type="3" resource="qizhituan3" sequenceNumber="3"></l>
+	<l id="3004" type="3" resource="qizhituan4" sequenceNumber="4"></l>
+	<l id="3006" type="3" resource="qizhituan6" sequenceNumber="6"></l>
+	<l id="3007" type="3" resource="qizhituan7" sequenceNumber="7"></l>
+	<l id="3008" type="3" resource="qizhituan8" sequenceNumber="8"></l>
+	<l id="3009" type="3" resource="qizhituan9" sequenceNumber="9"></l>
+	<l id="3010" type="3" resource="qizhituan10" sequenceNumber="10"></l>
+	<l id="3011" type="3" resource="qizhituan11" sequenceNumber="11"></l>
+	<l id="3012" type="3" resource="qizhituan12" sequenceNumber="12"></l>
+</r>

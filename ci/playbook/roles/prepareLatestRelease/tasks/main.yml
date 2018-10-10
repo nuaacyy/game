@@ -1,0 +1,13 @@
+---
+- name: "删除目录"
+  file:
+    path: "~/docker/nginx/slg2d-kt/latestVersion"
+    state: absent
+- name: "创建目录"
+  file:
+    path: "~/docker/nginx/slg2d-kt/latestVersion"
+    state: directory
+- name: "复制文件到目标目录"
+  shell: cp * ~/docker/nginx/slg2d-kt/latestVersion
+  args:
+    chdir: "~/docker/nginx/slg2d-kt/tmp/"

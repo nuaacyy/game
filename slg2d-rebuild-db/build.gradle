@@ -1,0 +1,9 @@
+archivesBaseName = 'slg2d-rebuild-db'
+
+apply plugin: 'application'
+
+mainClassName = "MainKt"
+
+dependencies {
+    compile project(":slg2d-common")
+}

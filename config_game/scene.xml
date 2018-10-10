@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="0" sceneType="0" sceneName="0" scene="0" music="0" heroSceneCameraPos="0" heroMapOrigin="0" WallTrapRoleId="0"></l>
+	<l id="1001" sceneType="1" sceneName="魔女军团战场景" scene="slgScene" music="1008" heroSceneCameraPos="0" heroMapOrigin="0" WallTrapRoleId="1000;2000;1000"></l>
+	<l id="1002" sceneType="1" sceneName="盖亚军团战场景" scene="slgScene2" music="100006" heroSceneCameraPos="0" heroMapOrigin="0" WallTrapRoleId="1000110313;2000;1000110313"></l>
+	<l id="2001" sceneType="2" sceneName="魔女英雄战场景" scene="heroScene" music="1008" heroSceneCameraPos="0;0;-24|1.8;0;-24|3.6;0;-24" heroMapOrigin="-5.8;1.5;0" WallTrapRoleId="0"></l>
+	<l id="2002" sceneType="2" sceneName="盖亚英雄战" scene="heroScene2" music="100006" heroSceneCameraPos="0;0;-24|0;0;-24|0;0;-24" heroMapOrigin="-5.8;1.5;0" WallTrapRoleId="0"></l>
+</r>

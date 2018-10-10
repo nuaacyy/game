@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="10001" name="新手引导-剧情动画" is_break="0" begin_place="0" begin_place_value1="0" begin_place_value2="0" active_condition="0;0;0" guaid_id="1001" force_guide="1" nextGuildId="10002" is_force_break="1"></l>
+	<l id="10002" name="新手引导-攻城剧情+攻城动画" is_break="0" begin_place="0" begin_place_value1="0" begin_place_value2="0" active_condition="0;0;0" guaid_id="1002" force_guide="1" nextGuildId="10003" is_force_break="1"></l>
+	<l id="10003" name="新手引导-军团战场-剧情" is_break="0" begin_place="0" begin_place_value1="0" begin_place_value2="0" active_condition="0;0;0" guaid_id="1003" force_guide="1" nextGuildId="10004" is_force_break="1"></l>
+	<l id="10004" name="新手引导-军团-英雄切换剧情" is_break="0" begin_place="3" begin_place_value1="1001" begin_place_value2="20" active_condition="0;0;0" guaid_id="1004" force_guide="1" nextGuildId="10005" is_force_break="1"></l>
+	<l id="10005" name="新手引导-英雄战结束剧情+进入内城" is_break="1" begin_place="0" begin_place_value1="0" begin_place_value2="0" active_condition="52;50001;0" guaid_id="1005" force_guide="1" nextGuildId="10006" is_force_break="1"></l>
+	<l id="10006" name="新手引导-兵营建造+士兵训练" is_break="0" begin_place="0" begin_place_value1="0" begin_place_value2="0" active_condition="0;0;0" guaid_id="1005" force_guide="1" nextGuildId="0" is_force_break="1"></l>
+</r>

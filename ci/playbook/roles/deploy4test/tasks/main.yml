@@ -1,0 +1,5 @@
+- name: 'stop all servers'
+  include_tasks: stop_server.yml
+
+- name: 'start all servers'
+  include_tasks: deploy_server.yml

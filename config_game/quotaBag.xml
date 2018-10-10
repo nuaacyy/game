@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l quotaId="1001" giftName="满额赠礼" money="30" touch="5000" giftAdd="500" giftTime="24" giftNeed="4000" giftNormal="2000" giftChange="500" dropId="1001;9000|1002;1000" id="100101" mailTitle="yj_title_mane" mailContent="yj_content_mane"></l>
+	<l quotaId="1001" giftName="满额赠礼" money="30" touch="5000" giftAdd="500" giftTime="24" giftNeed="8000" giftNormal="8000" giftChange="-500" dropId="1001;1000|1002;9000" id="100102" mailTitle="yj_title_mane" mailContent="yj_content_mane"></l>
+</r>

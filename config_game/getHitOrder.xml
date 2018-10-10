@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" solider="1" order="5;6;7;3;1;2;4"></l>
+	<l id="2" solider="2" order="6;7;5;1;2;3;4"></l>
+	<l id="3" solider="3" order="7;5;6;2;3;1;4"></l>
+	<l id="4" solider="4" order="1;2;3;4;5;6;7"></l>
+	<l id="5" solider="5" order="4;1;2;3;5;6;7"></l>
+	<l id="6" solider="6" order="4;1;2;3;5;6;7"></l>
+	<l id="7" solider="7" order="4;1;2;3;5;6;7"></l>
+</r>

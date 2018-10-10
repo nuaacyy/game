@@ -1,0 +1,78 @@
+---
+- name: "create dir"
+  file:
+    path: "{{ deploy_path }}"
+    state: directory
+
+- name: "fetch release file from remote"
+  block:
+    - unarchive:
+        src: "http://{{ release_host }}:{{ release_port }}/slg2d-kt/latestV/{{ dist_name }}.tar.gz"
+        dest: "{{ deploy_path }}"
+        remote_src: yes
+  when: localfile is undefined
+
+- name: "fetch release file from local"
+  block:
+    - unarchive:
+        src: "{{ dist_name }}.tar.gz"
+        dest: "{{ deploy_path }}"
+  when: localfile is defined
+
+- name: 'modify start config'
+  block:
+    - lineinfile:
+        dest: "{{ deploy_path }}/{{ dist_name }}/cfg/startconfig.json"
+        regexp: 'mgrHost'
+        line: '    "mgrHost": "{{ zk_host }}",'
+    - lineinfile:
+        dest: "{{ deploy_path }}/{{ dist_name }}/cfg/startconfig.json"
+        regexp: 'mgrPort'
+        line: '    "mgrPort": {{ zk_port }},'
+    - lineinfile:
+        dest: "{{ deploy_path }}/{{ dist_name }}/application.properties"
+        regexp: 'server.port'
+        line: 'server.port={{ mgr_port }}'
+    - lineinfile:
+        dest: "{{ deploy_path }}/{{ dist_name }}/zookeeper.properties"
+        regexp: 'zk.url'
+        line: 'zk.url={{ zk_host }}:{{ zk_port }}'
+
+- name: "clean db"
+  mysql_db:
+    name: "{{ db_name }}"
+    state: import
+    target: "{{ deploy_path }}/{{ dist_name }}/sql/struct.sql"
+    login_user: "{{ db_user }}"
+    login_password: "{{ db_pwd }}"
+    login_port: "{{ db_port }}"
+    login_host: "{{ db_host }}"
+  when: cleandb is defined
+
+- name: "start all"
+  block:
+    - shell: bash bin/slg2d.sh start public
+      args:
+        chdir: "{{ deploy_path }}/{{ dist_name }}"
+      async: 45
+      poll: 0
+    - shell: bash bin/slg2d.sh start world
+      args:
+        chdir: "{{ deploy_path }}/{{ dist_name }}"
+      async: 45
+      poll: 0
+    - shell: bash bin/slg2d.sh start home
+      args:
+        chdir: "{{ deploy_path }}/{{ dist_name }}"
+      async: 45
+      poll: 0
+    - shell: bash bin/slg2d.sh start gate
+      args:
+        chdir: "{{ deploy_path }}/{{ dist_name }}"
+      async: 45
+      poll: 0
+    - shell: bash bin/slg2d.sh start battle
+      args:
+        chdir: "{{ deploy_path }}/{{ dist_name }}"
+      async: 45
+      poll: 0

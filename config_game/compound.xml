@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" propsId="111001" group="1" itemId="0" cost="0" isChange="0"></l>
+	<l id="2" propsId="111002" group="1" itemId="111001;4" cost="0" isChange="0"></l>
+	<l id="3" propsId="111003" group="1" itemId="111002;4" cost="0" isChange="0"></l>
+	<l id="4" propsId="111004" group="1" itemId="111003;4" cost="0" isChange="0"></l>
+	<l id="5" propsId="111005" group="1" itemId="111004;4" cost="0" isChange="0"></l>
+	<l id="6" propsId="111006" group="2" itemId="0" cost="0" isChange="0"></l>
+	<l id="7" propsId="111007" group="2" itemId="111006;4" cost="0" isChange="0"></l>
+	<l id="8" propsId="111008" group="2" itemId="111007;4" cost="0" isChange="0"></l>
+	<l id="9" propsId="111009" group="2" itemId="111008;4" cost="0" isChange="0"></l>
+	<l id="10" propsId="111010" group="2" itemId="111009;4" cost="0" isChange="0"></l>
+</r>

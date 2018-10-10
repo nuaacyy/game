@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" id="1" name="墙纸" recovery="0"></l>
+	<l id="2" id="2" name="墙饰" recovery="0"></l>
+	<l id="3" id="3" name="装饰" recovery="0"></l>
+	<l id="4" id="4" name="地板" recovery="0"></l>
+	<l id="5" id="5" name="家具" recovery="回收家具后，家具将不可与魔女互动"></l>
+	<l id="6" id="6" name="功能家具" recovery="回收家具后，家具将不可产出资源"></l>
+</r>

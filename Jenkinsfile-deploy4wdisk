@@ -1,0 +1,15 @@
+pipeline {
+	agent any
+	stages {
+		stage('Deploy') {
+			steps {
+				withCredentials(bindings: [sshUserPrivateKey(credentialsId: 'easy-manage-out-wdisk', keyFileVariable: 'keyfile')]) {
+					sh '''
+					    bash -x ci/deploy_fetch2local.sh 172.18.3.201 10080
+					    bash -x ci/deploy_general.sh out_wdisk 212.64.113.169 2022
+					'''
+				}
+			}
+		}
+	}
+}

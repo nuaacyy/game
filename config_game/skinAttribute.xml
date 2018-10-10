@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l type="1" star="0" id="1000" name="4244819297" props="61101" propsNum="5" attribute="147;100|150;100"></l>
+	<l type="1" star="1" id="1001" name="4244819297" props="61101" propsNum="10" attribute="147;200|150;200"></l>
+	<l type="1" star="2" id="1002" name="4244819297" props="61101" propsNum="15" attribute="147;300|150;300"></l>
+	<l type="1" star="3" id="1003" name="4244819297" props="61101" propsNum="20" attribute="147;400|150;400"></l>
+	<l type="1" star="4" id="1004" name="4244819297" props="61101" propsNum="25" attribute="147;500|150;500"></l>
+	<l type="1" star="5" id="1005" name="4244819297" props="61101" propsNum="0" attribute="147;600|150;600"></l>
+	<l type="2" star="0" id="2000" name="1697541678" props="61101" propsNum="5" attribute="147;100|150;100"></l>
+	<l type="2" star="1" id="2001" name="1697541678" props="61101" propsNum="10" attribute="147;200|150;200"></l>
+	<l type="2" star="2" id="2002" name="1697541678" props="61101" propsNum="15" attribute="147;300|150;300"></l>
+	<l type="2" star="3" id="2003" name="1697541678" props="61101" propsNum="20" attribute="147;400|150;400"></l>
+	<l type="2" star="4" id="2004" name="1697541678" props="61101" propsNum="25" attribute="147;500|150;500"></l>
+	<l type="2" star="5" id="2005" name="1697541678" props="61101" propsNum="0" attribute="147;600|150;600"></l>
+	<l type="3" star="0" id="3000" name="3653856814" props="61101" propsNum="5" attribute="129;100|155;100"></l>
+	<l type="3" star="1" id="3001" name="3653856814" props="61101" propsNum="10" attribute="129;200|155;200"></l>
+	<l type="3" star="2" id="3002" name="3653856814" props="61101" propsNum="15" attribute="129;300|155;300"></l>
+	<l type="3" star="3" id="3003" name="3653856814" props="61101" propsNum="20" attribute="129;400|155;400"></l>
+	<l type="3" star="4" id="3004" name="3653856814" props="61101" propsNum="25" attribute="129;500|155;500"></l>
+	<l type="3" star="5" id="3005" name="3653856814" props="61101" propsNum="0" attribute="129;600|155;600"></l>
+	<l type="4" star="0" id="4000" name="1315204654" props="61101" propsNum="5" attribute="154;100|155;100"></l>
+	<l type="4" star="1" id="4001" name="1315204654" props="61101" propsNum="10" attribute="154;200|155;200"></l>
+	<l type="4" star="2" id="4002" name="1315204654" props="61101" propsNum="15" attribute="154;300|155;300"></l>
+	<l type="4" star="3" id="4003" name="1315204654" props="61101" propsNum="20" attribute="154;400|155;400"></l>
+	<l type="4" star="4" id="4004" name="1315204654" props="61101" propsNum="25" attribute="154;500|155;500"></l>
+	<l type="4" star="5" id="4005" name="1315204654" props="61101" propsNum="0" attribute="154;600|155;600"></l>
+</r>

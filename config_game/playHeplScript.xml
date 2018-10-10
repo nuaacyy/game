@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l scriptId="1" scriptStep="1" scriptType="1" buiding="1001" button="" coordinate="0;0" details="0"></l>
+	<l scriptId="2" scriptStep="1" scriptType="1" buiding="1009" button="" coordinate="0;0" details="0"></l>
+	<l scriptId="3" scriptStep="1" scriptType="1" buiding="1002" button="" coordinate="0;0" details="0"></l>
+	<l scriptId="4" scriptStep="1" scriptType="1" buiding="1001" button="" coordinate="0;0" details="0"></l>
+	<l scriptId="5" scriptStep="1" scriptType="2" buiding="0" button="BtnVip" coordinate="0;0" details="0"></l>
+	<l scriptId="6" scriptStep="1" scriptType="2" buiding="0" button="BtnToWorld" coordinate="0;0" details="0"></l>
+	<l scriptId="7" scriptStep="1" scriptType="1" buiding="1006" button="" coordinate="0;0" details="0"></l>
+	<l scriptId="8" scriptStep="1" scriptType="2" buiding="0" button="GroupRes" coordinate="0;0" details="0"></l>
+	<l scriptId="9" scriptStep="1" scriptType="2" buiding="0" button="BtnTaskIcon" coordinate="0;0" details="0"></l>
+	<l scriptId="10" scriptStep="1" scriptType="2" buiding="0" button="BtnTaskIcon" coordinate="0;0" details="0"></l>
+	<l scriptId="11" scriptStep="1" scriptType="2" buiding="0" button="BtnToWorld" coordinate="0;0" details="0"></l>
+	<l scriptId="12" scriptStep="1" scriptType="2" buiding="0" button="BtnToWorld" coordinate="0;0" details="0"></l>
+	<l scriptId="13" scriptStep="1" scriptType="2" buiding="0" button="BtnEmail" coordinate="0;0" details="0"></l>
+	<l scriptId="14" scriptStep="1" scriptType="2" buiding="0" button="BtnAllianceGeneral" coordinate="0;0" details="0"></l>
+	<l scriptId="15" scriptStep="1" scriptType="2" buiding="0" button="WidgetChat" coordinate="0;0" details="0"></l>
+	<l scriptId="16" scriptStep="1" scriptType="2" buiding="0" button="WidgetHead" coordinate="0;0" details="0"></l>
+	<l scriptId="17" scriptStep="1" scriptType="2" buiding="0" button="822198908" coordinate="0;0" details="0"></l>
+	<l scriptId="18" scriptStep="1" scriptType="2" buiding="0" button="WidgetHead" coordinate="0;0" details="0"></l>
+	<l scriptId="19" scriptStep="1" scriptType="2" buiding="0" button="BtnUion" coordinate="0;0" details="0"></l>
+	<l scriptId="20" scriptStep="1" scriptType="2" buiding="0" button="BtnEmail" coordinate="0;0" details="0"></l>
+</r>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" startDay="0" mapLocation="1" mapMonster="1" mapRelic="1"></l>
+	<l id="2" startDay="3" mapLocation="2" mapMonster="2" mapRelic="2"></l>
+	<l id="3" startDay="5" mapLocation="3" mapMonster="3" mapRelic="3"></l>
+</r>

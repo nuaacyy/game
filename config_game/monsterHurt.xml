@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1000" times="0" hurt="0"></l>
+	<l id="1001" times="1" hurt="500"></l>
+	<l id="1002" times="2" hurt="1000"></l>
+	<l id="1003" times="3" hurt="1500"></l>
+	<l id="1004" times="4" hurt="2000"></l>
+	<l id="1005" times="5" hurt="2500"></l>
+	<l id="1006" times="6" hurt="3000"></l>
+	<l id="1007" times="7" hurt="3500"></l>
+	<l id="1008" times="8" hurt="4000"></l>
+	<l id="1009" times="9" hurt="4500"></l>
+	<l id="1010" times="10" hurt="5000"></l>
+	<l id="1011" times="11" hurt="5500"></l>
+	<l id="1012" times="12" hurt="6000"></l>
+	<l id="1013" times="13" hurt="6500"></l>
+	<l id="1014" times="14" hurt="7000"></l>
+	<l id="1015" times="15" hurt="7500"></l>
+	<l id="1016" times="16" hurt="8000"></l>
+	<l id="1017" times="17" hurt="8500"></l>
+	<l id="1018" times="18" hurt="9000"></l>
+	<l id="1019" times="19" hurt="9500"></l>
+	<l id="1020" times="20" hurt="10000"></l>
+	<l id="1021" times="21" hurt="10500"></l>
+	<l id="1022" times="22" hurt="11000"></l>
+	<l id="1023" times="23" hurt="11500"></l>
+</r>

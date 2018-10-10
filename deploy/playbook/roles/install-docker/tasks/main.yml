@@ -1,0 +1,12 @@
+---
+- name: add registry config
+  copy:
+    src: daemon.json
+    dest: /etc/docker/daemon.json
+    owner: root
+    group: root
+
+- name: restart docker
+  service:
+    name: docker
+    state: restarted

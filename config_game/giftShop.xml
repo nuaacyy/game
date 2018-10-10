@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l label="1" name="4132489687" id="1" grid="1" buyCost="7;0;10" dropBagAward="23"></l>
+	<l label="1" name="4132489687" id="2" grid="2" buyCost="7;0;20" dropBagAward="24"></l>
+	<l label="1" name="4132489687" id="3" grid="3" buyCost="7;0;30" dropBagAward="25"></l>
+	<l label="2" name="4082776796" id="4" grid="1" buyCost="7;0;70" dropBagAward="26"></l>
+	<l label="2" name="4082776796" id="5" grid="2" buyCost="7;0;80" dropBagAward="27"></l>
+	<l label="2" name="4082776796" id="6" grid="3" buyCost="7;0;90" dropBagAward="28"></l>
+	<l label="2" name="4082776796" id="7" grid="4" buyCost="7;0;100" dropBagAward="29"></l>
+	<l label="3" name="1037822208" id="8" grid="1" buyCost="7;0;270" dropBagAward="30"></l>
+	<l label="3" name="1037822208" id="9" grid="2" buyCost="7;0;280" dropBagAward="31"></l>
+	<l label="3" name="1037822208" id="10" grid="3" buyCost="7;0;290" dropBagAward="32"></l>
+	<l label="4" name="3897809336" id="11" grid="1" buyCost="7;0;390" dropBagAward="33"></l>
+	<l label="4" name="3897809336" id="12" grid="2" buyCost="7;0;400" dropBagAward="34"></l>
+	<l label="4" name="3897809336" id="13" grid="3" buyCost="7;0;410" dropBagAward="35"></l>
+	<l label="4" name="3897809336" id="14" grid="4" buyCost="7;0;420" dropBagAward="36"></l>
+	<l label="4" name="3897809336" id="15" grid="5" buyCost="7;0;430" dropBagAward="37"></l>
+	<l label="4" name="3897809336" id="16" grid="6" buyCost="7;0;440" dropBagAward="38"></l>
+	<l label="5" name="3862556723" id="17" grid="1" buyCost="7;0;10" dropBagAward="39"></l>
+	<l label="5" name="3862556723" id="18" grid="2" buyCost="7;0;20" dropBagAward="40"></l>
+	<l label="5" name="3862556723" id="19" grid="3" buyCost="7;0;30" dropBagAward="41"></l>
+	<l label="5" name="3862556723" id="20" grid="4" buyCost="7;0;40" dropBagAward="42"></l>
+</r>

@@ -1,0 +1,45 @@
+pipeline {
+    agent any
+    stages {
+        stage("SyncConfig") {
+            steps {
+                sshagent(credentials: ['gitlab-201-jenkins']) {
+                    checkout([$class: 'SubversionSCM',
+                              additionalCredentials: [],
+                              excludedCommitMessages: '',
+                              excludedRegions: '',
+                              excludedRevprop: '',
+                              excludedUsers: '',
+                              filterChangelog: false,
+                              ignoreDirPropChanges: false,
+                              includedRegions: '',
+                              locations: [[cancelProcessOnExternalsFail: true,
+                                           credentialsId: 'slg2d-jenkins-svn',
+                                           depthOption: 'infinity',
+                                           ignoreExternalsOption: true,
+                                           local: 'cehuaproto',
+                                           remote: 'http://172.18.3.204/svn/slg2d_cehua/trunk/doc/Config/trunk']],
+                              quietOperation: true,
+                              workspaceUpdater: [$class: 'UpdateUpdater']])
+
+                    sh '''
+				    bash +x ci/sync-config.sh
+				    
+				    ls -al
+				    
+				    rm -rf cehuaproto
+				    
+				    ls -al
+					'''
+
+//                    withCredentials([usernamePassword(credentialsId: 'svn-4-build', usernameVariable: 'SVN_USER', passwordVariable: 'SVN_PWD')]) {
+//                        sh '''
+//				        bash +x ci/sync-config.sh
+//					    '''
+//                    }
+                }
+
+            }
+        }
+    }
+}

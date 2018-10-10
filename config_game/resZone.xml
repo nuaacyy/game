@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" level="1" coordinateZone="0;0|63;63"></l>
+	<l id="2" level="2" coordinateZone="64;64|127;127"></l>
+	<l id="3" level="3" coordinateZone="128;128|191;191"></l>
+	<l id="4" level="4" coordinateZone="192;192|256;256"></l>
+</r>

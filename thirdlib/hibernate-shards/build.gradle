@@ -1,0 +1,159 @@
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'uploadAuth'
+apply from: './libraries.gradle'
+
+group = 'org.hibernate'
+version = '3.6.10.3'
+
+targetCompatibility = "1.6"
+sourceCompatibility = "1.6"
+
+repositories {
+	maven {
+		url "$nexus_url/repository/maven-public/"
+	}
+}
+
+buildscript {
+	ext {
+		nexus_url = 'http://172.18.3.201:16000'
+	}
+	repositories {
+		maven {
+			url "$nexus_url/repository/maven-public/"
+		}
+	}
+	dependencies {
+		classpath 'org.hibernate.build.gradle:gradle-upload-auth-plugin:1.1.1'
+	}
+}
+
+// set up special classpath elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+configurations {
+	deployerJars {
+		description = 'Jars needed for doing deployment to JBoss Nexus repo'
+	}
+	// for all imported dependencies, exclude xml-apis (which are jdk specific) from transitivity
+	all*.exclude group: 'xml-apis', module: 'xml-apis'
+}
+
+// declare dependencies ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dependencies {
+	compile(libraries.slf4j_api)
+	compile('org.hibernate:hibernate-core:3.6.10.Final')
+
+	testCompile(libraries.junit)  // may already be a transitive dep from testing
+	testCompile(libraries.hsqldb)
+	testCompile(libraries.slf4j_api)
+	testCompile(libraries.mockito)
+	testRuntime(libraries.slf4j_log4j12)
+	testRuntime(libraries.javassist) // may already be a transitive dep from orm
+}
+
+// MacOS fun-ness ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ext.toolsJar = file("${System.getProperty('java.home')}/../lib/tools.jar")
+if (ext.toolsJar.exists()) {
+	dependencies {
+		testCompile files(toolsJar)
+	}
+}
+
+// Configure test task ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test {
+	systemProperties['hibernate.test.validatefailureexpected'] = true
+	systemProperties += System.properties.findAll { it.key.startsWith("hibernate.") }
+	maxHeapSize = "1024m"
+}
+
+// Set up jar manifest information ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+jar.manifest.attributes(
+	provider: 'gradle',
+	'Implementation-Url': 'http://hibernate.org',
+	'Implementation-Version': version,
+	'Implementation-Vendor': 'Hibernate.org',
+	'Implementation-Vendor-Id': 'org.hibernate'
+)
+
+// Prepare upload and install tasks (including POM information) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+task sourcesJar(type: Jar, dependsOn: compileJava) {
+	from sourceSets.main.allSource
+	classifier = 'sources'
+}
+
+artifacts {
+	archives sourcesJar
+}
+
+uploadArchives.dependsOn sourcesJar
+
+def pomConfig = {
+	name 'Hibernate Shards'
+	description 'Horizontal partitioning for Hibernate O/RM'
+	url 'http://hibernate.org'
+	organization {
+		name 'Hibernate.org'
+		url 'http://hibernate.org'
+	}
+	issueManagement {
+		system 'jira'
+		url 'https://hibernate.onjira.com/browse/HSHARDS'
+	}
+	scm {
+		url "http://github.com/hibernate/hibernate-shards"
+		connection "scm:git:http://github.com/hibernate/hibernate-shards.git"
+		developerConnection "scm:git:git@github.com:hibernate/hibernate-shards.git"
+	}
+	licenses {
+		license {
+			name 'GNU Lesser General Public License'
+			url 'http://www.gnu.org/licenses/lgpl-2.1.html'
+			comments 'See discussion at http://hibernate.org/license for more details.'
+			distribution 'repo'
+		}
+	}
+	developers {
+		developer {
+			id 'hibernate-team'
+			name 'The Hibernate Development Team'
+			organization 'Hibernate.org'
+			organizationUrl 'http://hibernate.org'
+		}
+	}
+}
+
+configure(install.repositories.mavenInstaller) {
+	pom.project pomConfig
+}
+
+uploadArchives {
+	repositories.mavenDeployer {
+		name = 'jbossDeployer'
+		configuration = configurations.deployerJars
+		pom.project pomConfig
+		repository(id: "point18-releases-repository", url: "$nexus_url/repository/topg-releases") {
+			authentication(userName: "admin", password: "admin123")
+		}
+		snapshotRepository(id: "point18-snapshots-repositorygrad", url: "$nexus_url/repository/maven-snapshots/") {
+			authentication(userName: "admin", password: "admin123")
+		}
+	}
+}
+
+// Configure gradlew generation ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+task wrapper(type: Wrapper) {
+	gradleVersion = '4.3.1'
+}
+
+
+idea {
+	module {
+		//if you love browsing Javadoc
+		downloadJavadoc = true
+
+		//and hate reading sources :)
+		downloadSources = true
+	}
+}

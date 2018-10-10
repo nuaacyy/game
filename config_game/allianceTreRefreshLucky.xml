@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="101" qualityInfo="1;4|2;1" luckNum="10" lowReward="2;7"></l>
+	<l id="102" qualityInfo="3;2|4;3" luckNum="1" lowReward="3;8"></l>
+	<l id="301" qualityInfo="1;1|4;5" luckNum="1" lowReward="4;9"></l>
+	<l id="302" qualityInfo="3;1|4;5" luckNum="2" lowReward="4;9"></l>
+	<l id="303" qualityInfo="3;5|4;1" luckNum="2" lowReward="4;9"></l>
+	<l id="304" qualityInfo="2;5" luckNum="2" lowReward="2;7"></l>
+</r>

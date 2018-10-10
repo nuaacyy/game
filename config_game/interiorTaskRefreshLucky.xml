@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" num="5" name="1;4|2;1" lucky="1" baseDrop="1;5"></l>
+	<l id="2" num="5" name="1;4|3;1" lucky="10" baseDrop="1;5"></l>
+	<l id="3" num="5" name="1;4|4;1" lucky="20" baseDrop="1;5"></l>
+	<l id="4" num="5" name="1;3|2;1|3;1" lucky="10" baseDrop="1;2"></l>
+	<l id="5" num="5" name="1;3|2;1|4;1" lucky="20" baseDrop="2;2"></l>
+	<l id="6" num="6" name="1;5|2;1" lucky="1" baseDrop="2;2"></l>
+	<l id="7" num="6" name="1;4|3;1" lucky="10" baseDrop="2;2"></l>
+	<l id="8" num="6" name="1;4|4;1" lucky="20" baseDrop="2;2"></l>
+	<l id="9" num="6" name="1;3|2;1|3;1" lucky="10" baseDrop="2;2"></l>
+	<l id="10" num="6" name="1;3|2;1|4;1" lucky="20" baseDrop="1;5"></l>
+	<l id="11" num="7" name="1;4|2;1" lucky="1" baseDrop="1;5"></l>
+	<l id="12" num="7" name="1;4|3;1" lucky="10" baseDrop="1;5"></l>
+	<l id="13" num="7" name="1;4|4;1" lucky="20" baseDrop="1;2"></l>
+	<l id="14" num="7" name="1;3|2;1|3;1" lucky="10" baseDrop="2;2"></l>
+	<l id="15" num="7" name="1;3|2;1|4;1" lucky="20" baseDrop="2;2"></l>
+	<l id="16" num="8" name="1;4|2;1" lucky="1" baseDrop="2;2"></l>
+	<l id="17" num="8" name="1;4|3;1" lucky="10" baseDrop="2;2"></l>
+	<l id="18" num="8" name="1;4|4;1" lucky="20" baseDrop="2;2"></l>
+	<l id="19" num="8" name="1;3|2;1|3;1" lucky="10" baseDrop="1;5"></l>
+	<l id="20" num="8" name="1;3|2;1|4;1" lucky="20" baseDrop="1;5"></l>
+	<l id="21" num="9" name="1;4|2;1" lucky="1" baseDrop="1;5"></l>
+	<l id="22" num="9" name="1;4|3;1" lucky="10" baseDrop="1;2"></l>
+	<l id="23" num="9" name="1;4|4;1" lucky="20" baseDrop="2;2"></l>
+	<l id="24" num="9" name="1;3|2;1|3;1" lucky="10" baseDrop="2;2"></l>
+	<l id="25" num="9" name="1;3|2;1|4;1" lucky="20" baseDrop="2;2"></l>
+	<l id="26" num="10" name="1;4|2;1" lucky="1" baseDrop="2;2"></l>
+	<l id="27" num="10" name="1;4|3;1" lucky="10" baseDrop="2;2"></l>
+	<l id="28" num="10" name="1;4|4;1" lucky="20" baseDrop="1;5"></l>
+	<l id="29" num="10" name="1;3|2;1|3;1" lucky="10" baseDrop="1;5"></l>
+	<l id="30" num="10" name="1;3|2;1|4;1" lucky="20" baseDrop="1;5"></l>
+</r>

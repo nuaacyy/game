@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" level="1" score="10" dropPropsId="1;2;3" stage="1"></l>
+	<l id="2" level="1" score="20" dropPropsId="1;2;4" stage="2"></l>
+	<l id="3" level="1" score="30" dropPropsId="1;2;5" stage="3"></l>
+	<l id="4" level="1" score="40" dropPropsId="1;2;3" stage="4"></l>
+	<l id="5" level="1" score="50" dropPropsId="1;2;4" stage="5"></l>
+	<l id="6" level="2" score="60" dropPropsId="1;2;5" stage="6"></l>
+	<l id="7" level="2" score="70" dropPropsId="1;2;3" stage="7"></l>
+	<l id="8" level="2" score="80" dropPropsId="1;2;4" stage="8"></l>
+	<l id="9" level="2" score="90" dropPropsId="1;2;5" stage="9"></l>
+	<l id="10" level="2" score="100" dropPropsId="1;2;3" stage="10"></l>
+	<l id="11" level="2" score="110" dropPropsId="1;2;4" stage="11"></l>
+	<l id="12" level="2" score="120" dropPropsId="1;2;5" stage="12"></l>
+	<l id="13" level="2" score="130" dropPropsId="1;2;3" stage="13"></l>
+	<l id="14" level="3" score="140" dropPropsId="1;2;4" stage="14"></l>
+	<l id="15" level="3" score="150" dropPropsId="1;2;5" stage="15"></l>
+	<l id="16" level="3" score="160" dropPropsId="1;2;3" stage="16"></l>
+	<l id="17" level="3" score="170" dropPropsId="1;2;4" stage="17"></l>
+	<l id="18" level="3" score="180" dropPropsId="1;2;5" stage="18"></l>
+	<l id="19" level="3" score="190" dropPropsId="1;2;3" stage="19"></l>
+	<l id="20" level="3" score="200" dropPropsId="1;2;4" stage="20"></l>
+	<l id="21" level="3" score="210" dropPropsId="1;2;5" stage="21"></l>
+	<l id="22" level="3" score="220" dropPropsId="1;2;3" stage="22"></l>
+	<l id="23" level="3" score="230" dropPropsId="1;2;4" stage="23"></l>
+	<l id="24" level="4" score="240" dropPropsId="1;2;5" stage="24"></l>
+</r>

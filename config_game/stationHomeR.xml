@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" station="1" num="3" pos="0;0"></l>
+	<l id="2" station="2" num="3" pos="-2;-2"></l>
+	<l id="3" station="3" num="3" pos="-3;-2"></l>
+	<l id="4" station="0" num="3" pos="0;-2"></l>
+	<l id="5" station="0" num="3" pos="0;1"></l>
+	<l id="6" station="0" num="3" pos="1;1"></l>
+	<l id="7" station="0" num="3" pos="1;0"></l>
+	<l id="8" station="0" num="3" pos="1;-1"></l>
+	<l id="9" station="0" num="3" pos="1;-2"></l>
+	<l id="10" station="0" num="3" pos="-1;1"></l>
+	<l id="11" station="0" num="3" pos="-1;0"></l>
+	<l id="12" station="0" num="3" pos="-1;-1"></l>
+	<l id="13" station="0" num="3" pos="-1;-2"></l>
+	<l id="14" station="0" num="3" pos="-2;-1"></l>
+	<l id="15" station="0" num="3" pos="-2;0"></l>
+	<l id="16" station="0" num="3" pos="-2;1"></l>
+	<l id="17" station="0" num="3" pos="0;-1"></l>
+	<l id="18" station="0" num="3" pos="-2;-1"></l>
+	<l id="19" station="0" num="3" pos="-3;0"></l>
+	<l id="20" station="0" num="3" pos="-3;1"></l>
+</r>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="101" name="331335025" powerManagement="1,2,3,4,5,6,7,8,9,11,13,14,15,16,17,19,20,21,22,23,24,25,100,30" positionNumb="1" step="1" solePosition="102%103%104%105%201%301%401%501"></l>
+	<l id="102" name="1001699214" powerManagement="2,3,12,7,11,15,16,18,19,20,21,22,23,24,25" positionNumb="100" step="3" solePosition="101%103%104%105%201%301%401%501"></l>
+	<l id="103" name="1001699213" powerManagement="12,15,16,18,19,21,23,24,25" positionNumb="100" step="4" solePosition="102%101%104%105%201%301%401%501"></l>
+	<l id="104" name="1001699212" powerManagement="12,15,16,18,19,23,24,25" positionNumb="100" step="5" solePosition="102%103%101%105%201%301%401%501"></l>
+	<l id="105" name="1001699211" powerManagement="12,15,16,18,19,23,24,25" positionNumb="100" step="6" solePosition="102%103%104%101%201%301%401%501"></l>
+	<l id="201" name="3843875002" powerManagement="2,3,4,6,12,7,11,15,16,18,19,20,21,22,23,24,25" positionNumb="1" step="2" solePosition="102%103%104%105%101%301%401%501"></l>
+	<l id="301" name="2026375803" powerManagement="2,3,4,6,12,7,11,15,16,18,19,20,21,22,23,24,25" positionNumb="1" step="2" solePosition="102%103%104%105%201%101%401%501"></l>
+	<l id="401" name="2638815372" powerManagement="2,3,4,6,12,7,11,15,16,18,19,20,21,22,23,24,25" positionNumb="1" step="2" solePosition="102%103%104%105%201%301%101%501"></l>
+	<l id="501" name="64155732" powerManagement="2,3,4,6,12,7,11,15,16,18,19,20,21,22,23,24,25" positionNumb="1" step="2" solePosition="102%103%104%105%201%301%401%101"></l>
+</r>

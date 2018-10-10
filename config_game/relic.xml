@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" level="1" relicName="1111095596" lineUp="1;10000" relicModel="relic" monsterHead="head_1001" bonuses="0" dropProps="10101;1;10000" dropManProps="10101;10000" dropHeroProps="10101;10000"></l>
+	<l id="2" level="2" relicName="3449747756" lineUp="1;8000|2;2000" relicModel="relic" monsterHead="head_1002" bonuses="0" dropProps="10201;1;10000" dropManProps="10201;10000" dropHeroProps="10201;10000"></l>
+	<l id="3" level="3" relicName="1493432620" lineUp="1;7000|2;3000" relicModel="relic" monsterHead="head_1003" bonuses="0" dropProps="10301;1;10000" dropManProps="10301;10000" dropHeroProps="10301;10000"></l>
+	<l id="4" level="4" relicName="3832084780" lineUp="1;6000|2;4000" relicModel="relic" monsterHead="head_1004" bonuses="0" dropProps="10401;1;10000" dropManProps="10401;10000" dropHeroProps="10401;10000"></l>
+	<l id="5" level="5" relicName="1875769644" lineUp="1;5000|2;5000" relicModel="relic" monsterHead="head_1005" bonuses="0" dropProps="10501;1;10000" dropManProps="10501;10000" dropHeroProps="10501;10000"></l>
+	<l id="6" level="6" relicName="4214421804" lineUp="1;4000|2;6000" relicModel="relic" monsterHead="head_1006" bonuses="0" dropProps="10601;1;10000" dropManProps="10601;10000" dropHeroProps="10601;10000"></l>
+	<l id="7" level="7" relicName="2258106668" lineUp="1;3000|2;7000" relicModel="relic" monsterHead="head_1007" bonuses="0" dropProps="10701;1;10000" dropManProps="10701;10000" dropHeroProps="10701;10000"></l>
+	<l id="8" level="8" relicName="301791532" lineUp="1;2000|2;8000" relicModel="relic" monsterHead="head_1008" bonuses="0" dropProps="10801;1;10000" dropManProps="10801;10000" dropHeroProps="10801;10000"></l>
+	<l id="9" level="9" relicName="2640443692" lineUp="1;1000|2;8000|3;1000" relicModel="relic" monsterHead="head_1009" bonuses="0" dropProps="10901;1;10000" dropManProps="10901;10000" dropHeroProps="10901;10000"></l>
+	<l id="10" level="10" relicName="1789741283" lineUp="2;8000|3;2000" relicModel="relic" monsterHead="head_1010" bonuses="0" dropProps="11001;1;10000" dropManProps="11001;10000" dropHeroProps="11001;10000"></l>
+	<l id="11" level="11" relicName="1789741282" lineUp="2;7000|3;3000" relicModel="relic" monsterHead="head_1011" bonuses="0" dropProps="11101;1;10000" dropManProps="11101;10000" dropHeroProps="11101;10000"></l>
+	<l id="12" level="12" relicName="1789741281" lineUp="2;6000|3;4000" relicModel="relic" monsterHead="head_1012" bonuses="0" dropProps="11201;1;10000" dropManProps="11201;10000" dropHeroProps="11201;10000"></l>
+	<l id="13" level="13" relicName="1789741280" lineUp="2;5000|3;5000" relicModel="relic" monsterHead="head_1013" bonuses="0" dropProps="11301;1;10000" dropManProps="11301;10000" dropHeroProps="21301;10000"></l>
+	<l id="14" level="14" relicName="1789741287" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1014" bonuses="0" dropProps="11401;1;10000" dropManProps="11401;10000" dropHeroProps="21401;10000"></l>
+	<l id="15" level="15" relicName="1789741286" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1001" bonuses="0" dropProps="11501;1;10000" dropManProps="11501;10000" dropHeroProps="21501;10000"></l>
+	<l id="16" level="16" relicName="1789741285" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1002" bonuses="1000" dropProps="11601;1;10000" dropManProps="11601;10000" dropHeroProps="21601;10000"></l>
+	<l id="17" level="17" relicName="1789741284" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1003" bonuses="1000" dropProps="11701;1;10000" dropManProps="11701;10000" dropHeroProps="21701;10000"></l>
+	<l id="18" level="18" relicName="1789741291" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1004" bonuses="1000" dropProps="11801;1;10000" dropManProps="11801;10000" dropHeroProps="21801;10000"></l>
+	<l id="19" level="19" relicName="1789741290" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1005" bonuses="1000" dropProps="11901;1;10000" dropManProps="11901;10000" dropHeroProps="21901;10000"></l>
+	<l id="20" level="20" relicName="4128393443" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1006" bonuses="1000" dropProps="12001;1;10000" dropManProps="12001;10000" dropHeroProps="22001;10000"></l>
+	<l id="21" level="21" relicName="4128393442" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1007" bonuses="5000" dropProps="12101;1;10000" dropManProps="12101;10000" dropHeroProps="22101;10000"></l>
+	<l id="22" level="22" relicName="4128393441" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1008" bonuses="5000" dropProps="12201;1;10000" dropManProps="12201;10000" dropHeroProps="22201;10000"></l>
+	<l id="23" level="23" relicName="4128393440" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1009" bonuses="5000" dropProps="12301;1;10000" dropManProps="12301;10000" dropHeroProps="22301;10000"></l>
+	<l id="24" level="24" relicName="4128393447" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1010" bonuses="5000" dropProps="12401;1;10000" dropManProps="12401;10000" dropHeroProps="22401;10000"></l>
+	<l id="25" level="25" relicName="4128393446" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1011" bonuses="5000" dropProps="12501;1;10000" dropManProps="12501;10000" dropHeroProps="22501;10000"></l>
+	<l id="26" level="26" relicName="4128393445" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1012" bonuses="5000" dropProps="12601;1;10000" dropManProps="12601;10000" dropHeroProps="22601;10000"></l>
+	<l id="27" level="27" relicName="4128393444" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1013" bonuses="5000" dropProps="12701;1;10000" dropManProps="12701;10000" dropHeroProps="22701;10000"></l>
+	<l id="28" level="28" relicName="4128393451" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1014" bonuses="5000" dropProps="12801;1;10000" dropManProps="12801;10000" dropHeroProps="22801;10000"></l>
+	<l id="29" level="29" relicName="4128393450" lineUp="2;4000|3;6000" relicModel="relic" monsterHead="head_1001" bonuses="5000" dropProps="12901;1;10000" dropManProps="12901;10000" dropHeroProps="22901;10000"></l>
+	<l id="30" level="30" relicName="2172078307" lineUp="5;10000" relicModel="relic" monsterHead="head_1002" bonuses="5000" dropProps="13001;1;10000" dropManProps="13001;10000" dropHeroProps="23001;10000"></l>
+</r>

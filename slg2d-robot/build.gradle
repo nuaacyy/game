@@ -1,0 +1,5 @@
+archivesBaseName = 'slg2d-robot'
+
+dependencies {
+	compile project(":slg2d-common")
+}

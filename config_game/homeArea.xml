@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" level="1" acreage="20;20" open="1"></l>
+	<l id="2" level="2" acreage="40;40" open="1"></l>
+	<l id="3" level="3" acreage="60;60" open="1"></l>
+	<l id="4" level="4" acreage="80;80" open="1"></l>
+	<l id="5" level="5" acreage="100;100" open="1"></l>
+	<l id="6" level="6" acreage="100;100" open="2"></l>
+</r>

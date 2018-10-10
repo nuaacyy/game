@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" name="3729778003" icon="officeTitle_1" mainType="1" subType="1" power="2:3:4:5:6" buff="155;1000|154;1000|156;1000" first="1" buffType="1"></l>
+	<l id="2" name="2944617854" icon="officeTitle_2" mainType="1" subType="2" power="2" buff="120;1000|121;1000|140;500" first="2" buffType="1"></l>
+	<l id="3" name="4268461100" icon="officeTitle_2" mainType="1" subType="2" power="2" buff="155;1000|156;500|140;500" first="2" buffType="1"></l>
+	<l id="4" name="4190947365" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="106;2000" first="3" buffType="1"></l>
+	<l id="5" name="4234144666" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="155;500|156;500" first="3" buffType="1"></l>
+	<l id="6" name="3682741802" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="101;500" first="3" buffType="1"></l>
+	<l id="7" name="1372579934" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="156;500|140;500" first="3" buffType="1"></l>
+	<l id="8" name="4082901527" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="156;500|154;500" first="3" buffType="1"></l>
+	<l id="9" name="4269985475" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="157;1500" first="3" buffType="1"></l>
+	<l id="10" name="3303872535" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="143;1500" first="3" buffType="1"></l>
+	<l id="11" name="1045884008" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="120;1000" first="3" buffType="1"></l>
+	<l id="12" name="4126855036" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="121;1000" first="3" buffType="1"></l>
+	<l id="13" name="78632506" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="154;-1000" first="3" buffType="2"></l>
+	<l id="14" name="323021729" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="156;-1000|140;-800" first="3" buffType="2"></l>
+	<l id="15" name="333048737" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="155;-1000|156;-600" first="3" buffType="2"></l>
+	<l id="16" name="993324748" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="155;-500|154;-1000" first="3" buffType="2"></l>
+	<l id="17" name="3817139928" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="106;-1500|143;-500" first="3" buffType="2"></l>
+	<l id="18" name="4273537682" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="143;-1500" first="3" buffType="2"></l>
+	<l id="19" name="1186870945" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="140;-500|101;-1000" first="3" buffType="2"></l>
+	<l id="20" name="323016302" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="120;-1000" first="3" buffType="2"></l>
+	<l id="21" name="3651069717" icon="officeTitle_3" mainType="1" subType="3" power="0" buff="121;-1000|106;500" first="3" buffType="2"></l>
+</r>

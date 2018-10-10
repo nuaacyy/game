@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" title="2358561388" subId="1" backgroud="bg_jiedao" talkDetailIds="1;2" nextTalkSubId="2" opt="0"></l>
+	<l id="1" title="2358561388" subId="2" backgroud="bg_jiedao" talkDetailIds="3;4;5;6;7;8;9;10;11;12;13;14;15" nextTalkSubId="3" opt="showUI@等等:3"></l>
+	<l id="1" title="2358561388" subId="3" backgroud="bg_jiedao" talkDetailIds="16;17;18;19;20;21;22;23;24;25" nextTalkSubId="4" opt="0"></l>
+	<l id="1" title="2358561388" subId="4" backgroud="bg_jiuguan" talkDetailIds="26;27" nextTalkSubId="5" opt="0"></l>
+	<l id="1" title="2358561388" subId="5" backgroud="bg_jiuguan" talkDetailIds="28;29;30;31;32;33;34;35;36;37;38;39" nextTalkSubId="6" opt="0"></l>
+	<l id="1" title="2358561388" subId="6" backgroud="bg_jiuguan" talkDetailIds="40;41" nextTalkSubId="7" opt="0"></l>
+	<l id="1" title="2358561388" subId="7" backgroud="bg_jiuguan" talkDetailIds="42;43" nextTalkSubId="8" opt="0"></l>
+	<l id="1" title="2358561388" subId="8" backgroud="bg_jiuguan" talkDetailIds="44;45" nextTalkSubId="9" opt="0"></l>
+	<l id="1" title="2358561388" subId="9" backgroud="bg_jiuguan" talkDetailIds="46;47;48" nextTalkSubId="0" opt="0"></l>
+	<l id="2" title="1149223016" subId="1" backgroud="bg_jiuguan" talkDetailIds="49;50" nextTalkSubId="2" opt="0"></l>
+	<l id="2" title="1149223016" subId="2" backgroud="bg_jiuguan" talkDetailIds="51;52;53" nextTalkSubId="3" opt="0"></l>
+	<l id="2" title="1149223016" subId="3" backgroud="bg_jiuguan" talkDetailIds="54;55" nextTalkSubId="0" opt="0"></l>
+	<l id="3" title="0" subId="1" backgroud="Bg_machi01_asa" talkDetailIds="126;127" nextTalkSubId="2" opt="0"></l>
+	<l id="3" title="0" subId="2" backgroud="Bg_machi01_asa" talkDetailIds="128;129;130" nextTalkSubId="3" opt="0"></l>
+	<l id="3" title="0" subId="3" backgroud="Bg_machi01_asa" talkDetailIds="131;132;133;134;135;135001;136;137;138;138001;139" nextTalkSubId="4" opt="0"></l>
+	<l id="3" title="0" subId="4" backgroud="Bg_machi01_asa" talkDetailIds="140;141" nextTalkSubId="0" opt="0"></l>
+	<l id="4" title="0" subId="1" backgroud="0" talkDetailIds="142" nextTalkSubId="2" opt="0"></l>
+	<l id="4" title="0" subId="2" backgroud="0" talkDetailIds="143;144;145" nextTalkSubId="3" opt="0"></l>
+	<l id="4" title="0" subId="3" backgroud="0" talkDetailIds="146;147;148" nextTalkSubId="4" opt="0"></l>
+	<l id="4" title="0" subId="4" backgroud="0" talkDetailIds="149" nextTalkSubId="5" opt="0"></l>
+	<l id="4" title="0" subId="5" backgroud="0" talkDetailIds="150" nextTalkSubId="0" opt="0"></l>
+	<l id="5" title="0" subId="1" backgroud="0" talkDetailIds="151" nextTalkSubId="2" opt="0"></l>
+	<l id="5" title="0" subId="2" backgroud="0" talkDetailIds="152;153;154;155;156;157;158;159;160;161;162;163;164;165;166;167;168" nextTalkSubId="0" opt="0"></l>
+	<l id="6" title="2950186187" subId="1" backgroud="0" talkDetailIds="0" nextTalkSubId="0" opt="0"></l>
+</r>

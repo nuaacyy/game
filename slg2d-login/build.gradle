@@ -1,0 +1,17 @@
+archivesBaseName = 'slg2d-login'
+
+apply plugin: "kotlin-spring"
+apply plugin: "io.spring.dependency-management"
+
+dependencies {
+	compile project(":slg2d-common")
+}
+
+jar {
+	manifest {
+		attributes(
+			'Main-Class': 'MainKt',
+			"Class-Path": configurations.compile.collect { it.getName() }.join(' '),
+		)
+	}
+}

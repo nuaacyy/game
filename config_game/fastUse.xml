@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l mainType="1" propsName="70701" subType="100" id="5000" lanTitle="确认将你的部队迁城到$1吗？"></l>
+	<l mainType="2" propsName="70801" subType="100" id="5000" lanTitle="确认将你的部队迁城到$1吗？"></l>
+	<l mainType="3" propsName="70901" subType="100" id="5000" lanTitle="确认将你的部队迁城到$1吗？"></l>
+	<l mainType="4" propsName="70601" subType="100" id="5000" lanTitle="确认使用道具在底图上随机位置迁城吗？"></l>
+	<l mainType="5" propsName="70501" subType="100" id="5000" lanTitle="确认使用道具将行军中的部队立即召回吗？"></l>
+</r>

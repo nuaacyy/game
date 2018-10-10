@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" monsterId="29104" locationId="1" resurrectionTime="600" afterMonsterId="2" openingTime="0;1" rankAward="1_1:25_26_27:500%2_3:28_29_30:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="2" monsterId="29105" locationId="1" resurrectionTime="600" afterMonsterId="3" openingTime="1;2" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="3" monsterId="29106" locationId="1" resurrectionTime="600" afterMonsterId="4" openingTime="3;4" rankAward="1_1:25_26_27:500%2_3:28_29_30:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="4" monsterId="29107" locationId="1" resurrectionTime="600" afterMonsterId="5" openingTime="5;6" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="5" monsterId="29108" locationId="1" resurrectionTime="600" afterMonsterId="6" openingTime="7;8" rankAward="1_1:25_26_27:500%2_3:28_29_30:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="6" monsterId="29109" locationId="1" resurrectionTime="600" afterMonsterId="7" openingTime="9;10" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="7" monsterId="29110" locationId="1" resurrectionTime="600" afterMonsterId="7" openingTime="11;0" rankAward="1_1:25_26_27:500%2_3:28_29_30:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="8" monsterId="29204" locationId="2" resurrectionTime="600" afterMonsterId="9" openingTime="0;1" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="9" monsterId="29205" locationId="2" resurrectionTime="600" afterMonsterId="10" openingTime="1;2" rankAward="1_1:25_26_27:500%2_3:28_29_30:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="10" monsterId="29206" locationId="2" resurrectionTime="600" afterMonsterId="11" openingTime="3;4" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="11" monsterId="29207" locationId="2" resurrectionTime="600" afterMonsterId="12" openingTime="5;6" rankAward="1_1:25_26_27:500%2_3:28_29_30:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="12" monsterId="29208" locationId="2" resurrectionTime="600" afterMonsterId="13" openingTime="7;8" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="13" monsterId="29209" locationId="2" resurrectionTime="600" afterMonsterId="14" openingTime="9;10" rankAward="1_1:25_26_27:500%2_3:28_29_30:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="14" monsterId="29210" locationId="2" resurrectionTime="600" afterMonsterId="14" openingTime="11;0" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="15" monsterId="29304" locationId="3" resurrectionTime="600" afterMonsterId="16" openingTime="0;1" rankAward="1_1:25_26_27:500%2_3:28_29_30:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="16" monsterId="29305" locationId="3" resurrectionTime="600" afterMonsterId="17" openingTime="1;2" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="17" monsterId="29306" locationId="3" resurrectionTime="600" afterMonsterId="18" openingTime="3;4" rankAward="1_1:25_26_27:500%2_3:28_29_30:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="18" monsterId="29307" locationId="3" resurrectionTime="600" afterMonsterId="19" openingTime="5;6" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="19" monsterId="29308" locationId="3" resurrectionTime="600" afterMonsterId="20" openingTime="7;8" rankAward="1_1:25_26_27:500%2_3:28_29_30:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="20" monsterId="29309" locationId="3" resurrectionTime="600" afterMonsterId="21" openingTime="9;10" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="21" monsterId="29310" locationId="3" resurrectionTime="600" afterMonsterId="21" openingTime="11;0" rankAward="1_1:25_26_27:500%2_3:28_29_30:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="22" monsterId="29404" locationId="4" resurrectionTime="600" afterMonsterId="23" openingTime="0;1" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="23" monsterId="29405" locationId="4" resurrectionTime="600" afterMonsterId="24" openingTime="1;2" rankAward="1_1:25_26_27:500%2_3:28_29_30:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="24" monsterId="29406" locationId="4" resurrectionTime="600" afterMonsterId="25" openingTime="3;4" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="25" monsterId="29407" locationId="4" resurrectionTime="600" afterMonsterId="26" openingTime="5;6" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="26" monsterId="29408" locationId="4" resurrectionTime="600" afterMonsterId="27" openingTime="7;8" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="27" monsterId="29409" locationId="4" resurrectionTime="600" afterMonsterId="28" openingTime="9;10" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+	<l id="28" monsterId="29410" locationId="4" resurrectionTime="600" afterMonsterId="28" openingTime="11;0" rankAward="1_1:28_29_30:500%2_3:31_32_33:500%4_5:31_32_33:500%6_10:31_32_33:500"></l>
+</r>

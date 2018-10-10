@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" castleLv="1" surprise="1;5000|2;5000"></l>
+	<l id="2" castleLv="2" surprise="2;5000|3;5000"></l>
+	<l id="3" castleLv="3" surprise="3;5000|4;5000"></l>
+	<l id="4" castleLv="4" surprise="4;5000|5;5000"></l>
+	<l id="5" castleLv="5" surprise="5;5000|6;5000"></l>
+	<l id="6" castleLv="8" surprise="4;10000"></l>
+	<l id="7" castleLv="10" surprise="5;10000"></l>
+	<l id="8" castleLv="15" surprise="6;10000"></l>
+</r>

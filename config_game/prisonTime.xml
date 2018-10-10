@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" townLv="1" timeType="0" time="0"></l>
+	<l id="2" townLv="2" timeType="0" time="0"></l>
+	<l id="3" townLv="3" timeType="0" time="0"></l>
+	<l id="4" townLv="4" timeType="0" time="0"></l>
+	<l id="5" townLv="5" timeType="0" time="0"></l>
+	<l id="6" townLv="6" timeType="0" time="0"></l>
+	<l id="7" townLv="7" timeType="0" time="0"></l>
+	<l id="8" townLv="8" timeType="0" time="0"></l>
+	<l id="9" townLv="9" timeType="0" time="0"></l>
+	<l id="10" townLv="10" timeType="1" time="600"></l>
+	<l id="11" townLv="11" timeType="1" time="600"></l>
+	<l id="12" townLv="12" timeType="1" time="600"></l>
+	<l id="13" townLv="13" timeType="1" time="600"></l>
+	<l id="14" townLv="14" timeType="1" time="600"></l>
+	<l id="15" townLv="15" timeType="1" time="600"></l>
+	<l id="16" townLv="16" timeType="1" time="600"></l>
+	<l id="17" townLv="17" timeType="2" time="720"></l>
+	<l id="18" townLv="18" timeType="2" time="720"></l>
+	<l id="19" townLv="19" timeType="2" time="720"></l>
+	<l id="20" townLv="20" timeType="2" time="720"></l>
+	<l id="21" townLv="21" timeType="2" time="720"></l>
+	<l id="22" townLv="22" timeType="2" time="720"></l>
+	<l id="23" townLv="23" timeType="2" time="720"></l>
+	<l id="24" townLv="24" timeType="2" time="720"></l>
+	<l id="25" townLv="25" timeType="2" time="720"></l>
+</r>

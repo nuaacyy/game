@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" rankMyself="18000;100000" rank1="-2000" rank2="1000" rank3="2000"></l>
+	<l id="2" rankMyself="15000;17999" rank1="-1800" rank2="900" rank3="1800"></l>
+	<l id="3" rankMyself="12500;14999" rank1="-1500" rank2="750" rank3="1500"></l>
+	<l id="4" rankMyself="10000;12499" rank1="-1000" rank2="500" rank3="1000"></l>
+	<l id="5" rankMyself="1000;9999" rank1="-1000" rank2="500" rank3="900"></l>
+	<l id="6" rankMyself="100;999" rank1="-100" rank2="50" rank3="90"></l>
+	<l id="7" rankMyself="50;99" rank1="-15" rank2="8" rank3="15"></l>
+	<l id="8" rankMyself="30;49" rank1="-10" rank2="5" rank3="10"></l>
+	<l id="9" rankMyself="10;29" rank1="-4" rank2="2" rank3="4"></l>
+	<l id="10" rankMyself="4;9" rank1="-3" rank2="2" rank3="3"></l>
+	<l id="11" rankMyself="3;3" rank1="-1" rank2="1" rank3="2"></l>
+	<l id="12" rankMyself="2;2" rank1="-2" rank2="-1" rank3="1"></l>
+	<l id="13" rankMyself="1;1" rank1="-3" rank2="-2" rank3="-1"></l>
+</r>

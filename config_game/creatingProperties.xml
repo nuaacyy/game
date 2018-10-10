@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" name="0" camp="0" tokenRecoveryRate="3600" decreeLimit="20" fameRecoveryRate="360" fameLimit="15000" powerValue="0" cityLimit="0" fortressLimit="0" skillLimit="100" skillExp="0" generalsLimit="100" distanceLimit="300" woodYield="150" ironYield="150" stoneYield="150" foodstuffYield="150" storageLimit="50000" gold="20000" acer="1000000" meritoriousService="0" reserveSoldiersRecovery="60" reserveSoldiers="3000" fame="2000" resource="1000000" decree="20" buildingQueue="1" heroCost="100" durability="600" durabilityRecover="0.7" basicDurability="600" soldiers="1000" boundDiamond="0" heroExp="500"></l>
+</r>

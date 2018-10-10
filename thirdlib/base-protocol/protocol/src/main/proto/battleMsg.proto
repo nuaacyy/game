@@ -1,0 +1,132 @@
+syntax = "proto3";
+package pb4battle;
+
+service BattleService {
+    rpc doHeroFight (DoHeroFightReq) returns (DoHeroFightResp) {
+    }
+
+    rpc CheckHeroFight (CheckHeroFightReq) returns (CheckHeroFightResp) {
+    }
+}
+
+message DoHeroFightReq {
+    int32 battleTime = 1; //战斗时间
+    int32 ranSeed = 2;
+    FightData atkFightData = 3; //攻击方数据
+    repeated FightData defFightDatas = 4; //防守方数据
+    repeated StarInfo starInfos = 5; //星象信息
+}
+
+message DoHeroFightResp {
+    int32 rt = 1;
+    int32 fightResult = 2;
+    repeated HeroFightReport fightInfo = 3; //战斗具体信息
+}
+
+message CheckHeroFightReq {
+    int32 battleTime = 1; //战斗时间
+    int32 ranSeed = 2;
+    FightData atkFightData = 3; //攻击方数据
+    repeated FightData defFightDatas = 4; //防守方数据
+    repeated HeroFightReport reports = 5;//客户端战斗信息
+}
+
+message CheckHeroFightResp {
+    int32 rt = 1;
+    int32 fightResult = 2;
+}
+
+message FightData {
+    repeated HeroData heroList = 1;
+}
+
+message HeroData {
+    int64 id = 1;
+    int32 protoId = 2;
+    int32 lv = 3;
+    int32 star = 4;
+    int32 awake = 5;
+    int32 asignHp = 6;
+    double initMorale = 7; //初始的士气
+    repeated int32 skillList = 8;
+    repeated EquipInfo equipInfos = 9;
+}
+
+message EquipInfo {
+    int32 equipId = 1;
+    int32 equipRank = 2;
+}
+
+message StarInfo {
+    repeated int32 starAttrs = 1;
+    repeated AdditionPropertyInfo addPropertys = 2;
+}
+
+message AdditionPropertyInfo {
+    int32 addProperty = 1;
+    int32 addValue = 2;
+}
+
+message OperateRecord {
+    int32 frame = 1;
+    int32 entityId = 2;
+    int32 launchUniqueSkill = 3;
+    int32 resetLaunchUniqueSkillFlag = 4;
+}
+
+message FightStatistics {
+    int32 recordKey = 1;
+    int32 recordValue = 2;
+}
+
+//英雄战报结构
+message HeroFightReport {
+    repeated FightEntity entitys = 1;//所有战斗单位
+    repeated FightRecord records = 2;//战斗请求记录
+    int32 fightResult = 3;//战斗结果
+    repeated FightStatistics statistics = 4; //统计数据
+    repeated OperateRecord operateRecords = 5;//操作记录
+}
+
+//战斗实体对象
+message FightEntity {
+    int64 id = 1;//唯一ID
+    repeated IntProperty intPropertys = 2;//int属性值
+    repeated FloatProperty floatPropertys = 3;//float属性值
+}
+
+//int属性值
+message IntProperty {
+    int32 propertyType = 1;//属性类别
+    int64 propertyValue = 2;//属性值
+}
+
+//float属性值
+message FloatProperty {
+    int32 propertyType = 1;//属性类别
+    double propertyValue = 2;//属性值
+}
+
+//array属性值
+message ArrayProperty {
+    int32 propertyType = 1;//属性类别
+    repeated IntProperty intPropertys = 2;//int属性值
+    repeated FloatProperty floatPropertys = 3;//float属性值
+}
+
+//战斗记录
+message FightRecord {
+    int32 frame = 1;//帧
+    int64 senderId = 2;//发送者Id
+    int64 receiverId = 3;//接受者Id
+    FightRequest request = 4;//请求内容
+}
+
+//战斗行为请求
+message FightRequest {
+    int32 behaviorType = 1;//行为类别
+    repeated IntProperty intPropertys = 2;//int属性值
+    repeated FloatProperty floatPropertys = 3;//float属性值
+    repeated ArrayProperty arrayPropertys = 4;//array属性值
+    repeated FightEntity entitys = 5;//生成的战斗单位
+}

@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package rpccommon;
+
+option java_package = "rpccommon";
+option java_outer_classname = "GrpcCommon";
+option java_multiple_files = true;
+
+// 区配置
+message PbGameConfig {
+    int64 id = 1; // 配置的唯一ID
+    int32 areaNo = 2; // 区号
+    int64 serverId = 3; // 平台上的区编号，很长！
+    int32 opId = 4; // 运营商
+    int32 opGameId = 5; // 平台商
+    string areaName = 6; // 区名
+    int32 areaState = 7; // 区状态
+    repeated string whiteRosters = 8; // 白名单
+    repeated string blackRosters = 9; // 黑名单
+    int32 deployState = 10; // 部署状态
+    string mysqlDbName = 11; // 数据库名
+    string loginKey = 12; // 登录key
+    string payKey = 13; // 支付key
+    int64 openAreaData = 14; // 开服时间
+    string giftKey = 15; // 礼包key
+}

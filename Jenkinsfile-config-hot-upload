@@ -1,0 +1,39 @@
+pipeline {
+    agent any
+    stages {
+        stage("SyncConfig") {
+            steps {
+                sshagent(credentials: ['gitlab-201-jenkins']) {
+//                    checkout([$class: 'SubversionSCM',
+//                              additionalCredentials: [],
+//                              excludedCommitMessages: '',
+//                              excludedRegions: '',
+//                              excludedRevprop: '',
+//                              excludedUsers: '',
+//                              filterChangelog: false,
+//                              ignoreDirPropChanges: false,
+//                              includedRegions: '',
+//                              locations: [[cancelProcessOnExternalsFail: true,
+//                                           credentialsId: 'svn-4-build',
+//                                           depthOption: 'infinity',
+//                                           ignoreExternalsOption: true,
+//                                           local: 'cehuaproto',
+//                                           remote: 'http://192.168.189.12/svn/com.youzu.sexy.cehua/trunk/doc/Config/trunk']],
+//                              quietOperation: true,
+//                              workspaceUpdater: [$class: 'UpdateUpdater']])
+
+                    withCredentials([usernamePassword(credentialsId: 'svn-4-build', usernameVariable: 'SVN_USER', passwordVariable: 'SVN_PWD')]) {
+                        sh '''
+				        bash +x ci/config-hot-upload.sh
+				    
+				        rm -rf cehuaproto
+				    
+				        ls -al
+					    '''
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" bubbletype="1" typeCheck="1" showLevelCheck="1032;1" showWeight="10" showTime="7" duration="3" bubbleContents="aaaa" fadeLevelCheck="1032;25"></l>
+	<l id="1" bubbletype="2" typeCheck="2" showLevelCheck="0" showWeight="11" showTime="8" duration="3" bubbleContents="bbbb" fadeLevelCheck="0"></l>
+	<l id="1" bubbletype="3" typeCheck="3" showLevelCheck="0" showWeight="12" showTime="9" duration="3" bubbleContents="ccccc" fadeLevelCheck="0"></l>
+	<l id="1" bubbletype="4" typeCheck="2" showLevelCheck="0" showWeight="13" showTime="10" duration="3" bubbleContents="dddd" fadeLevelCheck="0"></l>
+	<l id="1" bubbletype="5" typeCheck="1" showLevelCheck="0" showWeight="14" showTime="11" duration="3" bubbleContents="eeeee" fadeLevelCheck="0"></l>
+</r>

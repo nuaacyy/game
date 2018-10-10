@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l type="0" name="0" desc="0" time="0" bigTime="" littleTime="" reward="0"></l>
+	<l type="1" name="日常维护" desc="3509089042" time="3" bigTime="4" littleTime="03:00" reward="10604;2"></l>
+	<l type="2" name="紧急维护" desc="3509089042" time="0" bigTime="0" littleTime="0" reward="10604;2"></l>
+</r>

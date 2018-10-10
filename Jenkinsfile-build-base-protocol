@@ -1,0 +1,17 @@
+pipeline {
+	agent any
+	stages {
+		stage('Build') {
+			agent {
+				docker {
+					image 'weiweiwitch/jdk8-nodejs:0.1.0'
+				}
+			}
+			steps {
+				withCredentials(bindings: [sshUserPrivateKey(credentialsId: 'testvm-40', keyFileVariable: 'keyfile')]) {
+					sh 'sh -x ci/build_base-protocol.sh'
+				}
+			}
+		}
+	}
+}

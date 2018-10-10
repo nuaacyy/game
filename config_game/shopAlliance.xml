@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l label="1" name="特 殊" icon="Bag_IconSpecital" grid="1" id="94" props="14;70501;1" buyCost="22;0;6000" isBuff="0"></l>
+	<l label="1" name="特 殊" icon="Bag_IconSpecital" grid="2" id="95" props="14;70701;1" buyCost="22;0;270000" isBuff="0"></l>
+	<l label="1" name="特 殊" icon="Bag_IconSpecital" grid="3" id="96" props="14;70601;1" buyCost="22;0;60000" isBuff="0"></l>
+	<l label="1" name="特 殊" icon="Bag_IconSpecital" grid="4" id="97" props="14;70901;1" buyCost="22;0;30000" isBuff="0"></l>
+	<l label="1" name="特 殊" icon="Bag_IconSpecital" grid="5" id="98" props="14;71001;1" buyCost="22;0;30000" isBuff="0"></l>
+	<l label="1" name="特 殊" icon="Bag_IconSpecital" grid="6" id="99" props="14;71301;1" buyCost="22;0;90000" isBuff="0"></l>
+	<l label="1" name="特 殊" icon="Bag_IconSpecital" grid="7" id="100" props="14;71501;1" buyCost="22;0;60000" isBuff="0"></l>
+	<l label="1" name="特 殊" icon="Bag_IconSpecital" grid="8" id="101" props="14;71801;1" buyCost="22;0;18000" isBuff="0"></l>
+	<l label="1" name="特 殊" icon="Bag_IconSpecital" grid="9" id="102" props="14;71201;1" buyCost="22;0;810000" isBuff="0"></l>
+	<l label="1" name="特 殊" icon="Bag_IconSpecital" grid="10" id="103" props="14;11201;1" buyCost="22;0;40000" isBuff="0"></l>
+	<l label="2" name="资 源" icon="Bag_IconResource" grid="1" id="104" props="14;90101;1" buyCost="22;0;4500" isBuff="1"></l>
+	<l label="2" name="资 源" icon="Bag_IconResource" grid="2" id="105" props="14;90201;1" buyCost="22;0;4500" isBuff="1"></l>
+	<l label="2" name="资 源" icon="Bag_IconResource" grid="3" id="106" props="14;90301;1" buyCost="22;0;4500" isBuff="1"></l>
+	<l label="2" name="资 源" icon="Bag_IconResource" grid="4" id="107" props="14;90401;1" buyCost="22;0;4500" isBuff="1"></l>
+	<l label="2" name="资 源" icon="Bag_IconResource" grid="5" id="108" props="14;90501;1" buyCost="22;0;9000" isBuff="1"></l>
+	<l label="3" name="加 速" icon="Bag_IconSpeedUp" grid="1" id="109" props="14;20101;1" buyCost="22;0;3000" isBuff="0"></l>
+	<l label="3" name="加 速" icon="Bag_IconSpeedUp" grid="2" id="110" props="14;20102;1" buyCost="22;0;36000" isBuff="0"></l>
+	<l label="3" name="加 速" icon="Bag_IconSpeedUp" grid="3" id="111" props="14;20103;1" buyCost="22;0;54000" isBuff="0"></l>
+	<l label="3" name="加 速" icon="Bag_IconSpeedUp" grid="4" id="112" props="14;20104;1" buyCost="22;0;90000" isBuff="0"></l>
+	<l label="3" name="加 速" icon="Bag_IconSpeedUp" grid="5" id="113" props="14;91702;1" buyCost="22;0;30000" isBuff="0"></l>
+	<l label="3" name="加 速" icon="Bag_IconSpeedUp" grid="6" id="114" props="14;91703;1" buyCost="22;0;127500" isBuff="0"></l>
+	<l label="4" name="战 斗" icon="Bag_IconFight" grid="1" id="115" props="14;91202;1" buyCost="22;0;150000" isBuff="1"></l>
+	<l label="4" name="战 斗" icon="Bag_IconFight" grid="2" id="116" props="14;91401;1" buyCost="22;0;18000" isBuff="1"></l>
+	<l label="4" name="战 斗" icon="Bag_IconFight" grid="3" id="117" props="14;90601;1" buyCost="22;0;56300" isBuff="1"></l>
+	<l label="4" name="战 斗" icon="Bag_IconFight" grid="4" id="118" props="14;90701;1" buyCost="22;0;56300" isBuff="1"></l>
+	<l label="4" name="战 斗" icon="Bag_IconFight" grid="5" id="119" props="14;90901;1" buyCost="22;0;240000" isBuff="1"></l>
+	<l label="5" name="宝 箱" icon="Bag_IconBox" grid="1" id="120" props="14;40201;1" buyCost="22;0;9900" isBuff="0"></l>
+</r>

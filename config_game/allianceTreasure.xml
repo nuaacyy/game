@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1001" name="3569091688" quality="1" basicReward="1;5000|2;5000" dropReward="1;0" opentime="1" icon="0"></l>
+	<l id="1002" name="2003007747" quality="1" basicReward="1;5000|2;5000" dropReward="1;0" opentime="5" icon="0"></l>
+	<l id="1003" name="436923806" quality="1" basicReward="1;5000|2;5000" dropReward="1;0" opentime="10" icon="0"></l>
+	<l id="2001" name="3165807161" quality="2" basicReward="1;5000|2;5000" dropReward="1;0" opentime="20" icon="0"></l>
+	<l id="2002" name="1599723220" quality="2" basicReward="1;5000|2;5000" dropReward="1;0" opentime="30" icon="0"></l>
+	<l id="2003" name="33639279" quality="2" basicReward="1;5000|2;5000" dropReward="1;0" opentime="60" icon="0"></l>
+	<l id="3001" name="2762522634" quality="3" basicReward="1;5000|2;5000" dropReward="1;0" opentime="20" icon="0"></l>
+	<l id="3002" name="483977973" quality="3" basicReward="1;5000|2;5000" dropReward="1;0" opentime="30" icon="0"></l>
+	<l id="3003" name="3212861328" quality="3" basicReward="1;5000|2;5000" dropReward="1;0" opentime="60" icon="0"></l>
+	<l id="4001" name="510395496" quality="4" basicReward="1;5000|2;5000" dropReward="1;0" opentime="20" icon="0"></l>
+	<l id="4002" name="2466710632" quality="4" basicReward="1;5000|2;5000" dropReward="1;0" opentime="30" icon="0"></l>
+	<l id="4003" name="128058472" quality="4" basicReward="1;5000|2;5000" dropReward="1;0" opentime="60" icon="0"></l>
+</r>

@@ -1,0 +1,8 @@
+---
+deploy_path: ~/ci4test4mgr
+dist_name: slg2d
+release_host: 172.18.3.201
+release_port: 10080
+zk_host: 172.18.3.203
+zk_port: 12181
+mgr_port: 18080

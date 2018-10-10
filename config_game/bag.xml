@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r>
+	<l id="1" bigType="1" smallType="1" name="1054662303" icon="Bag_IconSpecital" props="1;7|7;5|7;7|7;6|7;9|7;10|7;12|7;13|7;15|7;14|7;17|7;18|1;8|6;1|6;2|6;3|6;4|6;5|7;20|1;12|1;15|7;1|7;2|7;8|7;11|1;9|1;10|1;16|9;10|9;11"></l>
+	<l id="2" bigType="1" smallType="2" name="3668939414" icon="Bag_IconResource" props="1;1|1;2|1;3|1;4|1;5|9;1|9;2|9;3|9;4|9;5"></l>
+	<l id="3" bigType="1" smallType="3" name="4046762143" icon="Bag_IconSpeedUp" props="2;1|2;10|9;17|2;2|2;3|2;4|2;5|2;6|2;7|2;11"></l>
+	<l id="4" bigType="1" smallType="4" name="2135362223" icon="Bag_IconFight" props="9;12|9;13|9;14|9;15|9;6|9;7|9;9"></l>
+	<l id="5" bigType="1" smallType="5" name="1395797736" icon="Bag_IconBox" props="4;1|4;2"></l>
+	<l id="6" bigType="2" smallType="1" name="2438932333" icon="Bag_IconBox" props="1;7|1;10"></l>
+	<l id="8" bigType="2" smallType="2" name="1120825743" icon="Bag_IconBox" props="6;10"></l>
+	<l id="9" bigType="2" smallType="3" name="2039573379" icon="Bag_IconBox" props="6;9"></l>
+</r>

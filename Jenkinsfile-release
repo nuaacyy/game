@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build And Release') {
+            steps {
+                withCredentials(bindings: [sshUserPrivateKey(credentialsId: 'easy-manage-201', keyFileVariable: 'keyfile')]) {
+                    withCredentials([usernamePassword(credentialsId: 'slg2d-jenkins-svn', usernameVariable: 'SVN_USER', passwordVariable: 'SVN_PWD')]) {
+                        sh 'bash -x ci/build_mgr_front.sh'
+                        sh 'bash -x ci/build_battle_service.sh'
+                        sh 'bash -x ci/releaseDist.sh'
+                    }
+
+                }
+            }
+        }
+    }
+}
